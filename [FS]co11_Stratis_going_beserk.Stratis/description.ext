@@ -1,0 +1,8 @@
+author = Filip;
+onLoadName = Stratis going beserk;
+onLoadMission = Stratis going beserk;
+joinUnassigned = 1;
+respawn = "BASE";
+respawndelay = 10;
+disabledAI = true;
+disableChannels[] = {0,2,3};
