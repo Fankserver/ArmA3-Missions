@@ -26,7 +26,8 @@ class Mission
 		"A3_Structures_F_Items_Vessels",
 		"A3_Structures_F_Civ_Camping",
 		"A3_Soft_F_MRAP_03",
-		"a3_characters_f_beta"
+		"a3_characters_f_beta",
+		"task_force_radio_items"
 	};
 	addOnsAuto[]=
 	{
@@ -53,6 +54,7 @@ class Mission
 		"A3_Structures_F_Items_Vessels",
 		"A3_Structures_F_Civ_Camping",
 		"A3_Soft_F_MRAP_03",
+		"task_force_radio_items",
 		"a3_map_stratis"
 	};
 	randomSeed=9048381;
@@ -2245,7 +2247,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=59;
+		items=60;
 		class Item0
 		{
 			position[]={2167.6716,5.8952813,5767.1079};
@@ -2797,6 +2799,18 @@ class Mission
 			side="EMPTY";
 			vehicle="I_MRAP_03_hmg_F";
 			skill=0.60000002;
+		};
+		class Item59
+		{
+			position[]={2187.062,6,5731.3623};
+			azimut=-76.792976;
+			id=144;
+			side="EMPTY";
+			vehicle="TF_NATO_Radio_Crate";
+			leader=1;
+			skill=0.60000002;
+			text="unit_73_250";
+			description="Konvoifuehrer";
 		};
 	};
 	class Markers

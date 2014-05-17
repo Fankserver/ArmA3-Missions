@@ -1,0 +1,20 @@
+class Header
+{
+gameType = COOP;
+minPlayers = 2;
+maxPlayers = 4;
+};
+
+
+author = Malwit;
+onLoadName = [FS]co4_Hell_from_Heaven;
+onLoadMission = [FS]co4_Hell_from_Heaven;
+
+joinUnassigned = 1;
+respawn = "BASE" ;
+respawndelay = 30;
+respawnDialog = false;
+respawnVehicleDelay = 10;
+
+disabledAI = false;
+disableChannels[] = {0,2,3};
