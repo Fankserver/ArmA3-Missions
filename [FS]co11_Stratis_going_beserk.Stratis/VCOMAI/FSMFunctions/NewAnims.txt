@@ -1,0 +1,24 @@
+acts_InjuredAngryRifle01,
+acts_InjuredCoughRifle02,
+acts_InjuredLookingRifle01,
+acts_InjuredLookingRifle02,
+acts_InjuredLookingRifle03,
+acts_InjuredLookingRifle04,
+acts_InjuredLookingRifle05,
+acts_InjuredLyingRifle01,
+acts_InjuredSpeakingRifle01,
+
+//FOR HEALING AI
+
+Acts_TreatingWounded03
+
+AinjPpneMstpSnonWnonDnon_rolltofront
+AinjPpneMstpSnonWnonDnon_rolltoback
+
+AmovPercMstpSrasWrflDnon_AadjPpneMstpSrasWrflDright
+AmovPercMstpSrasWrflDnon_AadjPpneMstpSrasWrflDleft
+
+AadjPpneMstpSrasWrflDleft_AmovPpneMstpSrasWrflDnon
+
+aadjppnemstpsraswrfldup
+AadjPpneMstpSrasWrflDup_AadjPknlMstpSrasWrflDdown
