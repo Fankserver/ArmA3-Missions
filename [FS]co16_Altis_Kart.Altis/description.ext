@@ -1,0 +1,37 @@
+/*
+	Copyright © 2014 Fankserver.com, All rights reserved
+	File: description.ext
+	Authors: 
+		- Niko "nano2k" Bochan, nano@fankserver.com
+
+	Description:
+	This mission plays just like Mario Kart. Get random powerups and drive like a pro!
+*/
+
+class Header
+{
+	gameType = COOP;
+	minPlayers = 2;
+	maxPlayers = 64;
+};
+
+author = "Fankserver Community";
+onLoadName = "[FS] Altis Karts";
+onLoadMission = "[FS] Altis Karts";
+
+joinUnassigned = 1;
+respawn = "BASE";
+respawndelay = 30;
+respawnDialog = false;
+respawnVehicleDelay = 10;
+
+disabledAI = false;
+disableChannels[] = {0,2,3};
+
+class CfgFunctions {
+	class FS {
+		class System {
+			class getRandomPowerUp {};
+		};
+	};
+};
