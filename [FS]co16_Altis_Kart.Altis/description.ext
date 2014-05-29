@@ -20,7 +20,7 @@ onLoadName = "[FS] Altis Karts";
 onLoadMission = "[FS] Altis Karts";
 
 joinUnassigned = 1;
-respawn = "BASE";
+respawn = "INSTANT";
 respawndelay = 30;
 respawnDialog = false;
 respawnVehicleDelay = 10;
@@ -33,5 +33,10 @@ class CfgFunctions {
 		class System {
 			class getRandomPowerUp {};
 		};
+		class Powerup {
+			class tnt {};
+			class banana {};
+			class boost {};
+		}
 	};
 };
