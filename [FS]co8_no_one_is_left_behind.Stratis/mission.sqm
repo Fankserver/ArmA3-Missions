@@ -41,7 +41,6 @@ class Mission
 		"A3_Modules_F",
 		"task_force_radio_items",
 		"A3_Modules_F_Supports",
-		"A3_Modules_F_Multiplayer",
 		"A3_Soft_F_MRAP_01",
 		"A3_Structures_F_Civ_Camping",
 		"A3_Structures_F_EPB_Civ_Accessories",
@@ -2403,7 +2402,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={4299.7744,231.23572,3915.5928};
+					position[]={4367.8257,226.31891,3793.877};
 					azimut=-734.01099;
 					id=74;
 					side="WEST";
@@ -2411,7 +2410,7 @@ class Mission
 					leader=1;
 					rank="COLONEL";
 					skill=0.60000002;
-					init="this allowDamage false;clipBoard=getposATL xyz;this addAction [""XYZ"",{copyToClipboard (str (clipBoard))}];this call X39_MedSys_fnc_InitializeUnit;";
+					init="clipBoard=getposATL xyz;this addAction [""XYZ"",{copyToClipboard (str (clipBoard))}];this call X39_MedSys_fnc_InitializeUnit;this allowDamage false;";
 				};
 			};
 		};
@@ -2505,7 +2504,7 @@ class Mission
 				items=5;
 				class Item0
 				{
-					position[]={4350.6543,225.02521,3782.3145};
+					position[]={4354.6147,225.41553,3784.6909};
 					azimut=-8.03374;
 					id=76;
 					side="EAST";
@@ -2568,12 +2567,12 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={4298.2681,230.2429,3921.3335};
+					position[]={4358.9917,226.19717,3794.6807};
 					azimut=-734.01099;
 					id=81;
 					side="EAST";
 					vehicle="O_spotter_F";
-					player="PLAYER COMMANDER";
+					player="PLAY CDG";
 					leader=1;
 					rank="COLONEL";
 					skill=0.60000002;
@@ -2582,49 +2581,21 @@ class Mission
 		};
 		class Item42
 		{
-			side="LOGIC";
+			side="WEST";
 			class Vehicles
 			{
 				items=1;
 				class Item0
 				{
-					position[]={4293.6646,228.63565,3925.9346};
-					class args
-					{
-						items=4;
-						class Item0
-						{
-							value="";
-							parentCls="ModuleRespawnPosition_F";
-							typeName="Name";
-						};
-						class Item1
-						{
-							value="0";
-							parentCls="ModuleRespawnPosition_F";
-							typeName="Type";
-						};
-						class Item2
-						{
-							value="0";
-							parentCls="ModuleRespawnPosition_F";
-							typeName="Side";
-						};
-						class Item3
-						{
-							value="2";
-							parentCls="ModuleRespawnPosition_F";
-							typeName="Marker";
-						};
-					};
+					position[]={4359.5298,225.36319,3782.665};
+					azimut=-734.01099;
 					id=82;
-					side="LOGIC";
-					vehicle="ModuleRespawnPosition_F";
+					side="WEST";
+					vehicle="B_spotter_F";
+					player="PLAY CDG";
 					leader=1;
-					lock="UNLOCKED";
+					rank="COLONEL";
 					skill=0.60000002;
-					text="respawn_east";
-					description="respawn_east";
 				};
 			};
 		};
@@ -2804,7 +2775,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=29;
+		items=32;
 		class Item0
 		{
 			position[]={1989.0458,2.5754457,3518.7407};
@@ -2906,7 +2877,7 @@ class Mission
 		};
 		class Item13
 		{
-			position[]={4348.9028,226.54903,3815.6748};
+			position[]={4366.0571,226.83005,3818.8608};
 			name="obj3";
 			type="Empty";
 		};
@@ -3015,14 +2986,36 @@ class Mission
 		};
 		class Item28
 		{
-			position[]={4299.8926,229.00282,3927.9434};
-			name="respawn_east";
+			position[]={2701.8181,112.55103,2498.2505};
+			name="respawn1";
+			text="Landing Zone";
+			type="Empty";
+		};
+		class Item29
+		{
+			position[]={2012.8706,3.9743676,2701.8516};
+			name="respawn2";
+			text="Hostage Camp";
+			type="Empty";
+		};
+		class Item30
+		{
+			position[]={1983.7141,2.5609546,3524.1387};
+			name="respawn3";
+			text="Spec Ops Camp";
+			type="Empty";
+		};
+		class Item31
+		{
+			position[]={4367.8857,226.42688,3799.5479};
+			name="respawn4";
+			text="Airstation";
 			type="Empty";
 		};
 	};
 	class Sensors
 	{
-		items=13;
+		items=14;
 		class Item0
 		{
 			position[]={3338.3562,223.05205,2981.2925};
@@ -3044,6 +3037,7 @@ class Mission
 			interruptable=1;
 			age="UNKNOWN";
 			name="trgobj0";
+			expActiv="[west,(getMarkerPos ""respawn3"")] call BIS_fnc_addRespawnPosition;";
 			class Effects
 			{
 			};
@@ -3088,7 +3082,7 @@ class Mission
 			interruptable=1;
 			age="UNKNOWN";
 			expCond="(east countside thislist) == 0 && alive playerCaptive && (west countside thislist) >= 2;";
-			expActiv="[playerCaptive] join (group XYZ);tsk1=true;";
+			expActiv="[playerCaptive] join (group XYZ);tsk1=true;[west,(getMarkerPos ""respawn2"")] call BIS_fnc_addRespawnPosition;";
 			class Effects
 			{
 			};
@@ -3180,7 +3174,7 @@ class Mission
 			interruptable=1;
 			age="UNKNOWN";
 			expCond="this && tsk2";
-			expActiv="tsk3=true;";
+			expActiv="tsk3=true;[west,(getMarkerPos ""respawn4"")] call BIS_fnc_addRespawnPosition;";
 			class Effects
 			{
 			};
@@ -3210,6 +3204,17 @@ class Mission
 			interruptable=1;
 			age="UNKNOWN";
 			expActiv="_nul= [] spawn ATR_fnc_mike";
+			class Effects
+			{
+			};
+		};
+		class Item13
+		{
+			position[]={2702.1938,112.58649,2496.6436};
+			activationBy="WEST";
+			interruptable=1;
+			age="UNKNOWN";
+			expActiv="[west,(getMarkerPos ""respawn1"")] call BIS_fnc_addRespawnPosition";
 			class Effects
 			{
 			};

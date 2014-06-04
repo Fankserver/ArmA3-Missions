@@ -1,16 +1,20 @@
-
-respawnDelay = 5;
+respawnTemplatesWest[] = {"MenuPosition"};
 respawn = 3;
+respawnDelay = 5;
+respawnOnStart = 0;
+
 
 onLoadName = "No one's left behind"; 
 loadScreen = "";
 author="Atrax";
 OnLoadMission = "Seek the hostage and humiliate the enemy";
+
 #include "LxOPS\lxOPS_dlg.hpp" 
+
 class Header {
-	gameType = ZGM;
-	minPlayers = 4;
-	maxPlayers = 12;
+	gameType = COOP;
+	minPlayers = 1;
+	maxPlayers = 8;
 };
 
 class CfgFunctions {
