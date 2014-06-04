@@ -25,8 +25,8 @@ class Mission
 		"A3_Structures_F_Items_Vessels",
 		"A3_Structures_F_Mil_Shelters",
 		"task_force_radio_items",
-		"X39_MedSys_Scripting",
-		"A3_Soft_F_Truck"
+		"A3_Soft_F_Truck",
+		"A3_Modules_F_Multiplayer"
 	};
 	addOnsAuto[]=
 	{
@@ -40,8 +40,8 @@ class Mission
 		"A3_Characters_F_Civil",
 		"A3_Modules_F",
 		"task_force_radio_items",
-		"X39_MedSys_Scripting",
 		"A3_Modules_F_Supports",
+		"A3_Modules_F_Multiplayer",
 		"A3_Soft_F_MRAP_01",
 		"A3_Structures_F_Civ_Camping",
 		"A3_Structures_F_EPB_Civ_Accessories",
@@ -2294,58 +2294,6 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={555.40326,-125.70396,383.14502};
-					class args
-					{
-						items=5;
-						class Item0
-						{
-							value="1";
-							parentCls="X39_MedSys_Module_BasicModule";
-							typeName="DialogOptions_EnableHealthView";
-						};
-						class Item1
-						{
-							value="0";
-							parentCls="X39_MedSys_Module_BasicModule";
-							typeName="DialogOptions_EnableBloodView";
-						};
-						class Item2
-						{
-							value="1";
-							parentCls="X39_MedSys_Module_BasicModule";
-							typeName="DialogOptions_EnableTourniquetView";
-						};
-						class Item3
-						{
-							value="1";
-							parentCls="X39_MedSys_Module_BasicModule";
-							typeName="DialogOptions_EnableLegView";
-						};
-						class Item4
-						{
-							value="1";
-							parentCls="X39_MedSys_Module_BasicModule";
-							typeName="DialogOptions_EnableMorphineView";
-						};
-					};
-					id=72;
-					side="LOGIC";
-					vehicle="X39_MedSys_Module_BasicModule";
-					leader=1;
-					lock="UNLOCKED";
-					skill=0.60000002;
-				};
-			};
-		};
-		class Item37
-		{
-			side="LOGIC";
-			class Vehicles
-			{
-				items=1;
-				class Item0
-				{
 					position[]={4329.894,-4.7579041,2524.5342};
 					class args
 					{
@@ -2393,7 +2341,7 @@ class Mission
 							typeName="BIS_SUPP_limit_UAV";
 						};
 					};
-					id=73;
+					id=72;
 					side="LOGIC";
 					vehicle="SupportRequester";
 					leader=1;
@@ -2405,7 +2353,7 @@ class Mission
 				};
 			};
 		};
-		class Item38
+		class Item37
 		{
 			side="LOGIC";
 			class Vehicles
@@ -2436,7 +2384,7 @@ class Mission
 							typeName="BIS_SUPP_filter";
 						};
 					};
-					id=74;
+					id=73;
 					side="LOGIC";
 					vehicle="SupportProvider_Virtual_CAS_Heli";
 					leader=1;
@@ -2447,7 +2395,7 @@ class Mission
 				};
 			};
 		};
-		class Item39
+		class Item38
 		{
 			side="WEST";
 			class Vehicles
@@ -2455,9 +2403,9 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={4299.7744,231.22212,3908.4087};
+					position[]={4299.7744,231.23572,3915.5928};
 					azimut=-734.01099;
-					id=75;
+					id=74;
 					side="WEST";
 					vehicle="B_spotter_F";
 					leader=1;
@@ -2467,7 +2415,7 @@ class Mission
 				};
 			};
 		};
-		class Item40
+		class Item39
 		{
 			side="LOGIC";
 			class Vehicles
@@ -2540,7 +2488,7 @@ class Mission
 							typeName="conditionOfPresence";
 						};
 					};
-					id=76;
+					id=75;
 					side="LOGIC";
 					vehicle="Site_OPFOR";
 					leader=1;
@@ -2549,27 +2497,7 @@ class Mission
 				};
 			};
 		};
-		class Item41
-		{
-			side="EAST";
-			class Vehicles
-			{
-				items=1;
-				class Item0
-				{
-					position[]={4364.6895,224.89287,3760.9424};
-					azimut=-734.01099;
-					id=77;
-					side="EAST";
-					vehicle="O_spotter_F";
-					player="PLAYER COMMANDER";
-					leader=1;
-					rank="COLONEL";
-					skill=0.60000002;
-				};
-			};
-		};
-		class Item42
+		class Item40
 		{
 			side="EAST";
 			class Vehicles
@@ -2579,7 +2507,7 @@ class Mission
 				{
 					position[]={4350.6543,225.02521,3782.3145};
 					azimut=-8.03374;
-					id=78;
+					id=76;
 					side="EAST";
 					vehicle="O_Soldier_TL_F";
 					leader=1;
@@ -2592,7 +2520,7 @@ class Mission
 				{
 					position[]={4346.4004,224.61063,3776.6655};
 					azimut=-8.0337391;
-					id=79;
+					id=77;
 					side="EAST";
 					vehicle="O_medic_F";
 					skill=0.40000001;
@@ -2602,7 +2530,7 @@ class Mission
 				{
 					position[]={4356.3027,224.9234,3778.0625};
 					azimut=-8.0337391;
-					id=80;
+					id=78;
 					side="EAST";
 					vehicle="O_Soldier_AR_F";
 					rank="CORPORAL";
@@ -2614,7 +2542,7 @@ class Mission
 					presence=0.51443619;
 					position[]={4361.9541,224.9637,3773.8101};
 					azimut=-8.0337391;
-					id=81;
+					id=79;
 					side="EAST";
 					vehicle="O_medic_F";
 					skill=0.40000001;
@@ -2624,11 +2552,79 @@ class Mission
 				{
 					position[]={4351.9473,224.67517,3774.7134};
 					azimut=-735.50995;
-					id=82;
+					id=80;
 					side="EAST";
 					vehicle="O_Soldier_GL_F";
 					skill=0.60000002;
 					init="this addEventHandler [""Killed"",{(_this select 0) unassignItem ""NVGoggles_OPFOR"";  (_this select 0) removeItem ""NVGoggles_OPFOR"";}]";
+				};
+			};
+		};
+		class Item41
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4298.2681,230.2429,3921.3335};
+					azimut=-734.01099;
+					id=81;
+					side="EAST";
+					vehicle="O_spotter_F";
+					player="PLAYER COMMANDER";
+					leader=1;
+					rank="COLONEL";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item42
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4293.6646,228.63565,3925.9346};
+					class args
+					{
+						items=4;
+						class Item0
+						{
+							value="";
+							parentCls="ModuleRespawnPosition_F";
+							typeName="Name";
+						};
+						class Item1
+						{
+							value="0";
+							parentCls="ModuleRespawnPosition_F";
+							typeName="Type";
+						};
+						class Item2
+						{
+							value="0";
+							parentCls="ModuleRespawnPosition_F";
+							typeName="Side";
+						};
+						class Item3
+						{
+							value="2";
+							parentCls="ModuleRespawnPosition_F";
+							typeName="Marker";
+						};
+					};
+					id=82;
+					side="LOGIC";
+					vehicle="ModuleRespawnPosition_F";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+					text="respawn_east";
+					description="respawn_east";
 				};
 			};
 		};
@@ -2808,7 +2804,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=28;
+		items=29;
 		class Item0
 		{
 			position[]={1989.0458,2.5754457,3518.7407};
@@ -3016,6 +3012,12 @@ class Mission
 			fillName="DiagGrid";
 			a=180;
 			b=180;
+		};
+		class Item28
+		{
+			position[]={4299.8926,229.00282,3927.9434};
+			name="respawn_east";
+			type="Empty";
 		};
 	};
 	class Sensors

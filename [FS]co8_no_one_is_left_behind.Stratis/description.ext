@@ -1,15 +1,11 @@
-// Respawn type, see the table below
-respawn = "3";
-// Delay in seconds before playable unit respawns.
+
 respawnDelay = 5;
-// Delay in seconds before vehicle respawns.
-respawnVehicleDelay = 60;
-// 0 to disable the score table (it can still be opened manually by pressing 'P' key).
-respawnDialog = 0;
-onLoadName = "Stratis 1"; 
+respawn = 3;
+
+onLoadName = "No one's left behind"; 
 loadScreen = "";
 author="Atrax";
-OnLoadMission = "no one's left behind";
+OnLoadMission = "Seek the hostage and humiliate the enemy";
 #include "LxOPS\lxOPS_dlg.hpp" 
 class Header {
 	gameType = ZGM;
@@ -46,3 +42,4 @@ class CfgSounds
 		titles[] = {1, "*enemy approaching from the west - aprox. 2 min - prepare yourself*"};
 	};
 };
+
