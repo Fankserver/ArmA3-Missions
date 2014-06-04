@@ -1,0 +1,47 @@
+// Respawn type, see the table below
+respawn = "3";
+// Delay in seconds before playable unit respawns.
+respawnDelay = 5;
+// Delay in seconds before vehicle respawns.
+respawnVehicleDelay = 60;
+// 0 to disable the score table (it can still be opened manually by pressing 'P' key).
+respawnDialog = 0;
+onLoadName = "Stratis 1"; 
+loadScreen = "";
+author="Atrax";
+OnLoadMission = "no one's left behind";
+#include "LxOPS\lxOPS_dlg.hpp" 
+class Header {
+	gameType = ZGM;
+	minPlayers = 4;
+	maxPlayers = 12;
+};
+
+class CfgFunctions {
+	class ATR {
+		class enemy {
+			class ups {};
+			class createMarker {};
+			class informant {};
+			class createWaypoint {};
+			class airfightVcl {};
+			class createTrigger {};
+			class createGroup {};
+			class bonusCargo {};
+		};
+	};
+};
+
+class CfgSounds
+{
+	sounds[] = {};
+	class hqRadio
+	{
+		// how the sound is referred to in the editor (e.g. trigger effects)
+		name = "hqObj2";
+		// filename, volume, pitch
+		sound[] = {"audio\hqobj2.ogg", 10, 1};
+		// subtitle delay in seconds, subtitle text 
+		titles[] = {1, "*enemy approaching from the west - aprox. 2 min - prepare yourself*"};
+	};
+};
