@@ -13,7 +13,7 @@ if (isServer) then {
   clearitemcargoGlobal _this;
 
   _this addweaponcargoGlobal ["srifle_DMR_01_F",1];
-  _this addmagazinecargoGlobal ["10Rnd_762x51_Mag",3];
+  _this addmagazinecargoGlobal ["10Rnd_762x51_Mag",15];
   _this addmagazinecargoGlobal ["Chemlight_yellow",15];
   _this addmagazinecargoGlobal ["Chemlight_blue",15];
   _this addmagazinecargoGlobal ["SmokeShellGreen",15];

@@ -9,7 +9,7 @@ loadScreen = "";
 author="Atrax";
 OnLoadMission = "Seek the hostage and humiliate the enemy";
 
-#include "LxOPS\lxOPS_dlg.hpp" 
+
 
 class Header {
 	gameType = COOP;
