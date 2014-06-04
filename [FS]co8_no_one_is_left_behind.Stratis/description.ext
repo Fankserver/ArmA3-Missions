@@ -28,6 +28,7 @@ class CfgFunctions {
 			class createTrigger {};
 			class createGroup {};
 			class bonusCargo {};
+			class mike {};
 		};
 	};
 };
