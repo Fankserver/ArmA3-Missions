@@ -6,6 +6,7 @@ maxPlayers = 8;
 };
 
 
+
 author = Malwit;
 onLoadName = [FS]co8 You shall not pass;
 onLoadMission = Haltet als Talibankaempfer einen Feindlichen Konvoi auf;
