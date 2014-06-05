@@ -1,0 +1,49 @@
+respawnTemplatesWest[] = {"MenuPosition"};
+respawn = 3;
+respawnDelay = 5;
+respawnOnStart = 0;
+
+
+onLoadName = "No one's left behind"; 
+loadScreen = "";
+author="Atrax";
+OnLoadMission = "Seek the hostage and humiliate the enemy";
+
+
+
+class Header {
+	gameType = COOP;
+	minPlayers = 1;
+	maxPlayers = 8;
+};
+
+class CfgFunctions {
+	class ATR {
+		class enemy {
+			class ups {};
+			class createMarker {};
+			class informant {};
+			class createWaypoint {};
+			class airfightVcl {};
+			class createTrigger {};
+			class createGroup {};
+			class bonusCargo {};
+			class mike {};
+		};
+	};
+};
+
+class CfgSounds
+{
+	sounds[] = {};
+	class hqRadio
+	{
+		// how the sound is referred to in the editor (e.g. trigger effects)
+		name = "hqObj2";
+		// filename, volume, pitch
+		sound[] = {"audio\hqobj2.ogg", 10, 1};
+		// subtitle delay in seconds, subtitle text 
+		titles[] = {1, "*enemy approaching from the west - aprox. 2 min - prepare yourself*"};
+	};
+};
+

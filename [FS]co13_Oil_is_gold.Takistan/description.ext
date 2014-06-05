@@ -1,0 +1,12 @@
+author = Filip;
+onLoadName = Oil is gold;
+onLoadMission = Boom boom pahw;
+joinUnassigned = 1;
+respawn = "BASE";
+respawndelay = 10;
+disabledAI = true;
+disableChannels[] = {0,1,2,3};
+
+class CfgFunctions {
+    #include "EPD\EPDcfgFunctions.hpp"
+};

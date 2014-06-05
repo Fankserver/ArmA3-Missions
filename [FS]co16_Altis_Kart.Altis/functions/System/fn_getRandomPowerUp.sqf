@@ -20,6 +20,6 @@ _dice = random 1.0;
 
 {
 	if (_dice < (_x select 1)) then {
-		[] spawn (_x select 0);
+		[_player] spawn (_x select 0);
 	};
 } forEach _possiblePowerUps;
