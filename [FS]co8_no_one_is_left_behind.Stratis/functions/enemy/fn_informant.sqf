@@ -1,4 +1,4 @@
-private ["_wp","_player","_position","_group","_pause","_air","_trigger","_wpArray","_wpHum","_wpPwn","_vehicles","_airhum","_airpwn1","_airpwn2","_aircay","_pwn1","_pwn2","_cay"];
+private ["_wp","_player","_position","_group","_pause","_air","_trigger","_wpArray","_wpHum","_vehicles","_airhum"];
 
 
 _vehicleArray = [];
@@ -78,8 +78,8 @@ sleep 10;
 //wait for airsupport
 hint "incoming radio message";
 playSound "hqRadio";
-_nul=cas_module synchronizeObjectsAdd [xyz];
 waitUntil {sleep 70;true};
+_nul=cas_module synchronizeObjectsAdd [tl1];
 
 //spawn enemy unit
 _enemy1 = [(getMarkerPos "enemy1"),EAST,(configfile >> "CfgGroups" >> "East" >> "OPF_F" >> "Infantry" >> "OIA_InfSquad")] call bis_fnc_spawnGroup;
@@ -107,7 +107,7 @@ _wpene3 setWaypointCompletionRadius 5;
 _wpene3 setWaypointStatements ["true",""];
 
 //hiding of civilian unit
-waitUntil {sleep 1; _distance = (leader _enemy1) distance informant1;_distance < 200}; 
+waitUntil {sleep 1; _distance = (leader _enemy1) distance informant1;(_distance < 200) || (count units _enemy1 < 2)}; 
 _wpGr5 = _group addWaypoint [[4291,2697,0],0,5];
 _wpGr5 setWaypointBehaviour "CARELESS";
 _wpGr5 setWaypointSpeed "FULL";
@@ -121,28 +121,11 @@ _vehicles = [] call ATR_fnc_airFightVcl;
 _airhum = _vehicles select 0;
 //assign vehicle handles
 hum = _airhum select 0;
-/*
-_airpwn1 = _vehicles select 1;
-_airpwn2 = _vehicles select 2;
 
 //create groups
 _airblue = createGroup West;
-_airbluefight = createGroup West;
 
-//assign groups
 [(_airhum select 2)] joinSilent _airblue;
-[(_airpwn1 select 2)] joinSilent _airbluefight;
-[(_airpwn2 select 2)] joinSilent _airbluefight;
-
-
-_pwn1 = _airpwn1 select 0;
-_pwn2 = _airpwn2 select 0;
-
-//Combatmode
-_pwn1 setCombatMode "BLUE";
-_pwn2 setCombatMode "BLUE";
-
-
 
 //waypoints for Hummingbird (extract)
 _wpH1 = (group Hum) addWaypoint [getMarkerPos "hum",0,1];
@@ -159,39 +142,7 @@ _wpH2 setWaypointType "MOVE";
 _wpH2 setWaypointCompletionRadius 20;
 _wpH2 setWaypointStatements ["",""];
 
-_wpP1 = (_airbluefight) addWaypoint [getMarkerPos "pwn",0,1];
-_wpP1 setWaypointBehaviour "CARELESS";
-_wpP1 setWaypointSpeed "FULL";
-_wpP1 setWaypointType "MOVE";
-_wpP1 setWaypointCompletionRadius 20;
-_wpP1 setWaypointStatements ["true",""];
-   
-_wpP2 = (_airbluefight) addWaypoint [getMarkerPos "pwn2",0,2];
-_wpP2 setWaypointBehaviour "CARELESS";
-_wpP2 setWaypointSpeed "FULL";
-_wpP2 setWaypointType "MOVE";
-_wpP2 setWaypointCompletionRadius 20;
-_wpP2 setWaypointStatements ["true",""];
-   
-_wpP3 = (_airbluefight) addWaypoint [getMarkerPos "pwn3",0,3];
-_wpP3 setWaypointBehaviour "COMBAT";
-_wpP3 setWaypointSpeed "NORMAL";
-_wpP3 setWaypointType "MOVE";
-_wpP3 setWaypointCompletionRadius 20;
-_wpP3 setWaypointStatements ["true",""];
-
-_wpP4 = (_airbluefight) addWaypoint [getMarkerPos "pwnArr",0,4];
-_wpP4 setWaypointBehaviour "COMBAT";
-_wpP4 setWaypointSpeed "NORMAL";
-_wpP4 setWaypointType "MOVE";
-_wpP4 setWaypointCompletionRadius 20;
-_wpP4 setWaypointStatements ["true",""];
-
-waitUntil {(leader _airblue) distance (getMarkerPos "pwnARR") < 100};
-_pwn1 setcombatMode "RED";
-_pwn2 setcombatMode "RED";
-*/
-waitUntil {sleep 1; _anzahl=count (units _enemy1); hint format ["%1",_anzahl];_anzahl<3};
+waitUntil {sleep 1; _anzahl=count (units _enemy1); _anzahl<3};
 
 _wpH3 = (group Hum) addWaypoint [getMarkerPos "humArr",0,3];
 _wpH3 setWaypointBehaviour "CARELESS";
@@ -199,7 +150,8 @@ _wpH3 setWaypointSpeed "LIMITED";
 _wpH3 setWaypointType "MOVE";
 _wpH3 setWaypointCompletionRadius 10;
 _wpH3 setWaypointStatements ["true","(vehicle this) land ""Get In"""];
-//waitUntil {sleep 1; _distance = (hum distance (getMarkerPos "humArr"));_distance < 600}; 
+
+waitUntil {sleep 1; _distance = (hum distance (getMarkerPos "humArr"));_distance < 600}; 
 _smoke = "SmokeShellGreen" createVehicle [4280,2677,1];
 
 //exertion of civilian unit

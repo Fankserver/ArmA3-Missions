@@ -59,12 +59,13 @@ class Mission
 	class Intel
 	{
 		briefingName="[FS]co8_no_one_is_left_behind";
-		overviewText="save the hostage ";
+		overviewText="save the hostage, get the intel, return for breakfast";
 		resistanceEast=1;
+		timeOfChanges=2460;
 		startFog=0.11;
 		startWind=0.099999994;
 		startWaves=0.099999994;
-		forecastFog=0.31999999;
+		forecastFog=0.34999999;
 		forecastWind=0.099999994;
 		forecastWaves=0.099999994;
 		forecastLightnings=0.099999994;
@@ -97,7 +98,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="tl1";
-					init="this moveinCargo heliStart;";
+					init="this call X39_MedSys_fnc_InitializeUnit;this moveinCargo heliStart;this allowDamage false";
 					description="Groupleader";
 					syncId=0;
 					synchronizations[]={9,7,18,16,11,14,23};
@@ -112,7 +113,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="g5";
-					init="this moveinCargo heliStart2";
+					init="this call X39_MedSys_fnc_InitializeUnit;this moveinCargo heliStart2";
 					description="Grenadier";
 					syncId=1;
 					synchronizations[]={14,23};
@@ -127,7 +128,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="gl2";
-					init="this moveinCargo heliStart2";
+					init="this call X39_MedSys_fnc_InitializeUnit;this moveinCargo heliStart2";
 					description="Squadleader/Radio";
 					syncId=2;
 					synchronizations[]={14,23};
@@ -142,7 +143,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="g4";
-					init="this moveinCargo heliStart";
+					init="this call X39_MedSys_fnc_InitializeUnit;this moveinCargo heliStart";
 					description="Rifleman/Radio";
 					syncId=3;
 					synchronizations[]={14,23};
@@ -157,7 +158,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="g7";
-					init="this moveinCargo heliStart2";
+					init="this call X39_MedSys_fnc_InitializeUnit;this moveinCargo heliStart2";
 					description="Medic";
 					syncId=4;
 					synchronizations[]={14,22};
@@ -172,7 +173,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="g3";
-					init="this moveinCargo heliStart";
+					init="this call X39_MedSys_fnc_InitializeUnit;this moveinCargo heliStart";
 					description="Medic";
 					syncId=5;
 					synchronizations[]={14,22};
@@ -187,7 +188,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="g2";
-					init="this moveinCargo heliStart";
+					init="this call X39_MedSys_fnc_InitializeUnit;this moveinCargo heliStart";
 					description="Machinegunner";
 					syncId=6;
 					synchronizations[]={14,23};
@@ -1896,7 +1897,7 @@ class Mission
 						};
 						class Item3
 						{
-							value="Secure <marker name = obj3>Airstation Mike</marker> and find any weapons the informant spoke of.<br />In addition gather any intelligence you can find about the CSAT troup movement.";
+							value="Secure <marker name = obj3>Airstation Mike</marker> and find any weapons the informant spoke of.<br />In addition gather any intelligence you can find about the CSAT troup movement.<br />According to the data we received from the informant, there should be several large weapons and a drone prototype somewhere in this camp.";
 							parentCls="ModuleTaskCreate_F";
 							typeName="Description";
 						};
@@ -2246,13 +2247,13 @@ class Mission
 						};
 						class Item5
 						{
-							value="1";
+							value="0";
 							parentCls="tfar_ModuleTaskForceRadioEnforceUsage";
 							typeName="same_sw_frequencies_for_side";
 						};
 						class Item6
 						{
-							value="1";
+							value="0";
 							parentCls="tfar_ModuleTaskForceRadioEnforceUsage";
 							typeName="same_lr_frequencies_for_side";
 						};
@@ -2437,7 +2438,7 @@ class Mission
 						};
 						class Item8
 						{
-							value="0.5";
+							value="0.3";
 							parentCls="Site_OPFOR";
 							typeName="buildingOccupationIndex";
 						};
@@ -2518,7 +2519,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={558.11993,8.3195948e-005,377.80811};
+					position[]={559.98914,-0.24540985,377.80811};
 					id=75;
 					side="LOGIC";
 					vehicle="X39_MedSys_Module_EnableLimitationsSystemModule";
@@ -2680,6 +2681,7 @@ class Mission
 			vehicle="B_Heli_Light_01_F";
 			leader=1;
 			skill=0.60000002;
+			init="this allowDamage false";
 		};
 		class Item6
 		{
@@ -2776,7 +2778,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=36;
+		items=37;
 		class Item0
 		{
 			position[]={1989.0458,2.5754457,3518.7407};
@@ -3037,6 +3039,12 @@ class Mission
 			name="airpat3";
 			type="Empty";
 		};
+		class Item36
+		{
+			position[]={4282.9272,0.43540522,2651.2148};
+			name="humArr";
+			type="Empty";
+		};
 	};
 	class Sensors
 	{
@@ -3086,15 +3094,15 @@ class Mission
 		};
 		class Item3
 		{
-			position[]={2004.3325,2.9924073,2717.8784};
-			a=5;
-			b=5;
+			position[]={2004.9106,3.0189991,2717.416};
+			a=4;
+			b=4;
 			angle=30.322399;
 			rectangular=1;
 			activationBy="WEST";
 			interruptable=1;
 			age="UNKNOWN";
-			expCond="(east countside thislist) <= 2 && alive playerCaptive && (west countside thislist) >= 2;";
+			expCond="alive playerCaptive && (west countSide thisList) > 0";
 			expActiv="[playerCaptive] join (group tl1);tsk1=true;[west,(getMarkerPos ""respawn2"")] call BIS_fnc_addRespawnPosition;";
 			class Effects
 			{
@@ -3180,13 +3188,13 @@ class Mission
 		class Item9
 		{
 			position[]={4351.3926,226.36118,3803.0347};
-			a=170;
-			b=170;
+			a=100;
+			b=100;
 			activationBy="EAST";
 			activationType="NOT PRESENT";
 			interruptable=1;
 			age="UNKNOWN";
-			expCond="this && tsk2";
+			expCond="(east countSide thisList) < 1 && (west countSide thisList) > 0 && (tsk2)";
 			expActiv="tsk3=true;[west,(getMarkerPos ""respawn4"")] call BIS_fnc_addRespawnPosition;";
 			class Effects
 			{
@@ -3196,9 +3204,9 @@ class Mission
 		};
 		class Item10
 		{
-			position[]={3334.9553,225.95761,2968.2969};
-			a=150;
-			b=150;
+			position[]={3329.2839,225.89378,2965.8662};
+			a=110;
+			b=110;
 			activationBy="EAST";
 			activationType="NOT PRESENT";
 			interruptable=1;

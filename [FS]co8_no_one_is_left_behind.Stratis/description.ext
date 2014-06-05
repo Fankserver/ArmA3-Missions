@@ -5,9 +5,9 @@ respawnOnStart = 0;
 
 
 onLoadName = "No one's left behind"; 
-loadScreen = "";
+loadScreen = "pictures\hostage.paa";
 author="Atrax";
-OnLoadMission = "Seek the hostage and humiliate the enemy";
+OnLoadMission = "Seek the hostage, get the intel... be home for breakfast";
 
 
 

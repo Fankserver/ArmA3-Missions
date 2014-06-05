@@ -100,10 +100,6 @@ _pat4_2 = "O_Soldier_AR_F" createUnit [getMarkerPos "obj3", _pat4,"",0.5,"PRIVAT
 _pat4_3 = "O_Soldier_GL_F" createUnit [getMarkerPos "obj3", _pat4,"",0.5,"PRIVATE"];
 _pat4_4 = "O_medic_F" createUnit [getMarkerPos "obj3", _pat4,"",0.5,"PRIVATE"];
 
-_pat4_1 addEventHandler ["Killed",{(_this select 0) unassignItem "NVGoggles_OPFOR";  (_this select 0) removeItem "NVGoggles_OPFOR";}];
-_pat4_2 addEventHandler ["Killed",{(_this select 0) unassignItem "NVGoggles_OPFOR";  (_this select 0) removeItem "NVGoggles_OPFOR";}];
-_pat4_3 addEventHandler ["Killed",{(_this select 0) unassignItem "NVGoggles_OPFOR";  (_this select 0) removeItem "NVGoggles_OPFOR";}];
-_pat4_4 addEventHandler ["Killed",{(_this select 0) unassignItem "NVGoggles_OPFOR";  (_this select 0) removeItem "NVGoggles_OPFOR";}];
 
 //Urban patrol script
 [_pat4,"pat4","","RANDOM"] spawn ATR_fnc_ups;

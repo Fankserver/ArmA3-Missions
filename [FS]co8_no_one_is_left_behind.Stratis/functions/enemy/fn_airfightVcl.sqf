@@ -13,7 +13,7 @@ _pwn2 allowFleeing 0;
 
 _pwn1 setSkill 0.8;
 _pwn2 setSkill 0.8;*/
-
+(crew hum select 0) allowFleeing 0;
 hum allowFleeing 0;
 hum allowDamage false;
 
