@@ -16,5 +16,5 @@ respawndelay = 30;
 respawnDialog = false;
 respawnVehicleDelay = 10;
 
-disabledAI = false;
-disableChannels[] = {0,2,3};
+disabledAI = true;
+disableChannels[] = {0,1,2,3};
