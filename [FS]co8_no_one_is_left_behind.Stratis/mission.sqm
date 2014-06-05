@@ -2596,7 +2596,7 @@ class Mission
 						};
 						class Item2
 						{
-							value="1";
+							value="0";
 							parentCls="X39_MedSys_Module_AddLimitationModule";
 							typeName="DialogOptions_BehaviourID";
 						};
