@@ -65,7 +65,8 @@ class Mission
 		startFog=0.11;
 		startWind=0.099999994;
 		startWaves=0.099999994;
-		forecastFog=0.34999999;
+		forecastWeather=0.28999999;
+		forecastFog=0.31;
 		forecastWind=0.099999994;
 		forecastWaves=0.099999994;
 		forecastLightnings=0.099999994;
@@ -98,7 +99,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="tl1";
-					init="this call X39_MedSys_fnc_InitializeUnit;this moveinCargo heliStart";
+					init="this call X39_MedSys_fnc_InitializeUnit;this moveinCargo heliStart;";
 					description="Groupleader";
 					syncId=0;
 					synchronizations[]={9,7,18,16,11,14,23};
@@ -999,6 +1000,7 @@ class Mission
 					vehicle="O_soldierU_medic_F";
 					leader=1;
 					skill=0.60000002;
+					text="campFire1";
 					init="this setpos (getMarkerPos ""camp3"");this addEventHandler [""Killed"",{(_this select 0) unassignItem ""NVGoggles_OPFOR"";  (_this select 0) removeItem ""NVGoggles_OPFOR"";}]";
 				};
 			};
@@ -1019,6 +1021,7 @@ class Mission
 					leader=1;
 					rank="LIEUTENANT";
 					skill=0.60000002;
+					text="campFire2";
 					init="this setpos (getMarkerPos ""camp1"");this addEventHandler [""Killed"",{(_this select 0) unassignItem ""NVGoggles_OPFOR"";  (_this select 0) removeItem ""NVGoggles_OPFOR"";}]";
 				};
 			};
@@ -1039,6 +1042,7 @@ class Mission
 					vehicle="O_soldierU_M_F";
 					leader=1;
 					skill=0.60000002;
+					text="campFire4";
 					init="this setpos (getMarkerPos ""camp2"");this addEventHandler [""Killed"",{(_this select 0) unassignItem ""NVGoggles_OPFOR"";  (_this select 0) removeItem ""NVGoggles_OPFOR"";}]";
 				};
 			};
@@ -2998,7 +3002,7 @@ class Mission
 		};
 		class Item31
 		{
-			position[]={4853.7969,50.286541,2914.6343};
+			position[]={5176.7842,71.083618,3644.2446};
 			name="airpat2";
 			type="Empty";
 		};
@@ -3082,7 +3086,7 @@ class Mission
 			activationBy="WEST";
 			interruptable=1;
 			age="UNKNOWN";
-			expCond="alive playerCaptive && (west countSide thisList) > 0";
+			expCond="alive playerCaptive && {((getPosATL _x) select 2) > 2} count thislist > 0";
 			expActiv="[playerCaptive] join (group tl1);tsk1=true;[west,(getMarkerPos ""respawn2"")] call BIS_fnc_addRespawnPosition;";
 			class Effects
 			{
@@ -3175,7 +3179,7 @@ class Mission
 			activationType="NOT PRESENT";
 			interruptable=1;
 			age="UNKNOWN";
-			expCond="";
+			expCond="this && tsk2";
 			expActiv="tsk3=true;[west,(getMarkerPos ""respawn4"")] call BIS_fnc_addRespawnPosition;";
 			class Effects
 			{

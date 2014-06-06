@@ -102,4 +102,4 @@ _pat4_4 = "O_medic_F" createUnit [getMarkerPos "obj3", _pat4,"",0.5,"PRIVATE"];
 
 
 //Urban patrol script
-[_pat4_1,"pat4","","RANDOM"] spawn ATR_fnc_ups;
+[(leader _pat4),"pat4","","RANDOM"] spawn ATR_fnc_ups;
