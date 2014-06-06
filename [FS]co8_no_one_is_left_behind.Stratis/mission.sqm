@@ -93,12 +93,12 @@ class Mission
 					id=0;
 					side="WEST";
 					vehicle="B_Soldier_TL_F";
-					player="PLAYER COMMANDER";
+					player="PLAY CDG";
 					leader=1;
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="tl1";
-					init="this call X39_MedSys_fnc_InitializeUnit;this moveinCargo heliStart;this allowDamage false";
+					init="this call X39_MedSys_fnc_InitializeUnit;this moveinCargo heliStart";
 					description="Groupleader";
 					syncId=0;
 					synchronizations[]={9,7,18,16,11,14,23};
@@ -1844,9 +1844,9 @@ class Mission
 				};
 				class Item3
 				{
-					presence=0.51443619;
+					presence=0.83604872;
 					position[]={2990.5952,171.35756,1866.9008};
-					azimut=-8.0337391;
+					azimut=-8.03374;
 					id=58;
 					side="EAST";
 					vehicle="O_medic_F";
@@ -2438,7 +2438,7 @@ class Mission
 						};
 						class Item8
 						{
-							value="0.3";
+							value="0.2";
 							parentCls="Site_OPFOR";
 							typeName="buildingOccupationIndex";
 						};
@@ -2616,7 +2616,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=14;
+		items=13;
 		class Item0
 		{
 			position[]={2041.9652,10.281359,2648.8423};
@@ -2674,32 +2674,21 @@ class Mission
 		};
 		class Item5
 		{
-			position[]={2663.5195,113.8688,2488.1484};
-			azimut=-858.83899;
-			id=83;
-			side="EMPTY";
-			vehicle="B_Heli_Light_01_F";
-			leader=1;
-			skill=0.60000002;
-			init="this allowDamage false";
-		};
-		class Item6
-		{
 			position[]={4280.189,2.3091419,2677.5781};
 			azimut=-732.78894;
-			id=84;
+			id=83;
 			side="EMPTY";
 			vehicle="Land_HelipadEmpty_F";
 			leader=1;
 			skill=0.60000002;
 			text="evac";
 		};
-		class Item7
+		class Item6
 		{
 			position[]={4375.0039,225.93471,3781.5703};
 			azimut=93.33757;
 			offsetY=1.5;
-			id=85;
+			id=84;
 			side="EMPTY";
 			vehicle="Land_HelipadEmpty_F";
 			isUAV=1;
@@ -2708,55 +2697,55 @@ class Mission
 			text="loot";
 			init="loot=""groundweaponholder"" createVehicle getPos this; loot addBackpackCargo [""B_UAV_01_backpack_F"",1];loot setPosATL [4349.551953,3758.0291,1.23137];loot setDir 310;";
 		};
-		class Item8
+		class Item7
 		{
 			position[]={1971.5884,3.0215271,3535.7983};
 			azimut=-502.23901;
-			id=86;
+			id=85;
 			side="EMPTY";
 			vehicle="O_APC_Tracked_02_cannon_F";
 			leader=1;
 			lock="LOCKED";
 			skill=0.60000002;
 		};
-		class Item9
+		class Item8
 		{
 			position[]={1989.9678,2.8279712,3536.6104};
 			azimut=-502.23901;
-			id=87;
+			id=86;
 			side="EMPTY";
 			vehicle="MetalBarrel_burning_F";
 			leader=1;
 			lock="LOCKED";
 			skill=0.60000002;
 		};
-		class Item10
+		class Item9
 		{
 			position[]={1986.8676,2.8291986,3538.9722};
 			azimut=-540.61755;
-			id=88;
+			id=87;
 			side="EMPTY";
 			vehicle="Land_WaterTank_F";
 			leader=1;
 			lock="LOCKED";
 			skill=0.60000002;
 		};
-		class Item11
+		class Item10
 		{
 			position[]={1972.2528,2.9486532,3534.9121};
 			azimut=-612.31085;
-			id=89;
+			id=88;
 			side="EMPTY";
 			vehicle="CamoNet_OPFOR_big_F";
 			leader=1;
 			lock="LOCKED";
 			skill=0.60000002;
 		};
-		class Item12
+		class Item11
 		{
 			position[]={1983.7676,2.8176134,3539.0454};
 			azimut=-722.14801;
-			id=90;
+			id=89;
 			side="EMPTY";
 			vehicle="Box_East_Wps_F";
 			leader=1;
@@ -2764,11 +2753,11 @@ class Mission
 			text="bonusCargo_1";
 			init="this call ATR_fnc_bonusCargo";
 		};
-		class Item13
+		class Item12
 		{
 			position[]={1868.4244,13.968672,2741.5488};
 			azimut=-1089.5;
-			id=91;
+			id=90;
 			side="EMPTY";
 			vehicle="C_Van_01_transport_F";
 			leader=1;
@@ -2778,7 +2767,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=37;
+		items=36;
 		class Item0
 		{
 			position[]={1989.0458,2.5754457,3518.7407};
@@ -2886,56 +2875,42 @@ class Mission
 		};
 		class Item14
 		{
-			position[]={4399.1782,0.0070526004,108.93091};
-			name="evacPwn2";
-			type="Empty";
-			angle=-84.265739;
-		};
-		class Item15
-		{
-			position[]={2672.4263,62.51226,593.47058};
-			name="evacPwn1";
-			type="Empty";
-			angle=9.6677647;
-		};
-		class Item16
-		{
 			position[]={2690.2131,-0.19593401,32.511856};
 			name="evacHum";
 			type="Empty";
 			angle=89.877869;
 		};
-		class Item17
+		class Item15
 		{
 			position[]={5092.251,-0.079432614,179.91406};
 			name="hum";
 			type="Empty";
 		};
-		class Item18
+		class Item16
 		{
 			position[]={4286.8638,2.577688,2666.4331};
 			name="pwnArr";
 			type="Empty";
 		};
-		class Item19
+		class Item17
 		{
 			position[]={4490.8071,0.26344183,1743.7583};
 			name="hum2";
 			type="Empty";
 		};
-		class Item20
+		class Item18
 		{
 			position[]={3450.7886,-0.060487203,47.786621};
 			name="humEvac";
 			type="Empty";
 		};
-		class Item21
+		class Item19
 		{
 			position[]={4099.7954,62.876823,2922.6553};
 			name="enemy1";
 			type="Empty";
 		};
-		class Item22
+		class Item20
 		{
 			position[]={1994.3645,2.30515,3511.4243};
 			name="pat3";
@@ -2946,7 +2921,7 @@ class Mission
 			a=120;
 			b=120;
 		};
-		class Item23
+		class Item21
 		{
 			position[]={2974.4924,166.04305,1925.793};
 			name="pat2";
@@ -2958,25 +2933,25 @@ class Mission
 			b=320;
 			angle=215.731;
 		};
-		class Item24
+		class Item22
 		{
 			position[]={4233.9365,20.630043,2771.5503};
 			name="enemy2";
 			type="Empty";
 		};
-		class Item25
+		class Item23
 		{
 			position[]={4367.8149,225.14436,3776.8359};
 			name="mort1";
 			type="Empty";
 		};
-		class Item26
+		class Item24
 		{
 			position[]={4368.0771,225.55101,3782.1128};
 			name="mort2";
 			type="Empty";
 		};
-		class Item27
+		class Item25
 		{
 			position[]={4355.3325,226.41554,3802.1763};
 			name="pat4";
@@ -2987,62 +2962,68 @@ class Mission
 			a=180;
 			b=180;
 		};
-		class Item28
+		class Item26
 		{
 			position[]={2701.8181,112.55103,2498.2505};
 			name="respawn1";
 			text="Landing Zone";
 			type="Empty";
 		};
-		class Item29
+		class Item27
 		{
 			position[]={2012.8706,3.9743676,2701.8516};
 			name="respawn2";
 			text="Hostage Camp";
 			type="Empty";
 		};
-		class Item30
+		class Item28
 		{
 			position[]={1983.7141,2.5609546,3524.1387};
 			name="respawn3";
 			text="Spec Ops Camp";
 			type="Empty";
 		};
-		class Item31
+		class Item29
 		{
 			position[]={4367.8857,226.42688,3799.5479};
 			name="respawn4";
 			text="Airstation";
 			type="Empty";
 		};
-		class Item32
+		class Item30
 		{
 			position[]={3594.9023,156.8085,2855.54};
 			name="airpat1";
 			type="Empty";
 		};
-		class Item33
+		class Item31
 		{
 			position[]={4853.7969,50.286541,2914.6343};
 			name="airpat2";
 			type="Empty";
 		};
-		class Item34
+		class Item32
 		{
 			position[]={4279.5229,211.02625,3704.4468};
 			name="airpat1_2_3";
 			type="Empty";
 		};
-		class Item35
+		class Item33
 		{
 			position[]={2935.2227,65.262642,3812.0571};
 			name="airpat3";
 			type="Empty";
 		};
-		class Item36
+		class Item34
 		{
 			position[]={4282.9272,0.43540522,2651.2148};
 			name="humArr";
+			type="Empty";
+		};
+		class Item35
+		{
+			position[]={3288.7878,229.17999,2935.7456};
+			name="obj4";
 			type="Empty";
 		};
 	};
@@ -3094,11 +3075,10 @@ class Mission
 		};
 		class Item3
 		{
-			position[]={2004.9106,3.0189991,2717.416};
-			a=4;
-			b=4;
+			position[]={2006.6152,3.0856836,2716.6387};
+			a=1.5;
+			b=1.5;
 			angle=30.322399;
-			rectangular=1;
 			activationBy="WEST";
 			interruptable=1;
 			age="UNKNOWN";
@@ -3187,14 +3167,15 @@ class Mission
 		};
 		class Item9
 		{
-			position[]={4351.3926,226.36118,3803.0347};
-			a=100;
-			b=100;
+			position[]={4345.1763,224.91312,3792.7515};
+			a=70;
+			angle=-91.183899;
+			rectangular=1;
 			activationBy="EAST";
 			activationType="NOT PRESENT";
 			interruptable=1;
 			age="UNKNOWN";
-			expCond="(east countSide thisList) < 1 && (west countSide thisList) > 0 && (tsk2)";
+			expCond="";
 			expActiv="tsk3=true;[west,(getMarkerPos ""respawn4"")] call BIS_fnc_addRespawnPosition;";
 			class Effects
 			{
@@ -3204,9 +3185,10 @@ class Mission
 		};
 		class Item10
 		{
-			position[]={3329.2839,225.89378,2965.8662};
-			a=110;
-			b=110;
+			position[]={3318.6917,226.20561,2959.0132};
+			a=100;
+			angle=142.901;
+			rectangular=1;
 			activationBy="EAST";
 			activationType="NOT PRESENT";
 			interruptable=1;

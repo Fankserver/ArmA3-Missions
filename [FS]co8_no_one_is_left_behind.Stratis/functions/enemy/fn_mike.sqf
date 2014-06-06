@@ -18,7 +18,7 @@ _mort1 removeMagazines  "8Rnd_82mm_Mo_Smoke_white";
 _mort1 removeMagazines "8Rnd_82mm_Mo_guided";
 _mort1 addMagazine ["8Rnd_82mm_Mo_LG",3];
 _mort1 addMagazine ["8Rnd_82mm_Mo_Flare_white",8];
-_mort1 addMagazine ["8Rnd_82mm_Mo_Smoke_white",3];
+_mort1 addMagazine ["8Rnd_82mm_Mo_Smoke_white",4];
 
 _mort2 removeMagazines  "8Rnd_82mm_Mo_shells";
 _mort2 removeMagazines  "8Rnd_82mm_Mo_Flare_white";
@@ -26,7 +26,7 @@ _mort2 removeMagazines  "8Rnd_82mm_Mo_Smoke_white";
 _mort2 removeMagazines "8Rnd_82mm_Mo_guided";
 _mort2 addMagazine ["8Rnd_82mm_Mo_LG",3];
 _mort2 addMagazine ["8Rnd_82mm_Mo_Flare_white",8];
-_mort2 addMagazine ["8Rnd_82mm_Mo_Smoke_white",3];
+_mort2 addMagazine ["8Rnd_82mm_Mo_Smoke_white",4];
 
 private ["_airpat1","_airpatsol1","_airpatsol2","_airpatsol3","_airpat1wp1","_airpat1wp2","_airpat2","_airpatsol4","_airpatsol5","_airpatsol6","_airpat2wp1","_airpat2wp2","airpat1_2_3","_airpat3","_airpatsol7","_airpatsol8","_airpatsol9","_airpat3wp1","_airpat3wp2"];
 //create patrol southwest
@@ -102,4 +102,4 @@ _pat4_4 = "O_medic_F" createUnit [getMarkerPos "obj3", _pat4,"",0.5,"PRIVATE"];
 
 
 //Urban patrol script
-[_pat4,"pat4","","RANDOM"] spawn ATR_fnc_ups;
+[_pat4_1,"pat4","","RANDOM"] spawn ATR_fnc_ups;

@@ -20,8 +20,8 @@ _wpGr1 setWaypointCompletionRadius 1;
 _wpGr1 setWaypointStatements ["true",""];
 
 //informant conversation
-[1] spawn ATR_fn_conversation;
-
+[1] spawn ATR_fnc_conversation;
+sleep 15;
 _wpGr2 = _group addWaypoint [[4280,2670,0],0,2];
 _wpGr2 setWaypointBehaviour "CARELESS";
 _wpGr2 setWaypointSpeed "NORMAL";
@@ -29,13 +29,14 @@ _wpGr2 setWaypointType "MOVE";
 _wpGr2 setWaypointCompletionRadius 1;
 _wpGr2 setWaypointStatements ["true",""];
 
-[2] spawn ATR_fn_conversation;
-
+[2] spawn ATR_fnc_conversation;
+sleep 5;
 //wait for player response
 informant1 addaction ["Stay calm man! We're here to protect you!",{costiaWait = 1;informant1 removeAction 0;},[],1,true,true,"","_this == player && player distance informant1 <= 4"];
 waituntil {sleep 0.1;costiaWait==1};
 
-[3] spawn ATR_fn_conversation;
+[3] spawn ATR_fnc_conversation;
+sleep 12;
 
 _wpGr3 = _group addWaypoint [[4275,2674,0],0,3];
 _wpGr3 setWaypointBehaviour "CARELESS";
@@ -44,12 +45,13 @@ _wpGr3 setWaypointType "MOVE";
 _wpGr3 setWaypointCompletionRadius 1;
 _wpGr3 setWaypointStatements ["true",""];
 
-[4] spawn ATR_fn_conversation;
+[4] spawn ATR_fnc_conversation;
 
 informant1 addaction ["Stay here! We'll call our support immediatly.",{costiaWait = 2;informant1 removeAction 1;},[],1,true,true,"","_this == player && player distance informant1 <= 4"];
 waituntil {sleep 0.1;costiaWait==2};
 
-[5] spawn ATR_fn_conversation;
+[5] spawn ATR_fnc_conversation;
+sleep 19;
 
 _wpGr4 = _group addWaypoint [[4280,2670,0],0,4];
 _wpGr4 setWaypointBehaviour "CARELESS";
@@ -106,7 +108,7 @@ _wpGr5 setWaypointType "MOVE";
 _wpGr5 setWaypointCompletionRadius 1;
 _wpGr5 setWaypointStatements ["true",""];
 
-[6] spawn ATR_fn_conversation;
+[6] spawn ATR_fnc_conversation;
 
 //spawn vehicles and assign in handles
 private ["_vehicles","_airhum","_airblue"];
@@ -154,7 +156,7 @@ _smoke = "SmokeShellGreen" createVehicle [4280,2677,1];
 //exertion of civilian unit
 waitUntil {sleep 1, _distance = (hum distance informant1); _distance < 24}; 
 
-[7] spawn ATR_fn_conversation;
+[7] spawn ATR_fnc_conversation;
 
 //get civilian near landing zone
 _wpGr6 = _group addWaypoint [[(position hum select 0)+2,(position hum select 1)-2],0,6];

@@ -12,12 +12,14 @@ switch (_number) do {
 		costia globalChat "Costia Papadopolous: But quiet! I think we not alone.";
 		sleep 4;
 		costia globalChat "Costia Papadopolous: You me promised safe get away!!";
-		exitWith {sleep 2};
+		sleep 2;
+		exit;
 	};
 	case 2:{
 		sleep 3;
 		costia globalChat "Costia Papadopolous: Where boat? Where helicopter? We all die!! Where boat????";
-		exitWith {sleep 2};
+		sleep 2;
+		exit;
 	};
 	case 3:{
 		sleep 3;
@@ -26,7 +28,8 @@ switch (_number) do {
 		costia globalChat "Costia Papadopolous: Soldier on Stratis much!! Much more than you!";
 		sleep 4;
 		costia globalChat "Costia Papadopolous: Where boat!";
-		exitWith {sleep 1};
+		sleep 1;
+		exit;
 	};
 	case 4:{
 		costia globalChat "Costia Papadopolous: Me go!! You no stay!";
@@ -41,7 +44,8 @@ switch (_number) do {
 		costia globalChat "Costia Papadopolous: But big weapons at air station! Make soldiers dead! You go there!";
 		sleep 4;
 		costia globalChat "Costia Papadopolous: I mark you map. Now boat. Me fear!";
-		exitWith {sleep 3};
+		sleep 3;
+		exit;
 	};
 	case 6:{
 		costia globalchat "Costia Papadopolous: They Coming!!!! Hide!! HIDE!!!!!!";
