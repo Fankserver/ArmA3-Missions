@@ -1,5 +1,5 @@
 //create Trigger
-private ["_trig","_marker","_xRad","_yRad","_angle","_rect","_side","_detect","_repeat"];
+private ["_trig","_marker","_xRad","_yRad","_angle","_rect","_side","_detect","_repeat","_trg"];
 _marker = [_this,0, "",[""]] call BIS_fnc_param; //markerPosition
 _xRad = [_this,1, 100,[0]] call BIS_fnc_param;
 _yRad = [_this,2, 100,[0]] call BIS_fnc_param;

@@ -29,6 +29,7 @@ class CfgFunctions {
 			class createGroup {};
 			class bonusCargo {};
 			class mike {};
+			class conversation {}:
 		};
 	};
 };
