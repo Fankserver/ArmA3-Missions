@@ -2282,7 +2282,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={8286.4521,296.04001,2117.8677};
+					position[]={8286.418,296.04001,2118.1113};
 					class args
 					{
 						items=3;
@@ -2312,7 +2312,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					syncId=15;
-					synchronizations[]={0,3,4,5,6,7,8,9,10,17,16};
+					synchronizations[]={0,3,4,5,6,7,8,9,10,16,17};
 				};
 			};
 		};
@@ -2336,6 +2336,46 @@ class Mission
 		};
 		class Item67
 		{
+			side="WEST";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={8205.4707,296.01279,2144.1914};
+					azimut=-208.922;
+					id=88;
+					side="WEST";
+					vehicle="TFA_tri_rs_F";
+					player="PLAYER COMMANDER";
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="unit_86_180";
+					init="this call X39_MedSys_fnc_InitializeUnit;";
+					description="EOD";
+					syncId=16;
+				};
+				class Item1
+				{
+					position[]={8204.6162,296.03476,2143.699};
+					azimut=-208.922;
+					id=89;
+					side="WEST";
+					vehicle="TFA_tri_rs_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.60000002;
+					text="PaulPanzer";
+					init="this call X39_MedSys_fnc_InitializeUnit;";
+					description="EOD Leader";
+					syncId=17;
+					synchronizations[]={15};
+				};
+			};
+		};
+		class Item68
+		{
 			side="EAST";
 			class Vehicles
 			{
@@ -2343,7 +2383,7 @@ class Mission
 				class Item0
 				{
 					position[]={4881.5698,537.56604,3723.3533};
-					id=88;
+					id=90;
 					side="EAST";
 					vehicle="CAF_AG_eeur_r_AK47";
 					leader=1;
@@ -2353,7 +2393,7 @@ class Mission
 				class Item1
 				{
 					position[]={4884.5698,540.83026,3718.3533};
-					id=89;
+					id=91;
 					side="EAST";
 					vehicle="CAF_AG_eeur_r_AK47";
 					skill=0.40000001;
@@ -2361,7 +2401,7 @@ class Mission
 				class Item2
 				{
 					position[]={4886.5698,541.54388,3718.3533};
-					id=90;
+					id=92;
 					side="EAST";
 					vehicle="CAF_AG_eeur_r_AK74";
 					rank="CORPORAL";
@@ -2370,7 +2410,7 @@ class Mission
 				class Item3
 				{
 					position[]={4892.5698,543.94427,3718.3533};
-					id=91;
+					id=93;
 					side="EAST";
 					vehicle="CAF_AG_eeur_r_PKM";
 					rank="CORPORAL";
@@ -2406,7 +2446,7 @@ class Mission
 				};
 			};
 		};
-		class Item68
+		class Item69
 		{
 			side="EAST";
 			class Vehicles
@@ -2415,7 +2455,7 @@ class Mission
 				class Item0
 				{
 					position[]={5531.832,561.93243,3462.4424};
-					id=92;
+					id=94;
 					side="EAST";
 					vehicle="CAF_AG_eeur_r_AK47";
 					leader=1;
@@ -2425,7 +2465,7 @@ class Mission
 				class Item1
 				{
 					position[]={5534.832,562.66357,3457.4424};
-					id=93;
+					id=95;
 					side="EAST";
 					vehicle="CAF_AG_eeur_r_AK47";
 					skill=0.40000001;
@@ -2433,7 +2473,7 @@ class Mission
 				class Item2
 				{
 					position[]={5536.832,562.02032,3457.4424};
-					id=94;
+					id=96;
 					side="EAST";
 					vehicle="CAF_AG_eeur_r_AK74";
 					rank="CORPORAL";
@@ -2442,7 +2482,7 @@ class Mission
 				class Item3
 				{
 					position[]={5542.832,560.17395,3457.4424};
-					id=95;
+					id=97;
 					side="EAST";
 					vehicle="CAF_AG_eeur_r_PKM";
 					rank="CORPORAL";
@@ -2475,47 +2515,6 @@ class Mission
 					{
 					};
 					showWP="NEVER";
-				};
-			};
-		};
-		class Item69
-		{
-			side="WEST";
-			class Vehicles
-			{
-				items=2;
-				class Item0
-				{
-					position[]={8205.8018,296.01324,2144.2336};
-					azimut=-208.922;
-					id=96;
-					side="WEST";
-					vehicle="TFA_tri_rs_F";
-					player="PLAY CDG";
-					rank="CORPORAL";
-					skill=0.60000002;
-					text="PeterPan";
-					init="this call X39_MedSys_fnc_InitializeUnit;";
-					description="EOD";
-					syncId=16;
-					synchronizations[]={15};
-				};
-				class Item1
-				{
-					position[]={8204.6162,296.03476,2143.699};
-					azimut=-208.922;
-					id=97;
-					side="WEST";
-					vehicle="TFA_tri_rs_F";
-					player="PLAY CDG";
-					leader=1;
-					rank="SERGEANT";
-					skill=0.60000002;
-					text="PaulPanzer";
-					init="this call X39_MedSys_fnc_InitializeUnit;";
-					description="EOD Leader";
-					syncId=17;
-					synchronizations[]={15};
 				};
 			};
 		};
@@ -2725,7 +2724,7 @@ class Mission
 		items=2;
 		class Item0
 		{
-			position[]={5113.0767,145.39999,6049.5405};
+			position[]={5128.5508,145.39999,6041.4775};
 			a=20;
 			b=20;
 			activationBy="WEST";
