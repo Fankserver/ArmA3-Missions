@@ -1,6 +1,6 @@
 author = Filip;
 onLoadName = Oil is gold;
-onLoadMission = Boom boom pahw;
+onLoadMission = Erreicht das Feldlager! Merica!;
 joinUnassigned = 1;
 respawn = "BASE";
 respawndelay = 10;
@@ -10,7 +10,7 @@ disableChannels[] = {0,1,2,3};
 class Header
 {
 	gameType = Coop; // Game type, see 'class' columns in the table below
-	minPlayers = 2000Rnd_23mm_AZP85; //min # of players the mission supports
+	minPlayers = 2; //min # of players the mission supports
 	maxPlayers = 13; //max # of players the mission supports
 };
 
