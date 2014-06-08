@@ -398,7 +398,7 @@ class Mission
 						items=5;
 						class Item0
 						{
-							value="1";
+							value="0";
 							parentCls="X39_MedSys_Module_BasicModule";
 							typeName="DialogOptions_EnableHealthView";
 						};
@@ -410,19 +410,19 @@ class Mission
 						};
 						class Item2
 						{
-							value="1";
+							value="0";
 							parentCls="X39_MedSys_Module_BasicModule";
 							typeName="DialogOptions_EnableTourniquetView";
 						};
 						class Item3
 						{
-							value="1";
+							value="0";
 							parentCls="X39_MedSys_Module_BasicModule";
 							typeName="DialogOptions_EnableLegView";
 						};
 						class Item4
 						{
-							value="1";
+							value="0";
 							parentCls="X39_MedSys_Module_BasicModule";
 							typeName="DialogOptions_EnableMorphineView";
 						};
