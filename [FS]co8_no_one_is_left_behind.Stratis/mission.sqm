@@ -80,7 +80,7 @@ class Mission
 	};
 	class Groups
 	{
-		items=42;
+		items=41;
 		class Item0
 		{
 			side="WEST";
@@ -94,7 +94,7 @@ class Mission
 					id=0;
 					side="WEST";
 					vehicle="B_Soldier_TL_F";
-					player="PLAYER COMMANDER";
+					player="PLAY CDG";
 					leader=1;
 					rank="LIEUTENANT";
 					skill=0.60000002;
@@ -204,7 +204,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={608,0.01104781,289.4707};
+					position[]={602.19745,0.013557389,286.43115};
 					azimut=35.332699;
 					offsetY=40;
 					special="FLY";
@@ -517,7 +517,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={606.31354,-0.0011072904,270.33447};
+					position[]={606.31366,0.076270834,267.01953};
 					azimut=35.332699;
 					offsetY=30;
 					special="FLY";
@@ -2468,7 +2468,7 @@ class Mission
 			side="LOGIC";
 			class Vehicles
 			{
-				items=1;
+				items=2;
 				class Item0
 				{
 					position[]={559.98914,-0.24540985,377.80811};
@@ -2476,6 +2476,49 @@ class Mission
 					side="LOGIC";
 					vehicle="X39_MedSys_Module_EnableLimitationsSystemModule";
 					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+				class Item1
+				{
+					position[]={560.07245,-126.5848,391.38525};
+					class args
+					{
+						items=5;
+						class Item0
+						{
+							value="0";
+							parentCls="X39_MedSys_Module_BasicModule";
+							typeName="DialogOptions_EnableHealthView";
+						};
+						class Item1
+						{
+							value="0";
+							parentCls="X39_MedSys_Module_BasicModule";
+							typeName="DialogOptions_EnableBloodView";
+						};
+						class Item2
+						{
+							value="0";
+							parentCls="X39_MedSys_Module_BasicModule";
+							typeName="DialogOptions_EnableTourniquetView";
+						};
+						class Item3
+						{
+							value="0";
+							parentCls="X39_MedSys_Module_BasicModule";
+							typeName="DialogOptions_EnableLegView";
+						};
+						class Item4
+						{
+							value="0";
+							parentCls="X39_MedSys_Module_BasicModule";
+							typeName="DialogOptions_EnableMorphineView";
+						};
+					};
+					id=75;
+					side="LOGIC";
+					vehicle="X39_MedSys_Module_BasicModule";
 					lock="UNLOCKED";
 					skill=0.60000002;
 				};
@@ -2512,7 +2555,7 @@ class Mission
 							typeName="DialogOptions_BehaviourID";
 						};
 					};
-					id=75;
+					id=76;
 					side="LOGIC";
 					vehicle="X39_MedSys_Module_AddLimitationModule";
 					leader=1;
@@ -2554,7 +2597,7 @@ class Mission
 							typeName="DialogOptions_BehaviourID";
 						};
 					};
-					id=76;
+					id=77;
 					side="LOGIC";
 					vehicle="X39_MedSys_Module_AddLimitationModule";
 					leader=1;
@@ -2562,58 +2605,6 @@ class Mission
 					skill=0.60000002;
 					syncId=23;
 					synchronizations[]={6,3,1,2,0,13};
-				};
-			};
-		};
-		class Item41
-		{
-			side="LOGIC";
-			class Vehicles
-			{
-				items=1;
-				class Item0
-				{
-					position[]={558.78424,-127.60015,396.29639};
-					class args
-					{
-						items=5;
-						class Item0
-						{
-							value="0";
-							parentCls="X39_MedSys_Module_BasicModule";
-							typeName="DialogOptions_EnableHealthView";
-						};
-						class Item1
-						{
-							value="0";
-							parentCls="X39_MedSys_Module_BasicModule";
-							typeName="DialogOptions_EnableBloodView";
-						};
-						class Item2
-						{
-							value="0";
-							parentCls="X39_MedSys_Module_BasicModule";
-							typeName="DialogOptions_EnableTourniquetView";
-						};
-						class Item3
-						{
-							value="0";
-							parentCls="X39_MedSys_Module_BasicModule";
-							typeName="DialogOptions_EnableLegView";
-						};
-						class Item4
-						{
-							value="0";
-							parentCls="X39_MedSys_Module_BasicModule";
-							typeName="DialogOptions_EnableMorphineView";
-						};
-					};
-					id=77;
-					side="LOGIC";
-					vehicle="X39_MedSys_Module_BasicModule";
-					leader=1;
-					lock="UNLOCKED";
-					skill=0.60000002;
 				};
 			};
 		};
@@ -3218,10 +3209,9 @@ class Mission
 		class Item12
 		{
 			position[]={548.66852,-118.33082,328.20117};
-			activationBy="DELTA";
 			interruptable=1;
 			age="UNKNOWN";
-			expActiv="rec2=[helistart2,400] spawn BIS_fnc_Unitcapture";
+			expActiv="rec2=[helistart2,400,15] spawn BIS_fnc_Unitcapture";
 			class Effects
 			{
 			};

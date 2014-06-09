@@ -11,7 +11,7 @@ path = compile preprocessFile "scripts\path.sqf";
 path2 = compile preprocessFile "scripts\path2.sqf";
 
 //start mission flight to start location
-//sleep 5;
+
 rec = [] spawn path;
 rec2 = [] spawn path2;
 
