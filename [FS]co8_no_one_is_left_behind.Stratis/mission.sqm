@@ -94,12 +94,12 @@ class Mission
 					id=0;
 					side="WEST";
 					vehicle="B_Soldier_TL_F";
-					player="PLAY CDG";
+					player="PLAYER COMMANDER";
 					leader=1;
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="tl1";
-					init="this call X39_MedSys_fnc_InitializeUnit;this moveinCargo heliStart;";
+					init="this call X39_MedSys_fnc_InitializeUnit;this moveinCargo heliStart;this assignAsCargo helistart1";
 					description="Groupleader";
 					syncId=0;
 					synchronizations[]={9,7,18,16,11,14,23};
@@ -114,7 +114,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="g5";
-					init="this call X39_MedSys_fnc_InitializeUnit;this moveinCargo heliStart2";
+					init="this call X39_MedSys_fnc_InitializeUnit;this moveinCargo heliStart2;this assignAsCargo helistart2";
 					description="Grenadier";
 					syncId=1;
 					synchronizations[]={14,23};
@@ -129,7 +129,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="gl2";
-					init="this call X39_MedSys_fnc_InitializeUnit;this moveinCargo heliStart2";
+					init="this call X39_MedSys_fnc_InitializeUnit;this moveinCargo heliStart2;this assignAsCargo helistart2";
 					description="Squadleader/Radio";
 					syncId=2;
 					synchronizations[]={14,23};
@@ -144,7 +144,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="g4";
-					init="this call X39_MedSys_fnc_InitializeUnit;this moveinCargo heliStart";
+					init="this call X39_MedSys_fnc_InitializeUnit;this moveinCargo heliStart;this assignAsCargo helistart";
 					description="Rifleman/Radio";
 					syncId=3;
 					synchronizations[]={14,23};
@@ -159,7 +159,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="g7";
-					init="this call X39_MedSys_fnc_InitializeUnit;this moveinCargo heliStart2";
+					init="this call X39_MedSys_fnc_InitializeUnit;this moveinCargo heliStart2;this assignAsCargo helistart2";
 					description="Medic";
 					syncId=4;
 					synchronizations[]={14,22};
@@ -174,7 +174,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="g3";
-					init="this call X39_MedSys_fnc_InitializeUnit;this moveinCargo heliStart";
+					init="this call X39_MedSys_fnc_InitializeUnit;this moveinCargo heliStart;this assignAsCargo helistart";
 					description="Medic";
 					syncId=5;
 					synchronizations[]={14,22};
@@ -189,7 +189,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="g2";
-					init="this call X39_MedSys_fnc_InitializeUnit;this moveinCargo heliStart";
+					init="this call X39_MedSys_fnc_InitializeUnit;this moveinCargo heliStart;this assignAsCargo helistart";
 					description="Machinegunner";
 					syncId=6;
 					synchronizations[]={14,23};
@@ -204,7 +204,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={602.19745,0.013557389,286.43115};
+					position[]={602.19745,-0.00085205381,286.43115};
 					azimut=35.332699;
 					offsetY=40;
 					special="FLY";
@@ -216,6 +216,106 @@ class Mission
 					fuel=0.60972911;
 					ammo=0;
 					text="heliStart";
+					init="this setpos [getpos this select 0,getpos this select 1,10];this flyInHeight 10";
+				};
+			};
+			class Waypoints
+			{
+				items=10;
+				class Item0
+				{
+					position[]={610.24255,9.9984322,299.60059};
+					combatMode="BLUE";
+					speed="FULL";
+					combat="CARELESS";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item1
+				{
+					position[]={1572.4854,20.402712,1288.125};
+					expActiv="this forcespeed 150;";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item2
+				{
+					position[]={1662.8903,-0.25529003,1381.3755};
+					expActiv="this forcespeed 140;";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item3
+				{
+					position[]={1794.8191,-0.053669434,1518.959};
+					expActiv="this forcespeed 120;";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item4
+				{
+					position[]={1943.7104,-0.46174353,1662.1953};
+					expActiv="this forcespeed 100;";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item5
+				{
+					position[]={2110.7422,10.000432,1850.8662};
+					speed="NORMAL";
+					expActiv="this forcespeed 80;";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item6
+				{
+					position[]={2418.5042,32.853096,2090.9116};
+					speed="LIMITED";
+					expActiv="this forcespeed 60;this setCaptive true";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item7
+				{
+					position[]={2477.0627,25.038557,2121.481};
+					expActiv="this forcespeed 40;";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item8
+				{
+					position[]={2539.533,26.5623,2153.0444};
+					combatMode="BLUE";
+					combat="CARELESS";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item9
+				{
+					position[]={2649.1423,116.71587,2463.7378};
+					expActiv="(vehicle this) land ""LAND""; dostop helistart;helistart move getpos helistart;";
+					class Effects
+					{
+					};
+					showWP="NEVER";
 				};
 			};
 		};
@@ -517,7 +617,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={606.31366,0.076270834,267.01953};
+					position[]={590.22955,0.24137744,257.89063};
 					azimut=35.332699;
 					offsetY=30;
 					special="FLY";
@@ -529,6 +629,102 @@ class Mission
 					fuel=0.60972911;
 					ammo=0;
 					text="heliStart2";
+					init="this setpos [getpos this select 0,getpos this select 1,10];this flyInHeight 10";
+				};
+			};
+			class Waypoints
+			{
+				items=10;
+				class Item0
+				{
+					position[]={617.99622,0.0045369798,281.88672};
+					combatMode="BLUE";
+					speed="FULL";
+					combat="CARELESS";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item1
+				{
+					position[]={1599.3636,-0.0027176375,1242.123};
+					expActiv="this forcespeed 150;";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item2
+				{
+					position[]={1699.6713,-0.0006751144,1339.5444};
+					expActiv="this forcespeed 140;";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item3
+				{
+					position[]={1823.7928,0.0014937801,1476.6553};
+					expActiv="this forcespeed 120;";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item4
+				{
+					position[]={1960.9038,0.0046046712,1638.3022};
+					expActiv="this forcespeed 100;";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item5
+				{
+					position[]={2108.1179,0,1817.2686};
+					expActiv="this forcespeed 80;";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item6
+				{
+					position[]={2413.3704,14.951853,2059.7388};
+					expActiv="this forcespeed 60;this setCaptive true";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item7
+				{
+					position[]={2476.1526,23.919806,2096.5425};
+					expActiv="this forcespeed 40;";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item8
+				{
+					position[]={2543.9866,28.263174,2133.3462};
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item9
+				{
+					position[]={2855.6182,131.36316,2447.2778};
+					expActiv="(vehicle this) land ""LAND""; dostop helistart2;helistart2 move getpos helistart2;";
+					class Effects
+					{
+					};
+					showWP="NEVER";
 				};
 			};
 		};
@@ -2823,7 +3019,7 @@ class Mission
 		};
 		class Item7
 		{
-			position[]={3577.8347,167.63025,3160.1816};
+			position[]={7051.9976,-0.43286085,6528.0498};
 			name="heliCrash";
 			type="Empty";
 		};
@@ -2857,7 +3053,7 @@ class Mission
 		};
 		class Item12
 		{
-			position[]={2708.8289,112.97847,2501.4194};
+			position[]={2864.2698,136.69356,2467.4722};
 			name="LZ1";
 			text="LZ Alpha";
 			type="mil_start";
@@ -2959,7 +3155,7 @@ class Mission
 		};
 		class Item26
 		{
-			position[]={2701.8181,112.55103,2498.2505};
+			position[]={2856.6838,137.30748,2474.5796};
 			name="respawn1";
 			text="Landing Zone";
 			type="Empty";
@@ -3024,16 +3220,16 @@ class Mission
 	};
 	class Sensors
 	{
-		items=13;
+		items=14;
 		class Item0
 		{
-			position[]={3338.3562,223.05205,2981.2925};
-			a=150;
-			b=150;
+			position[]={3474.7512,160.52896,3163.647};
+			a=400;
+			b=400;
 			activationBy="WEST";
 			interruptable=1;
 			age="UNKNOWN";
-			expActiv="bomb1=""M_Mo_82mm_AT_LG"" createVehicle [(getPos heliStart select 0),(getPos heliStart select 1),(getPos heliStart select 2)]; bomb2=""M_Mo_82mm_AT_LG"" createVehicle [(getPos heliStart2 select 0),(getPos heliStart2 select 1),(getPos heliStart2 select 2)];heliStart2 setdamage 1; heliStart2 setfuel 0;[""Maxwell"",[3292,2938],""ELLIPSE"",100,100,""mil_circle"",""ColorRed"",""DiagGrid"",""heavy enemy activity""] call ATR_fnc_createMarker";
+			expActiv="bomb1=""M_Mo_82mm_AT_LG"" createVehicle [(getPos heliStart select 0),(getPos heliStart select 1),(getPos heliStart select 2)]; bomb2=""M_Mo_82mm_AT_LG"" createVehicle [(getPos heliStart2 select 0),(getPos heliStart2 select 1),(getPos heliStart2 select 2)];heliStart2 setdamage 1; heliStart2 setfuel 0;[""Maxwell"",[3292,2938],""ELLIPSE"",100,100,""mil_circle"",""ColorRed"",""DiagGrid"",""heavy enemy activity""] call ATR_fnc_createMarker;helistart setdamage 1; helistart setfuel 0;";
 			class Effects
 			{
 			};
@@ -3197,11 +3393,13 @@ class Mission
 		};
 		class Item11
 		{
-			position[]={2702.1938,112.58649,2496.6436};
+			position[]={2792.9329,122.26054,2449.0049};
+			a=300;
+			b=300;
 			activationBy="WEST";
 			interruptable=1;
 			age="UNKNOWN";
-			expActiv="[west,(getMarkerPos ""respawn1"")] call BIS_fnc_addRespawnPosition";
+			expActiv="[west,(getMarkerPos ""respawn1"")] call BIS_fnc_addRespawnPosition;";
 			class Effects
 			{
 			};
@@ -3212,6 +3410,21 @@ class Mission
 			interruptable=1;
 			age="UNKNOWN";
 			expActiv="rec2=[helistart2,400,15] spawn BIS_fnc_Unitcapture";
+			class Effects
+			{
+			};
+		};
+		class Item13
+		{
+			position[]={2810.6689,123.24153,2452.2314};
+			a=300;
+			b=300;
+			activationBy="WEST";
+			activationType="GUER D";
+			interruptable=1;
+			age="UNKNOWN";
+			expCond="(({_x in helistart} count [tl1,g2,g3,g4]) < 1) && (({_x in helistart2} count [gl2,g5,g7]) < 1)";
+			expActiv="helistart setcaptive false; helistart doMove (getMarkerPos ""heliCrash""); helistart forcespeed 200;helistart2 setcaptive false; helistart2 doMove (getMarkerPos ""heliCrash""); helistart2 forcespeed 200;";
 			class Effects
 			{
 			};

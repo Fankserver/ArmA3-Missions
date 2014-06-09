@@ -7,13 +7,13 @@ if (isServer) then {call compile preprocessFile "scripts\locationlist.sqf";};
 _side = createCenter east;
 
 //precompile flightpath at mission start
-path = compile preprocessFile "scripts\path.sqf";
-path2 = compile preprocessFile "scripts\path2.sqf";
+//path = compile preprocessFile "scripts\path.sqf";
+//path2 = compile preprocessFile "scripts\path2.sqf";
 
 //start mission flight to start location
 
-rec = [] spawn path;
-rec2 = [] spawn path2;
+//rec = [] spawn path;
+//rec2 = [] spawn path2;
 
 //hide markers for UPS script
 "pat1" setMarkerPos [-(getMarkerPos "pat1" select 0),-(getMarkerPos "pat1" select 1)];
