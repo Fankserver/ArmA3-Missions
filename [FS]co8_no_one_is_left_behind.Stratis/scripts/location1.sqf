@@ -28,9 +28,13 @@ _pos = [2005.911621,2721.587402,3.59752];
 _object = createVehicle ["Box_East_Wps_F", _pos, [], 0, "CAN_COLLIDE"];
 _object setDir 30;
 _object setPosATL _pos;
-clearWeaponCargo _object;
-clearMagazineCargo _object;
-_object addbackpackCargo ["tf_rt1523g",1];
+if (isServer) then {
+  clearweaponcargoGlobal _object;
+  clearmagazinecargoGlobal _object;
+  clearitemcargoGlobal _object;
+
+  _object addBackpackCargoGlobal ["tf_rt1523g",1];
+};
 
 _pos = [4349.862793,3757.831055,0.46167];
 _object = createVehicle ["Land_CampingTable_F", _pos, [], 0, "CAN_COLLIDE"];

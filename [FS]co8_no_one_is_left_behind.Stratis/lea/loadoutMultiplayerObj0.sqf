@@ -9,7 +9,7 @@
 * + ArmA 3
 * + TFAR
 * 
-* Call the script: _dummy = [] execvm "lea\loadoutServer.sqf";
+* Call the script: _dummy = [] execvm "lea\loadoutMultiplayer.sqf";
 * 
 */
 
@@ -25,13 +25,14 @@
 */
 
 if (!isNil "tl1") then {
+	if (player == tl1) exitwith {
 removeallweapons tl1;
 removeallassigneditems tl1;
 removeHeadgear tl1;
 removeUniform tl1;
 removeBackpack tl1;
 removeVest tl1;
-removeGoggles tl1;
+
 
 tl1 addWeapon "ItemMap";
 tl1 addWeapon "ItemWatch";
@@ -72,9 +73,11 @@ clearWeaponCargoGlobal (uniformContainer tl1);
 (uniformContainer tl1) addmagazinecargoGlobal ["9Rnd_45ACP_Mag",2];
 tl1 addWeapon "tf_anprc152";
 tl1 selectWeapon (primaryWeapon tl1);
+	};
 };
 
 if (!isNil "g5") then {
+	if (player == g5) exitwith {
 removeallweapons g5;
 removeallassigneditems g5;
 removeHeadgear g5;
@@ -124,9 +127,11 @@ clearWeaponCargoGlobal (uniformContainer g5);
 (uniformContainer g5) addmagazinecargoGlobal ["9Rnd_45ACP_Mag",3];
 g5 addWeapon "tf_anprc152";
 g5 selectWeapon (primaryWeapon g5);
+	};
 };
 
 if (!isNil "gl2") then {
+	if (player == gl2) exitwith {
 removeallweapons gl2;
 removeallassigneditems gl2;
 removeHeadgear gl2;
@@ -174,9 +179,11 @@ clearWeaponCargoGlobal (uniformContainer gl2);
 (uniformContainer gl2) addmagazinecargoGlobal ["9Rnd_45ACP_Mag",3];
 gl2 addWeapon "tf_anprc152";
 gl2 selectWeapon (primaryWeapon gl2);
+	};
 };
 
 if (!isNil "g4") then {
+	if (player == g4) exitwith {
 removeallweapons g4;
 removeallassigneditems g4;
 removeHeadgear g4;
@@ -222,9 +229,11 @@ clearWeaponCargoGlobal (uniformContainer g4);
 (uniformContainer g4) addmagazinecargoGlobal ["9Rnd_45ACP_Mag",3];
 g4 addWeapon "tf_anprc152";
 g4 selectWeapon (primaryWeapon g4);
+	};
 };
 
 if (!isNil "g7") then {
+	if (player == g7) exitwith {
 removeallweapons g7;
 removeallassigneditems g7;
 removeHeadgear g7;
@@ -279,9 +288,11 @@ clearWeaponCargoGlobal (uniformContainer g7);
 (uniformContainer g7) addmagazinecargoGlobal ["9Rnd_45ACP_Mag",1];
 g7 addWeapon "tf_anprc152";
 g7 selectWeapon (primaryWeapon g7);
+	};
 };
 
 if (!isNil "g3") then {
+	if (player == g3) exitwith {
 removeallweapons g3;
 removeallassigneditems g3;
 removeHeadgear g3;
@@ -336,9 +347,11 @@ clearWeaponCargoGlobal (uniformContainer g3);
 (uniformContainer g3) addmagazinecargoGlobal ["9Rnd_45ACP_Mag",1];
 g3 addWeapon "tf_anprc152";
 g3 selectWeapon (primaryWeapon g3);
+	};
 };
 
 if (!isNil "g2") then {
+	if (player == g2) exitwith {
 removeallweapons g2;
 removeallassigneditems g2;
 removeHeadgear g2;
@@ -384,33 +397,87 @@ clearWeaponCargoGlobal (uniformContainer g2);
 (uniformContainer g2) addmagazinecargoGlobal ["9Rnd_45ACP_Mag",3];
 g2 addWeapon "tf_anprc152";
 g2 selectWeapon (primaryWeapon g2);
+	};
 };
 
 if (!isNil "playerCaptive") then {
-removeallweapons playerCaptive;
-removeallassigneditems playerCaptive;
-removeHeadgear playerCaptive;
-removeUniform playerCaptive;
-removeBackpack playerCaptive;
-removeVest playerCaptive;
-removeGoggles playerCaptive;
+	if (player == playerCaptive) exitwith {
+		if (tsk1==true){
+			removeallweapons g5;
+			removeallassigneditems g5;
+			removeHeadgear g5;
+			removeUniform g5;
+			removeBackpack g5;
+			removeVest g5;
 
-playerCaptive addWeapon "ItemWatch";
-playerCaptive addWeapon "ItemCompass";
-playerCaptive addUniform "U_B_SpecopsUniform_sgg";
-clearItemCargoGlobal (uniformContainer playerCaptive);
-clearMagazineCargoGlobal (uniformContainer playerCaptive);
-clearWeaponCargoGlobal (uniformContainer playerCaptive);
-if (count weapons playerCaptive > 0) then {
-  private['_type', '_muzzles'];
-  _type = ((weapons playerCaptive) select 0);
-  _muzzles = getArray(configFile >>"cfgWeapons">> _type >>"muzzles");
-  if (count _muzzles > 1) then {
-     playerCaptive selectWeapon (_muzzles select 0);
-  }
-  else {
-     playerCaptive selectWeapon _type;
-  };
+			g5 addWeapon "ItemMap";
+			g5 addWeapon "ItemWatch";
+			g5 addWeapon "ItemCompass";
+			g5 addWeapon "ItemGPS";
+			g5 addWeapon "H_HelmetLeaderO_ocamo";
+			g5 addBackpack "B_TacticalPack_blk";
+			(backpackContainer g5) addmagazinecargoGlobal ["30Rnd_65x39_caseless_mag_Tracer",1];
+			g5 addWeapon "arifle_MX_GL_Black_F";
+			removeBackpack g5;
+			g5 addPrimaryWeaponItem "acc_pointer_IR";
+			g5 addPrimaryWeaponItem "optic_Aco";
+			g5 addBackpack "B_TacticalPack_blk";
+			(backpackContainer g5) addmagazinecargoGlobal ["9Rnd_45ACP_Mag",1];
+			g5 addWeapon "hgun_ACPC2_F";
+			removeBackpack g5;
+			g5 addBackpack "B_Carryall_oli";
+			clearItemCargoGlobal (backpackContainer g5);
+			clearMagazineCargoGlobal (backpackContainer g5);
+			clearWeaponCargoGlobal (backpackContainer g5);
+			(backpackContainer g5) additemcargoGlobal ["x39_bandage",5];
+			(backpackContainer g5) addmagazinecargoGlobal ["30Rnd_65x39_caseless_mag_Tracer",10];
+			(backpackContainer g5) addmagazinecargoGlobal ["1Rnd_Smoke_Grenade_shell",8];
+			(backpackContainer g5) addmagazinecargoGlobal ["UGL_FlareWhite_F",8];
+			(backpackContainer g5) addmagazinecargoGlobal ["1Rnd_HE_Grenade_shell",7];
+			g5 addVest "V_PlateCarrier1_blk";
+			clearItemCargoGlobal (vestContainer g5);
+			clearMagazineCargoGlobal (vestContainer g5);
+			clearWeaponCargoGlobal (vestContainer g5);
+			(vestContainer g5) additemcargoGlobal ["FirstAidKit",1];
+			(vestContainer g5) addmagazinecargoGlobal ["30Rnd_65x39_caseless_mag_Tracer",4];
+			(vestContainer g5) addmagazinecargoGlobal ["9Rnd_45ACP_Mag",1];
+			(vestContainer g5) addmagazinecargoGlobal ["1Rnd_HE_Grenade_shell",3];
+			g5 addItemToVest "HandGrenade";
+			g5 addItemToVest "HandGrenade";
+			g5 addUniform "U_B_SpecopsUniform_sgg";
+			clearItemCargoGlobal (uniformContainer g5);
+			clearMagazineCargoGlobal (uniformContainer g5);
+			clearWeaponCargoGlobal (uniformContainer g5);
+			(uniformContainer g5) addmagazinecargoGlobal ["9Rnd_45ACP_Mag",3];
+			g5 addWeapon "tf_anprc152";
+			g5 selectWeapon (primaryWeapon g5);
+		} else {
+			removeallweapons playerCaptive;
+			removeallassigneditems playerCaptive;
+			removeHeadgear playerCaptive;
+			removeUniform playerCaptive;
+			removeBackpack playerCaptive;
+			removeVest playerCaptive;
+			removeGoggles playerCaptive;
+	
+			playerCaptive addWeapon "ItemWatch";
+			playerCaptive addWeapon "ItemCompass";
+			playerCaptive addUniform "U_B_SpecopsUniform_sgg";
+			clearItemCargoGlobal (uniformContainer playerCaptive);
+			clearMagazineCargoGlobal (uniformContainer playerCaptive);
+			clearWeaponCargoGlobal (uniformContainer playerCaptive);
+			if (count weapons playerCaptive > 0) then {
+				private['_type', '_muzzles'];
+				_type = ((weapons playerCaptive) select 0);
+				_muzzles = getArray(configFile >>"cfgWeapons">> _type >>"muzzles");
+				if (count _muzzles > 1) then {
+					playerCaptive selectWeapon (_muzzles select 0);
+				}
+				else {
+					playerCaptive selectWeapon _type;
+				};
+			};
+		};
 };
-};
+
 

@@ -21,4 +21,5 @@ _side = createCenter east;
 "pat3" setMarkerPos [-(getMarkerPos "pat3" select 0),-(getMarkerPos "pat3" select 1)];
 "pat4" setMarkerPos [-(getMarkerPos "pat4" select 0),-(getMarkerPos "pat4" select 1)];
 
+{_x setMarkerAlphaLocal 0} foreach ["pat1","pat2","pat3","pat4"];
 
