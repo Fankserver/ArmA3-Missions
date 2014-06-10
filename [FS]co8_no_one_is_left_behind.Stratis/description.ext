@@ -31,6 +31,7 @@ class CfgFunctions {
 			class bonusCargo {};
 			class mike {};
 			class conversation {};
+			class patsNorth {};
 		};
 	};
 };

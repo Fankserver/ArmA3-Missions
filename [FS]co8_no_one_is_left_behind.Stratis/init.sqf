@@ -20,6 +20,9 @@ _side = createCenter east;
 "pat2" setMarkerPos [-(getMarkerPos "pat2" select 0),-(getMarkerPos "pat2" select 1)];
 "pat3" setMarkerPos [-(getMarkerPos "pat3" select 0),-(getMarkerPos "pat3" select 1)];
 "pat4" setMarkerPos [-(getMarkerPos "pat4" select 0),-(getMarkerPos "pat4" select 1)];
-
 {_x setMarkerAlphaLocal 0} foreach ["pat1","pat2","pat3","pat4"];
 
+//create Trigger for northern mission part
+private ["_patTrigger"];
+_patTrigger = ["patTriggerObj0",1700,1,0,true,west,"PRESENT",false] call ATR_fnc_createTrigger;
+_patTrigger setTriggerStatements ["this","[] call ATR_fnc_patsNorth",""]; 

@@ -94,6 +94,7 @@ class Mission
 					id=0;
 					side="WEST";
 					vehicle="B_Soldier_TL_F";
+					player="PLAY CDG";
 					leader=1;
 					rank="LIEUTENANT";
 					skill=0.60000002;
@@ -1648,7 +1649,7 @@ class Mission
 						};
 						class Item1
 						{
-							value="Mission";
+							value="";
 							parentCls="ModuleCreateDiaryRecord_F";
 							typeName="Subject";
 						};
@@ -2820,15 +2821,15 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={2006.63,3.1013174,2715.9194};
-					azimut=-1089.5;
-					offsetY=3;
+					position[]={3705.3057,166.72464,3721.531};
+					azimut=-1587.6;
 					id=78;
 					side="WEST";
 					vehicle="B_diver_F";
 					player="PLAYER COMMANDER";
 					leader=1;
 					skill=0.60000002;
+					init="this setcaptive true; [] call ATR_fnc_patsNorth";
 				};
 			};
 		};
@@ -2987,7 +2988,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=36;
+		items=46;
 		class Item0
 		{
 			position[]={1989.0458,2.5754457,3518.7407};
@@ -3048,7 +3049,7 @@ class Mission
 		};
 		class Item7
 		{
-			position[]={7051.9976,-0.43286085,6528.0498};
+			position[]={8123.687,-0.29405829,7858.7305};
 			name="heliCrash";
 			type="Empty";
 		};
@@ -3230,7 +3231,7 @@ class Mission
 		};
 		class Item33
 		{
-			position[]={2935.2227,65.262642,3812.0571};
+			position[]={2952.707,66.696472,3801.2979};
 			name="airpat3";
 			type="Empty";
 		};
@@ -3246,19 +3247,80 @@ class Mission
 			name="obj4";
 			type="Empty";
 		};
+		class Item36
+		{
+			position[]={3492.605,161.63791,3142.4082};
+			name="patTriggerObj0";
+			type="Empty";
+		};
+		class Item37
+		{
+			position[]={2149.8794,94.64505,3813.1201};
+			name="northpat1_0";
+			type="Empty";
+		};
+		class Item38
+		{
+			position[]={2744.5969,16.218733,3922.5278};
+			name="northpat1_1";
+			type="Empty";
+		};
+		class Item39
+		{
+			position[]={3827.6536,80.635139,4009.4648};
+			name="northpat1_2";
+			type="Empty";
+		};
+		class Item40
+		{
+			position[]={2129.7781,9.2244043,3539.5024};
+			name="northpat2_0";
+			type="Empty";
+		};
+		class Item41
+		{
+			position[]={3827.6536,80.635139,4009.4648};
+			name="northpat1_2_1";
+			type="Empty";
+		};
+		class Item42
+		{
+			position[]={2750.0703,134.37744,3499.7056};
+			name="northpat2_1";
+			type="Empty";
+		};
+		class Item43
+		{
+			position[]={3684.2703,178.41309,3236.0601};
+			name="northpat2_2";
+			type="Empty";
+		};
+		class Item44
+		{
+			position[]={3619.4543,157.79524,3716.5796};
+			name="northsnip1";
+			type="Empty";
+			angle=-23.912231;
+		};
+		class Item45
+		{
+			position[]={2774.6858,101.40359,3584.2856};
+			name="snipOverwatch";
+			type="Empty";
+		};
 	};
 	class Sensors
 	{
 		items=14;
 		class Item0
 		{
-			position[]={3474.7512,160.52896,3163.647};
-			a=400;
-			b=400;
+			position[]={4623.2593,134.7735,4169.543};
+			a=700;
+			b=700;
 			activationBy="WEST";
 			interruptable=1;
 			age="UNKNOWN";
-			expActiv="bomb1=""M_Mo_82mm_AT_LG"" createVehicle [(getPos heliStart select 0),(getPos heliStart select 1),(getPos heliStart select 2)]; bomb2=""M_Mo_82mm_AT_LG"" createVehicle [(getPos heliStart2 select 0),(getPos heliStart2 select 1),(getPos heliStart2 select 2)];heliStart2 setdamage 1; heliStart2 setfuel 0;[""Maxwell"",[3292,2938],""ELLIPSE"",100,100,""mil_circle"",""ColorRed"",""DiagGrid"",""heavy enemy activity""] call ATR_fnc_createMarker;helistart setdamage 1; helistart setfuel 0;";
+			expActiv="bomb1=""M_Mo_82mm_AT_LG"" createVehicle [(getPos heliStart select 0),(getPos heliStart select 1),(getPos heliStart select 2)]; bomb2=""M_Mo_82mm_AT_LG"" createVehicle [(getPos heliStart2 select 0),(getPos heliStart2 select 1),(getPos heliStart2 select 2)];heliStart2 setdamage 1; heliStart2 setfuel 0;[""Maxwell"",[3292,2938],""ELLIPSE"",100,100,""mil_circle"",""ColorRed"",""DiagGrid"",""heavy enemy activity""] call ATR_fnc_createMarker;; helistart setfuel 0;";
 			class Effects
 			{
 			};

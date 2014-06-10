@@ -32,7 +32,7 @@ private ["_airpat1","_airpatsol1","_airpatsol2","_airpatsol3","_airpat1wp1","_ai
 //create patrol southwest
 _airpat1 = createGroup EAST;
 _airpatsol1 = "O_Soldier_TL_F" createUnit [getMarkerPos "airpat1_2_3", _airpat1,"",0.6,"SERGEANT"];
-_airpatsol2 = "O_Soldier_AR_F" createUnit [getMarkerPos "airpat1_2_3", _airpat1,"",0.5,"PRIVATE"];
+_airpatsol2 = "O_Soldier_F" createUnit [getMarkerPos "airpat1_2_3", _airpat1,"",0.5,"PRIVATE"];
 _airpatsol3 = "O_medic_F" createUnit [getMarkerPos "airpat1_2_3", _airpat1,"",0.5,"PRIVATE"];
 
 //remove Nightvision
@@ -54,7 +54,7 @@ _airpat1wp2 setWaypointType "CYCLE";
 //create patrol southeast
 _airpat2 = createGroup EAST;
 _airpatsol4 = "O_Soldier_TL_F" createUnit [getMarkerPos "airpat1_2_3", _airpat1,"",0.6,"SERGEANT"];
-_airpatsol5 = "O_Soldier_AR_F" createUnit [getMarkerPos "airpat1_2_3", _airpat1,"",0.5,"PRIVATE"];
+_airpatsol5 = "O_Soldier_F" createUnit [getMarkerPos "airpat1_2_3", _airpat1,"",0.5,"PRIVATE"];
 _airpatsol6 = "O_medic_F" createUnit [getMarkerPos "airpat1_2_3", _airpat1,"",0.5,"PRIVATE"];
 
 _airpatsol4 addEventHandler ['Killed',{(_this select 0) unassignItem 'NVGoggles_OPFOR';  (_this select 0) removeItem 'NVGoggles_OPFOR';}];
@@ -75,7 +75,7 @@ _airpat2wp2 setWaypointType "CYCLE";
 //create patrol west
 _airpat3 = createGroup EAST;
 _airpatsol7 = "O_Soldier_TL_F" createUnit [getMarkerPos "airpat1_2_3", _airpat1,"",0.6,"SERGEANT"];
-_airpatsol8 = "O_Soldier_AR_F" createUnit [getMarkerPos "airpat1_2_3", _airpat1,"",0.5,"PRIVATE"];
+_airpatsol8 = "O_Soldier_F" createUnit [getMarkerPos "airpat1_2_3", _airpat1,"",0.5,"PRIVATE"];
 _airpatsol9 = "O_medic_F" createUnit [getMarkerPos "airpat1_2_3", _airpat1,"",0.5,"PRIVATE"];
 
 _airpatsol7 addEventHandler ['Killed',{(_this select 0) unassignItem 'NVGoggles_OPFOR';  (_this select 0) removeItem 'NVGoggles_OPFOR';}];
@@ -96,7 +96,7 @@ _airpat3wp2 setWaypointType "CYCLE";
 //create UPS patrol
 _pat4 = createGroup EAST;
 _pat4_1= "O_Soldier_TL_F" createUnit [getMarkerPos "obj3", _pat4,"",0.6,"SERGEANT"];
-_pat4_2 = "O_Soldier_AR_F" createUnit [getMarkerPos "obj3", _pat4,"",0.5,"PRIVATE"];
+_pat4_2 = "O_Soldier_F" createUnit [getMarkerPos "obj3", _pat4,"",0.5,"PRIVATE"];
 _pat4_3 = "O_Soldier_GL_F" createUnit [getMarkerPos "obj3", _pat4,"",0.5,"PRIVATE"];
 _pat4_4 = "O_medic_F" createUnit [getMarkerPos "obj3", _pat4,"",0.5,"PRIVATE"];
 
