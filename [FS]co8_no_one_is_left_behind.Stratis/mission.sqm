@@ -2926,6 +2926,7 @@ class Mission
 			leader=1;
 			lock="LOCKED";
 			skill=0.60000002;
+			init="clearWeaponCargo this;clearMagazineCargo this;clearItemCargo this;";
 		};
 		class Item8
 		{
