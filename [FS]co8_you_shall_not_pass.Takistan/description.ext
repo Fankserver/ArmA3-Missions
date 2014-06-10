@@ -6,15 +6,15 @@ maxPlayers = 8;
 };
 
 
-
 author = Malwit;
 onLoadName = [FS]co8 You shall not pass;
 onLoadMission = Haltet als Talibankaempfer einen Feindlichen Konvoi auf;
+loadScreen =  "pictures\Taliban.paa";
 
 joinUnassigned = 1;
 respawn = "BASE" ;
-respawndelay = 0;
-respawnDialog = false;
+respawndelay = 60;
+respawnDialog = true;
 respawnVehicleDelay = 10;
 
 disabledAI = true;

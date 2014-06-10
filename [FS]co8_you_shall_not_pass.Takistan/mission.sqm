@@ -261,7 +261,7 @@ class Mission
 					init="this call X39_MedSys_fnc_InitializeUnit;";
 					description="Talibanführer";
 					syncId=0;
-					synchronizations[]={8,9,10,11,12,14,13,15,16,18};
+					synchronizations[]={8,9,10,11,12,14,13,15,16,17};
 				};
 				class Item1
 				{
@@ -278,7 +278,7 @@ class Mission
 					init="this call X39_MedSys_fnc_InitializeUnit;";
 					description="RPG-Schütze";
 					syncId=1;
-					synchronizations[]={18};
+					synchronizations[]={17};
 				};
 				class Item2
 				{
@@ -295,7 +295,7 @@ class Mission
 					init="this call X39_MedSys_fnc_InitializeUnit;";
 					description="IED-Experte";
 					syncId=2;
-					synchronizations[]={18};
+					synchronizations[]={17};
 				};
 				class Item3
 				{
@@ -312,7 +312,7 @@ class Mission
 					init="this call X39_MedSys_fnc_InitializeUnit;";
 					description="RPK-Schütze";
 					syncId=3;
-					synchronizations[]={18};
+					synchronizations[]={17};
 				};
 				class Item4
 				{
@@ -329,7 +329,7 @@ class Mission
 					init="this call X39_MedSys_fnc_InitializeUnit;";
 					description="RPK-Schütze";
 					syncId=4;
-					synchronizations[]={18};
+					synchronizations[]={17};
 				};
 				class Item5
 				{
@@ -346,7 +346,7 @@ class Mission
 					init="this call X39_MedSys_fnc_InitializeUnit;";
 					description="Schütze";
 					syncId=5;
-					synchronizations[]={18};
+					synchronizations[]={17};
 				};
 				class Item6
 				{
@@ -363,7 +363,7 @@ class Mission
 					init="this call X39_MedSys_fnc_InitializeUnit;";
 					description="Schütze";
 					syncId=6;
-					synchronizations[]={18};
+					synchronizations[]={17};
 				};
 				class Item7
 				{
@@ -380,7 +380,7 @@ class Mission
 					init="this call X39_MedSys_fnc_InitializeUnit;";
 					description="Sanitäter";
 					syncId=7;
-					synchronizations[]={17};
+					synchronizations[]={18};
 				};
 			};
 		};
@@ -1925,7 +1925,7 @@ class Mission
 					vehicle="Logic";
 					leader=1;
 					skill=0.60000002;
-					init="X39_MedSys_var_Hearing_enable = false;";
+					init="X39_MedSys_var_Hearing_enable = false;  X39_MedSys_var_KnockOut_enableChatWhenKnockedOut = false; X39_MedSys_var_Bleeding_BloodLossPerTickModificator =.25; ";
 				};
 			};
 		};
@@ -2854,13 +2854,37 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={3177.3975,60.574394,9895.7988};
+					position[]={3118.5874,60.412739,9916.6572};
+					class args
+					{
+						items=3;
+						class Item0
+						{
+							value="1";
+							parentCls="X39_MedSys_Module_AddLimitationModule";
+							typeName="DialogOptions_TakeSynchedClassnames";
+						};
+						class Item1
+						{
+							value="[""BANDAGE"",""EPINEPHRINE"",""MORPHINE"",""TOURNIQUET""]";
+							parentCls="X39_MedSys_Module_AddLimitationModule";
+							typeName="DialogOptions_LimitationToAdd";
+						};
+						class Item2
+						{
+							value="0";
+							parentCls="X39_MedSys_Module_AddLimitationModule";
+							typeName="DialogOptions_BehaviourID";
+						};
+					};
 					id=110;
 					side="LOGIC";
-					vehicle="X39_MedSys_Module_EnableLimitationsSystemModule";
+					vehicle="X39_MedSys_Module_AddLimitationModule";
 					leader=1;
 					lock="UNLOCKED";
 					skill=0.60000002;
+					syncId=17;
+					synchronizations[]={0,1,2,3,4,5,6};
 				};
 			};
 		};
@@ -2872,37 +2896,13 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={3179.6895,60.560001,9908.0352};
-					class args
-					{
-						items=3;
-						class Item0
-						{
-							value="0";
-							parentCls="X39_MedSys_Module_AddLimitationModule";
-							typeName="DialogOptions_TakeSynchedClassnames";
-						};
-						class Item1
-						{
-							value=" [""BANDAGE"", ""BLOOD"", ""EPINEPHRINE"", ""DEFIBRILLATE"", ""MORPHINE"", ""MEDKIT"", ""TOURNIQUET""]";
-							parentCls="X39_MedSys_Module_AddLimitationModule";
-							typeName="DialogOptions_LimitationToAdd";
-						};
-						class Item2
-						{
-							value="0";
-							parentCls="X39_MedSys_Module_AddLimitationModule";
-							typeName="DialogOptions_BehaviourID";
-						};
-					};
+					position[]={3127.3899,60.392292,9917.4082};
 					id=111;
 					side="LOGIC";
-					vehicle="X39_MedSys_Module_AddLimitationModule";
+					vehicle="X39_MedSys_Module_EnableLimitationsSystemModule";
 					leader=1;
 					lock="UNLOCKED";
 					skill=0.60000002;
-					syncId=17;
-					synchronizations[]={7};
 				};
 			};
 		};
@@ -2914,19 +2914,19 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={3171.0554,60.576904,9886.8301};
+					position[]={3128.6633,60.399632,9924.3359};
 					class args
 					{
 						items=3;
 						class Item0
 						{
-							value="0";
+							value="1";
 							parentCls="X39_MedSys_Module_AddLimitationModule";
 							typeName="DialogOptions_TakeSynchedClassnames";
 						};
 						class Item1
 						{
-							value="[""BANDAGE"", ""EPINEPHRINE"", ""MORPHINE"", ""TOURNIQUET""]";
+							value="[""BANDAGE"",""BLOOD"", ""DEFIBRILLATE"",""EPINEPHRINE"",""MORPHINE"",""MEDKIT"",""TOURNIQUET""]";
 							parentCls="X39_MedSys_Module_AddLimitationModule";
 							typeName="DialogOptions_LimitationToAdd";
 						};
@@ -2944,7 +2944,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					syncId=18;
-					synchronizations[]={0,1,2,3,4,5,6};
+					synchronizations[]={7};
 				};
 			};
 		};
