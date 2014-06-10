@@ -1997,7 +1997,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="Costia";
-					init="this call X39_MedSys_fnc_InitializeUnit;X39_MedSys_var_Hearing_enable = false;";
+					init="this call X39_MedSys_fnc_InitializeUnit;X39_MedSys_var_Hearing_enable = false;  X39_MedSys_var_KnockOut_enableChatWhenKnockedOut = false;  X39_MedSys_var_Bleeding_BloodLossPerTickModificator =.25; ";
 				};
 			};
 		};
@@ -2684,13 +2684,13 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={560.77386,-0.00043723645,191.57129};
+					position[]={559.05841,-0.0011769235,200.39404};
 					class args
 					{
 						items=3;
 						class Item0
 						{
-							value="0";
+							value="1";
 							parentCls="X39_MedSys_Module_AddLimitationModule";
 							typeName="DialogOptions_TakeSynchedClassnames";
 						};
@@ -2732,7 +2732,7 @@ class Mission
 						items=3;
 						class Item0
 						{
-							value="0";
+							value="1";
 							parentCls="X39_MedSys_Module_AddLimitationModule";
 							typeName="DialogOptions_TakeSynchedClassnames";
 						};
