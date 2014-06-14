@@ -26,3 +26,5 @@ _side = createCenter east;
 private ["_patTrigger"];
 _patTrigger = ["patTriggerObj0",1700,1,0,true,west,"PRESENT",false] call ATR_fnc_createTrigger;
 _patTrigger setTriggerStatements ["this","[] call ATR_fnc_patsNorth",""]; 
+
+

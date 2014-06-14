@@ -1,0 +1,117 @@
+class Sentences {
+    class C1 {
+     text = $STR_DIALOG_Costia_C1;
+     speech[] = {};
+     class Arguments {};
+  };
+    class C1_1 {
+     text = $STR_DIALOG_Costia_C1_1;
+     speech[] = {};
+     class Arguments {};
+  };
+    class C2 {
+    text = $STR_DIALOG_Costia_C2;
+    speech[] = {};
+    class Arguments {};
+  };
+  class C3 {
+     text = $STR_DIALOG_Costia_C3;
+     speech[] = {};
+     class Arguments {};
+  };
+  class P3_1 {
+     text = $STR_DIALOG_Costia_P3_1;
+     speech[] = {};
+     class Arguments {};
+  };
+  class P3_2 {
+     text = $STR_DIALOG_Costia_P3_2;
+     speech[] = {};
+     class Arguments {};
+  };
+  class P3 {
+     text = $STR_DIALOG_Costia_P3;
+     speech[] = {};
+     class Arguments {};
+  };
+  class C4_1 {
+     text = $STR_DIALOG_Costia_C4_1;
+     speech[] = {};
+     class Arguments {};
+  };
+  class C4_2 {
+     text = $STR_DIALOG_Costia_C4_2;
+     speech[] = {};
+     class Arguments {};
+  };
+  class C5 {
+     text = $STR_DIALOG_Costia_C5;
+     speech[] = {};
+     class Arguments {};
+  };
+  class C6 {
+     text = $STR_DIALOG_Costia_C6;
+     speech[] = {};
+     class Arguments {};
+  };
+  class C7 {
+     text = $STR_DIALOG_Costia_C7;
+     speech[] = {};
+     class Arguments {};
+  };
+  class P7_1 {
+     text = $STR_DIALOG_Costia_P7_1;
+     speech[] = {};
+     class Arguments {};
+  };
+  class P7_2 {
+     text = $STR_DIALOG_Costia_P7_2;
+     speech[] = {};
+     class Arguments {};
+  };
+  class C8_1 {
+     text = $STR_DIALOG_Costia_C8_1;
+     speech[] = {};
+     class Arguments {};
+  };
+  class C8_1_1 {
+     text = $STR_DIALOG_Costia_C81_1;
+     speech[] = {};
+     class Arguments {};
+  };
+  class C8_2 {
+     text = $STR_DIALOG_Costia_C8_2;
+     speech[] = {};
+     class Arguments {};
+  };
+  class C9 {
+     text = $STR_DIALOG_Costia_C9;
+     speech[] = {};
+     class Arguments {};
+  };
+  class C10 {
+     text = $STR_DIALOG_Costia_C10;
+     speech[] = {};
+     class Arguments {};
+  };
+  class C11 {
+     text = $STR_DIALOG_Costia_C11;
+     speech[] = {};
+     class Arguments {};
+  };
+  class C12 {
+     text = $STR_DIALOG_Costia_C12;
+     speech[] = {};
+     class Arguments {};
+  };
+  class C13 {
+     text = $STR_DIALOG_Costia_C13;
+     speech[] = {};
+     class Arguments {};
+  };
+};
+
+class Arguments{};
+class Special {};
+startWithVocal[] = {hour};
+startWithConsonant[] = {europe, university};

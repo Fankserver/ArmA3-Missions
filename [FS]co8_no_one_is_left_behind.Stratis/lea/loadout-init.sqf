@@ -34,15 +34,9 @@ if (!isDedicated) then {
 		waitUntil{scriptDone _dummy};
 		while {true} do {
 			if (player != _lastcorps) then{
-				if (tsk0 == true) then{
-					_dummy = [] execVM "lea\loadoutMultiplayerObj0.sqf";
-					waitUntil{scriptDone _dummy};
-					_lastcorps = player;
-				} else {
-					_dummy = [] execVM "lea\loadoutMultiplayer.sqf";
-					waitUntil{scriptDone _dummy};
-					_lastcorps = player;	
-				};
+				_dummy = [] execVM "lea\loadoutMultiplayer.sqf";
+				waitUntil{scriptDone _dummy};
+				_lastcorps = player;
 			};
 			sleep 1;
 		};

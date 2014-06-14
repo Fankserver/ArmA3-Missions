@@ -1,0 +1,127 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<Project name="Arma3">
+<Package name="Mission">
+<Container name="obj2 dialog">
+
+<!--
+<Key ID="STR_DIALOG_Chatter_I_0">
+<English>Hey!</English>
+</Key>
+<Key ID="STR_DIALOG_Chatter_I_1">
+<English>So those bastards came after you too, eh?</English>
+</Key>
+<Key ID="STR_DIALOG_Chatter_I_2">
+<English>You 'think so'?</English>
+</Key>
+<Key ID="STR_DIALOG_Chatter_I_P_2_1">
+<English>Get lost.</English>
+</Key>
+<Key ID="STR_DIALOG_Chatter_I_P_3_1">
+<English>You're not much of a talker, are you?</English>
+</Key>
+
+
+<Key ID="STR_DIALOG_Chatter_P_0">
+<English>Uhh, hi.</English>
+</Key>
+<Key ID="STR_DIALOG_Chatter_P_1">
+<English>I... I think so.</English>
+</Key>
+<Key ID="STR_DIALOG_Chatter_P_2">
+<English>Shut up!</English>
+</Key>
+<Key ID="STR_DIALOG_Chatter_P_3">
+<English>Well... yeah.</English>
+</Key>
+<Key ID="STR_DIALOG_Chatter_P_2_1">
+<English>Fine!</English>
+</Key>
+<Key ID="STR_DIALOG_Chatter_P_3_1">
+<English>...</English>
+</Key>
+-->
+
+<!-- part 1 Costia -->
+<Key ID="STR_DIALOG_Costia_C1">
+<English>Hey you! Over here!</English>
+</Key>
+<Key ID="STR_DIALOG_Costia_C1_1">
+<English>But quiet! I think we are not alone!</English>
+</Key>
+<Key ID="STR_DIALOG_Costia_C2">
+<English>You me promised safe get away!!</English>
+</Key>
+<Key ID="STR_DIALOG_Costia_C3">
+<English>Where boat? Where helicopter? We all die!! Where boat????</English>
+</Key>
+
+<!-- part 1 Player -->
+<Key ID="STR_DIALOG_Costia_P3_1">
+<English>We're the reconnaissance force and need your help and information! You have to cooperate!</English>
+</Key>
+<Key ID="STR_DIALOG_Costia_P3_2">
+<English>Stay calm! We're here to protect you but we need your help.</English>
+</Key>
+
+
+<!-- part 2 Costia -->
+<Key ID="STR_DIALOG_Costia_C4_1">
+<English>Fuck you! No me help! No boat!</English>
+</Key>
+<Key ID="STR_DIALOG_Costia_C4_2">
+<English>You protect? With what?</English>
+</Key>
+<Key ID="STR_DIALOG_Costia_C5">
+<English>You little people here!</English>
+</Key>
+<Key ID="STR_DIALOG_Costia_C6">
+<English>Soldier on Stratis much!! Much more than you!</English>
+</Key>
+<Key ID="STR_DIALOG_Costia_C7">
+<English>Where boat!</English>
+</Key>
+
+<!-- part 2 Player -->
+<Key ID="STR_DIALOG_Costia_P7_1">
+<English>The information Greek prick! Now! Or you find yourself eatin' the dirt!!</English>
+</Key>
+<Key ID="STR_DIALOG_Costia_P7_2">
+<English>Stay here! We'll call our support immediatly.</English>
+</Key>
+
+<!-- part 3 Costia -->
+<Key ID="STR_DIALOG_Costia_C8_1">
+<English>No hurt... please no hurt.</English>
+</Key>
+<Key ID="STR_DIALOG_Costia_C8_1_1">
+<English>Nothing left. Wife. Dog. Boat.</English>
+</Key>
+<Key ID="STR_DIALOG_Costia_C8_2">
+<English>Support? Now? Please... call... I help!</English>
+</Key>
+<Key ID="STR_DIALOG_Costia_C9">
+<English>Ok. Much soldiers at Maxwell! Much than you. You not go.</English>
+</Key>
+<Key ID="STR_DIALOG_Costia_C10">
+<English>But big weapons at air station! Make soldiers dead! You go there!</English>
+</Key>
+<Key ID="STR_DIALOG_Costia_C11">
+<English>I mark you map. Now boat. Me fear!</English>
+</Key>
+
+<!-- part 4 Costia -->
+<Key ID="STR_DIALOG_Costia_C12">
+<English>They Coming!!!! Hide!! HIDE!!!!!!</English>
+</Key>
+
+
+<!-- part 5 Costia -->
+<Key ID="STR_DIALOG_Costia_C13">
+<English>Help! Get out me! Help!</English>
+</Key>
+
+
+</Container>
+</Package>
+</Project>

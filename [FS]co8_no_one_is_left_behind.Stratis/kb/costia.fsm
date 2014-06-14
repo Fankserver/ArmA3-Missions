@@ -1,0 +1,355 @@
+/*%FSM<COMPILE "C:\Program Files (x86)\Bohemia Interactive\Tools\FSM Editor Personal Edition\scriptedFSM.cfg, costia">*/
+/*%FSM<HEAD>*/
+/*
+item0[] = {"Init",0,250,16.084469,-318.286896,106.084412,-268.286560,0.000000,"Init"};
+item1[] = {"__",4,218,-131.543182,-179.885620,-41.543182,-129.885620,0.000000,"-"};
+item2[] = {"default_end",1,250,-135.497498,-80.368759,-45.497467,-30.368774,0.000000,"default end"};
+item3[] = {"",7,210,57.604782,-206.906906,65.604797,-198.906906,0.000000,""};
+item4[] = {"P3_1",4,218,162.532806,-269.606445,252.532806,-219.606369,1.000000,"P3_1"};
+item5[] = {"P3_2",4,218,159.237549,-205.678406,249.237549,-155.678329,1.000000,"P3_2"};
+item6[] = {"P7_1",4,218,159.896606,-143.727448,249.896606,-93.727425,1.000000,"P7_1"};
+item7[] = {"P7_2",4,218,159.896591,-84.412827,249.896591,-34.412750,1.000000,"P7_2"};
+item8[] = {"",7,210,56.286682,-96.186157,64.286697,-88.186172,0.000000,""};
+item9[] = {"C4_1",2,250,295.729919,-266.880432,385.729950,-216.880478,0.000000,"C4_1"};
+item10[] = {"C4_2",2,250,295.070862,-204.929596,385.070892,-154.929596,0.000000,"C4_2"};
+item11[] = {"C8_1",2,250,293.093719,-143.637726,383.093750,-93.637726,0.000000,"C8_1"};
+item12[] = {"C8_2",2,250,293.752777,-83.664001,383.752777,-33.664005,0.000000,"C8_2"};
+item13[] = {"true",8,218,411.063965,-233.927811,501.063965,-183.927811,0.000000,"true"};
+item14[] = {"C5",2,250,552.167358,-372.906464,642.167358,-322.906464,0.000000,"C5"};
+item15[] = {"true",8,218,412.136932,-117.934647,502.136932,-67.934647,0.000000,"true"};
+item16[] = {"C9",2,250,550.211975,-116.754807,640.211914,-66.754799,0.000000,"C9"};
+item17[] = {"C6",2,250,551.383667,-299.258667,641.383667,-249.258667,0.000000,"C6"};
+item18[] = {"C7",1,250,552.361328,-227.888153,642.361389,-177.888168,0.000000,"C7"};
+item19[] = {"wait",8,218,658.928223,-324.678314,748.928223,-274.678314,0.000000,"wait"};
+item20[] = {"wait",8,218,657.950562,-260.151733,747.950562,-210.151733,0.000000,"wait"};
+item21[] = {"C10",2,250,549.428284,-43.107002,639.428223,6.892998,0.000000,"C10"};
+item22[] = {"C11",1,250,550.405945,28.263512,640.406006,78.263496,0.000000,"C11"};
+item23[] = {"wait",8,218,656.972900,-68.526649,746.972900,-18.526649,0.000000,"wait"};
+item24[] = {"wait",8,218,655.995239,-4.000069,745.995239,45.999931,0.000000,"wait"};
+link0[] = {0,1};
+link1[] = {0,3};
+link2[] = {1,2};
+link3[] = {3,4};
+link4[] = {3,5};
+link5[] = {3,8};
+link6[] = {4,9};
+link7[] = {5,10};
+link8[] = {6,11};
+link9[] = {7,12};
+link10[] = {8,6};
+link11[] = {8,7};
+link12[] = {9,13};
+link13[] = {10,13};
+link14[] = {11,15};
+link15[] = {12,15};
+link16[] = {13,14};
+link17[] = {14,19};
+link18[] = {15,16};
+link19[] = {16,23};
+link20[] = {17,20};
+link21[] = {19,17};
+link22[] = {20,18};
+link23[] = {21,24};
+link24[] = {23,21};
+link25[] = {24,22};
+globals[] = {0.000000,0,0,0,0,640,480,1,27,6316128,1,-57.548470,694.016357,161.598495,-554.560669,934,890,1};
+window[] = {2,-1,-1,-1,-1,950,-1196,-156,160,3,952};
+*//*%FSM</HEAD>*/
+class FSM
+{
+  fsmName = "costia";
+  class States
+  {
+    /*%FSM<STATE "Init">*/
+    class Init
+    {
+      name = "Init";
+      init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "P3_1">*/
+        class P3_1
+        {
+          priority = 1.000000;
+          to="C4_1";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"(_sentenceId in [""P3_1""]);" \n
+           ""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/"_timeout = time + 3.0;"/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "P3_2">*/
+        class P3_2
+        {
+          priority = 1.000000;
+          to="C4_2";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"(_sentenceId in [""P3_2""]);" \n
+           ""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/"_timeout = time + 3.0;"/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "P7_1">*/
+        class P7_1
+        {
+          priority = 1.000000;
+          to="C8_1";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"(_sentenceId in [""P7_1""]);" \n
+           ""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/"_timeout = time + 3.0;"/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "P7_2">*/
+        class P7_2
+        {
+          priority = 1.000000;
+          to="C8_2";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"(_sentenceId in [""P7_2""]);" \n
+           ""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/"_timeout = time + 3.0;"/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "__">*/
+        class __
+        {
+          priority = 0.000000;
+          to="default_end";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "default_end">*/
+    class default_end
+    {
+      name = "default_end";
+      init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "C4_1">*/
+    class C4_1
+    {
+      name = "C4_1";
+      init = /*%FSM<STATEINIT""">*/"_this kbTell [_from, _topic, ""C4_1""];" \n
+       "_timeout = time + 3.0;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/"time > _timeout" \n
+       ""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "true">*/
+        class true
+        {
+          priority = 0.000000;
+          to="C5";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"time > _timeout" \n
+           ""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "C4_2">*/
+    class C4_2
+    {
+      name = "C4_2";
+      init = /*%FSM<STATEINIT""">*/"_this kbTell [_from, _topic, ""C4_2""];" \n
+       "_timeout = time + 3.0;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "true">*/
+        class true
+        {
+          priority = 0.000000;
+          to="C5";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"time > _timeout" \n
+           ""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "C8_1">*/
+    class C8_1
+    {
+      name = "C8_1";
+      init = /*%FSM<STATEINIT""">*/"_this kbTell [_from, _topic, ""C8_1""];" \n
+       "_timeout = time + 3.0;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/"time > _timeout" \n
+       ""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "true">*/
+        class true
+        {
+          priority = 0.000000;
+          to="C9";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"time > _timeout" \n
+           ""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "C8_2">*/
+    class C8_2
+    {
+      name = "C8_2";
+      init = /*%FSM<STATEINIT""">*/"_this kbTell [_from, _topic, ""C8_2""];" \n
+       "_timeout = time + 3.0;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/"time > _timeout" \n
+       ""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "true">*/
+        class true
+        {
+          priority = 0.000000;
+          to="C9";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"time > _timeout" \n
+           ""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "C5">*/
+    class C5
+    {
+      name = "C5";
+      init = /*%FSM<STATEINIT""">*/"_this kbTell [_from, _topic, ""C5""];" \n
+       "_timeout = time + 3.0;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "wait">*/
+        class wait
+        {
+          priority = 0.000000;
+          to="C6";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"time > _timeout"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "C9">*/
+    class C9
+    {
+      name = "C9";
+      init = /*%FSM<STATEINIT""">*/"_this kbTell [_from, _topic, ""C9""];" \n
+       "_timeout = time + 3.0;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "wait">*/
+        class wait
+        {
+          priority = 0.000000;
+          to="C10";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"time > _timeout"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "C6">*/
+    class C6
+    {
+      name = "C6";
+      init = /*%FSM<STATEINIT""">*/"_this kbTell [_from, _topic, ""C6""];" \n
+       "_timeout = time + 3.0;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "wait">*/
+        class wait
+        {
+          priority = 0.000000;
+          to="C7";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"time > _timeout"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "C7">*/
+    class C7
+    {
+      name = "C7";
+      init = /*%FSM<STATEINIT""">*/"_this kbTell [_from, _topic, ""C7""];" \n
+       ""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "C10">*/
+    class C10
+    {
+      name = "C10";
+      init = /*%FSM<STATEINIT""">*/"_this kbTell [_from, _topic, ""C10""];" \n
+       "_timeout = time + 3.0;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "wait">*/
+        class wait
+        {
+          priority = 0.000000;
+          to="C11";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"time > _timeout"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "C11">*/
+    class C11
+    {
+      name = "C11";
+      init = /*%FSM<STATEINIT""">*/"_this kbTell [_from, _topic, ""C11""];" \n
+       ""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+      };
+    };
+    /*%FSM</STATE>*/
+  };
+  initState="Init";
+  finalStates[] =
+  {
+    "default_end",
+    "C7",
+    "C11",
+  };
+};
+/*%FSM</COMPILE>*/
