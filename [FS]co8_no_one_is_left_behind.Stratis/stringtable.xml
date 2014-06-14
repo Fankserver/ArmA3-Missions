@@ -4,44 +4,6 @@
 <Package name="Mission">
 <Container name="obj2 dialog">
 
-<!--
-<Key ID="STR_DIALOG_Chatter_I_0">
-<English>Hey!</English>
-</Key>
-<Key ID="STR_DIALOG_Chatter_I_1">
-<English>So those bastards came after you too, eh?</English>
-</Key>
-<Key ID="STR_DIALOG_Chatter_I_2">
-<English>You 'think so'?</English>
-</Key>
-<Key ID="STR_DIALOG_Chatter_I_P_2_1">
-<English>Get lost.</English>
-</Key>
-<Key ID="STR_DIALOG_Chatter_I_P_3_1">
-<English>You're not much of a talker, are you?</English>
-</Key>
-
-
-<Key ID="STR_DIALOG_Chatter_P_0">
-<English>Uhh, hi.</English>
-</Key>
-<Key ID="STR_DIALOG_Chatter_P_1">
-<English>I... I think so.</English>
-</Key>
-<Key ID="STR_DIALOG_Chatter_P_2">
-<English>Shut up!</English>
-</Key>
-<Key ID="STR_DIALOG_Chatter_P_3">
-<English>Well... yeah.</English>
-</Key>
-<Key ID="STR_DIALOG_Chatter_P_2_1">
-<English>Fine!</English>
-</Key>
-<Key ID="STR_DIALOG_Chatter_P_3_1">
-<English>...</English>
-</Key>
--->
-
 <!-- part 1 Costia -->
 <Key ID="STR_DIALOG_Costia_C1">
 <English>Hey you! Over here!</English>

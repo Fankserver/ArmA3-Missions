@@ -6,15 +6,6 @@ if (isServer) then {call compile preprocessFile "scripts\locationlist.sqf";};
 
 _side = createCenter east;
 
-//precompile flightpath at mission start
-//path = compile preprocessFile "scripts\path.sqf";
-//path2 = compile preprocessFile "scripts\path2.sqf";
-
-//start mission flight to start location
-
-//rec = [] spawn path;
-//rec2 = [] spawn path2;
-
 //hide markers for UPS script
 "pat1" setMarkerPos [-(getMarkerPos "pat1" select 0),-(getMarkerPos "pat1" select 1)];
 "pat2" setMarkerPos [-(getMarkerPos "pat2" select 0),-(getMarkerPos "pat2" select 1)];
@@ -27,4 +18,12 @@ private ["_patTrigger"];
 _patTrigger = ["patTriggerObj0",1700,1,0,true,west,"PRESENT",false] call ATR_fnc_createTrigger;
 _patTrigger setTriggerStatements ["this","[] call ATR_fnc_patsNorth",""]; 
 
+//add obj2 topic to all player units
+private ["_players"];
+_players = [tl1,gl2,player1,player2];
+{
+     _x kbaddTopic ["costia", "kb\costia.bikb", "", compile preprocessFileLineNumbers "kb\player.sqf"];
+} forEach [tl1,gl2,player1,player2];
 
+//assign name to informant
+costia setidentity "costiaPapadopolous";

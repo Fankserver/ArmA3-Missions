@@ -80,7 +80,7 @@ class Mission
 	};
 	class Groups
 	{
-		items=45;
+		items=43;
 		class Item0
 		{
 			side="WEST";
@@ -1727,7 +1727,7 @@ class Mission
 				class Item0
 				{
 					position[]={2439.554,3.0457914,1143.0215};
-					id=85;
+					id=83;
 					type="GETIN";
 					class Effects
 					{
@@ -1867,7 +1867,7 @@ class Mission
 				class Item0
 				{
 					position[]={1954.6086,4.3999968,3584.7524};
-					id=86;
+					id=84;
 					type="GETIN";
 					class Effects
 					{
@@ -1977,8 +1977,8 @@ class Mission
 					leader=1;
 					rank="COLONEL";
 					skill=0.60000002;
-					text="Informant1";
-					init="this allowfleeing 0;this allowDamage false;";
+					text="costia";
+					init="this allowfleeing 0;this allowDamage false;costia kbAddtopic[""costia"", ""kb\costia.bikb"", ""kb\costia.fsm""];";
 				};
 			};
 		};
@@ -1998,7 +1998,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="Costia2";
-					init="this call X39_MedSys_fnc_InitializeUnit;X39_MedSys_var_Hearing_enable = false;  X39_MedSys_var_KnockOut_enableChatWhenKnockedOut = false;  X39_MedSys_var_Bleeding_BloodLossPerTickModificator =.25; ";
+					init="this call X39_MedSys_fnc_InitializeUnit;X39_MedSys_var_KnockOut_enableChatWhenKnockedOut = false;  X39_MedSys_var_Bleeding_BloodLossPerTickModificator =.25; ";
 				};
 			};
 		};
@@ -2815,73 +2815,33 @@ class Mission
 		};
 		class Item42
 		{
-			side="CIV";
-			class Vehicles
-			{
-				items=1;
-				class Item0
-				{
-					position[]={4286.2334,1.4764208,2657.3916};
-					azimut=-81.386398;
-					id=78;
-					side="CIV";
-					vehicle="C_man_1";
-					leader=1;
-					skill=0.60000002;
-					text="costia";
-					init="costia kbAddtopic[""costia"", ""kb\costia.bikb"", ""kb\costia.fsm""];";
-				};
-			};
-		};
-		class Item43
-		{
-			side="CIV";
-			class Vehicles
-			{
-				items=1;
-				class Item0
-				{
-					position[]={4278.4966,1.8283166,2657.6543};
-					azimut=-1701.92;
-					id=79;
-					side="CIV";
-					vehicle="C_man_1";
-					leader=1;
-					skill=0.60000002;
-					text="Klaus";
-					init="Klaus kbAddtopic[""chatter"", ""chatter.bikb"", ""Klaus.fsm"", {call compile preprocessFileLineNumbers ""Klaus.sqf""}];";
-				};
-			};
-		};
-		class Item44
-		{
 			side="WEST";
 			class Vehicles
 			{
 				items=2;
 				class Item0
 				{
-					position[]={4285.1782,2.1462109,2660.6548};
-					azimut=-180.938;
-					id=80;
-					side="WEST";
-					vehicle="B_Soldier_F";
-					leader=1;
-					skill=0.60000002;
-					text="Player2";
-					init="Player2 kbAddtopic[""costia"", ""kb\costia.bikb"", """", {call compile preprocessFileLineNumbers ""kb\player.sqf""}];";
-				};
-				class Item1
-				{
-					position[]={4282.9888,2.2973766,2661.4617};
-					azimut=-1604.99;
-					id=81;
+					position[]={4277.1226,2.4333558,2676.9739};
+					azimut=-1787.6674;
+					id=78;
 					side="WEST";
 					vehicle="B_diver_F";
 					player="PLAYER COMMANDER";
+					leader=1;
 					skill=0.60000002;
 					text="Player1";
-					init="[] call ATR_fnc_patsNorth;Player1 kbAddtopic[""costia"", ""kb\costia.bikb"", """", {call compile preprocessFileLineNumbers ""kb\player.sqf""}];";
+					init="[] call ATR_fnc_patsNorth;";
+				};
+				class Item1
+				{
+					position[]={4279.2534,2.4704063,2674.6577};
+					azimut=-180.938;
+					id=79;
+					side="WEST";
+					vehicle="B_Soldier_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="Player2";
 				};
 			};
 		};
@@ -2893,7 +2853,7 @@ class Mission
 		{
 			position[]={2041.9652,10.281359,2648.8423};
 			azimut=-1019.41;
-			id=82;
+			id=80;
 			side="EMPTY";
 			vehicle="B_MRAP_01_F";
 			leader=1;
@@ -2904,7 +2864,7 @@ class Mission
 		{
 			position[]={2047.8665,10.300754,2649.6338};
 			azimut=-951.55701;
-			id=83;
+			id=81;
 			side="EMPTY";
 			vehicle="FirePlace_burning_F";
 			leader=1;
@@ -2914,7 +2874,7 @@ class Mission
 		{
 			position[]={2051.9988,10.798616,2647.6333};
 			azimut=-914.10492;
-			id=84;
+			id=82;
 			side="EMPTY";
 			vehicle="Land_WoodPile_large_F";
 			leader=1;
@@ -2925,7 +2885,7 @@ class Mission
 			position[]={2439.554,3.0457914,1143.0215};
 			azimut=426.73999;
 			special="CARGO";
-			id=85;
+			id=83;
 			side="EMPTY";
 			vehicle="O_G_Offroad_01_F";
 			leader=1;
@@ -2937,7 +2897,7 @@ class Mission
 			position[]={1954.6086,4.3999968,3584.7524};
 			azimut=426.73999;
 			special="CARGO";
-			id=86;
+			id=84;
 			side="EMPTY";
 			vehicle="O_G_Offroad_01_F";
 			leader=1;
@@ -2948,7 +2908,7 @@ class Mission
 		{
 			position[]={4280.189,2.3091419,2677.5781};
 			azimut=-732.78894;
-			id=87;
+			id=85;
 			side="EMPTY";
 			vehicle="Land_HelipadEmpty_F";
 			leader=1;
@@ -2960,7 +2920,7 @@ class Mission
 			position[]={4375.0039,225.93471,3781.5703};
 			azimut=93.33757;
 			offsetY=1.5;
-			id=88;
+			id=86;
 			side="EMPTY";
 			vehicle="Land_HelipadEmpty_F";
 			isUAV=1;
@@ -2973,7 +2933,7 @@ class Mission
 		{
 			position[]={1971.5884,3.0215271,3535.7983};
 			azimut=-502.23901;
-			id=89;
+			id=87;
 			side="EMPTY";
 			vehicle="O_APC_Tracked_02_cannon_F";
 			leader=1;
@@ -2985,7 +2945,7 @@ class Mission
 		{
 			position[]={1989.9678,2.8279712,3536.6104};
 			azimut=-502.23901;
-			id=90;
+			id=88;
 			side="EMPTY";
 			vehicle="MetalBarrel_burning_F";
 			leader=1;
@@ -2996,7 +2956,7 @@ class Mission
 		{
 			position[]={1986.8676,2.8291986,3538.9722};
 			azimut=-540.61755;
-			id=91;
+			id=89;
 			side="EMPTY";
 			vehicle="Land_WaterTank_F";
 			leader=1;
@@ -3007,7 +2967,7 @@ class Mission
 		{
 			position[]={1972.2528,2.9486532,3534.9121};
 			azimut=-612.31085;
-			id=92;
+			id=90;
 			side="EMPTY";
 			vehicle="CamoNet_OPFOR_big_F";
 			leader=1;
@@ -3018,7 +2978,7 @@ class Mission
 		{
 			position[]={1983.7676,2.8176134,3539.0454};
 			azimut=-722.14801;
-			id=93;
+			id=91;
 			side="EMPTY";
 			vehicle="Box_East_Wps_F";
 			leader=1;
@@ -3030,7 +2990,7 @@ class Mission
 		{
 			position[]={1868.4244,13.968672,2741.5488};
 			azimut=-1089.5;
-			id=94;
+			id=92;
 			side="EMPTY";
 			vehicle="C_Van_01_transport_F";
 			leader=1;
@@ -3161,7 +3121,7 @@ class Mission
 		};
 		class Item16
 		{
-			position[]={4286.8638,2.577688,2666.4331};
+			position[]={4278.3667,2.4240685,2675.1362};
 			name="pwnArr";
 			type="Empty";
 		};
@@ -3363,7 +3323,7 @@ class Mission
 	};
 	class Sensors
 	{
-		items=16;
+		items=14;
 		class Item0
 		{
 			position[]={4623.2593,134.7735,4169.543};
@@ -3570,31 +3530,6 @@ class Mission
 			age="UNKNOWN";
 			expCond="(({_x in helistart} count [tl1,g2,g3,g4]) < 1) && (({_x in helistart2} count [gl2,g5,g7]) < 1)";
 			expActiv="helistart setcaptive false; helistart doMove (getMarkerPos ""heliCrash""); helistart forcespeed 200;helistart2 setcaptive false; helistart2 doMove (getMarkerPos ""heliCrash""); helistart2 forcespeed 200;";
-			class Effects
-			{
-			};
-		};
-		class Item14
-		{
-			position[]={4281.5547,1.8511914,2658.0547};
-			a=2;
-			b=2;
-			activationBy="ANY";
-			repeating=1;
-			interruptable=1;
-			age="UNKNOWN";
-			expActiv="costia kbTell [(group player1), ""costia"", ""C1""];costia kbTell [(group player1), ""costia"", ""C1_1""];costia kbTell [(group player1), ""costia"", ""C2""];costia kbTell [ player1, ""costia"", ""C3""];";
-			class Effects
-			{
-			};
-		};
-		class Item15
-		{
-			position[]={4278.4492,2.2869825,2661.0391};
-			interruptable=1;
-			age="UNKNOWN";
-			expCond="Horst kbwassaid [Klaus, ""chatter"",""I_0"",90];";
-			expActiv="hint ""Trigger"";";
 			class Effects
 			{
 			};

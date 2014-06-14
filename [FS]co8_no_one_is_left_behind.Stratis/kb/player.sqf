@@ -1,5 +1,4 @@
 BIS_convMenu = [];
-
 switch (_sentenceId) do {
 	case "C3": {
 		BIS_convMenu = BIS_convMenu + [["We need your information! You have to cooperate!", _topic, "P3_1", []]];

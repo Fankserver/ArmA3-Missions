@@ -30,7 +30,6 @@ class CfgFunctions {
 			class createGroup {};
 			class bonusCargo {};
 			class mike {};
-			class conversation {};
 			class patsNorth {};
 		};
 	};
@@ -50,3 +49,14 @@ class CfgSounds
 	};
 };
 
+class CfgIdentities
+{
+	class costiaPapadopolous
+	{
+		name = "Costia Papadopolous";
+		face = "Face58";
+		glasses = "None";
+		speaker = "Adam";
+		pitch = 0.9;
+	};
+};

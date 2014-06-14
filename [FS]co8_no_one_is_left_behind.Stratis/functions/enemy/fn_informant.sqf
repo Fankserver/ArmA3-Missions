@@ -7,9 +7,9 @@ _air = markerPos "obj3";
 _player = [_this,0, objNull,[objNull]] call BIS_fnc_param;
 _position = position _player;
 _group = createGroup Civilian;
-[informant1] joinsilent _group;
-informant1 setCombatMode "BLUE";
-informant1 allowFleeing 0;
+[costia] joinsilent _group;
+costia setCombatMode "BLUE";
+costia allowFleeing 0;
 
 private ["_wpGr1","_wpGr2","_wpGr3","_wpGr4","_wpGr5","_wpGr6"];
 _wpGr1 = _group addWaypoint [_position,0,1];
@@ -20,8 +20,12 @@ _wpGr1 setWaypointCompletionRadius 1;
 _wpGr1 setWaypointStatements ["true",""];
 
 //informant conversation
-[1] spawn ATR_fnc_conversation;
-sleep 15;
+costia kbTell [Player1, "costia", "C1"];
+sleep 5;
+costia kbTell [Player1, "costia", "C1_1"];
+sleep 5;
+costia kbTell [Player1, "costia", "C2"];
+
 _wpGr2 = _group addWaypoint [[4280,2670,0],0,2];
 _wpGr2 setWaypointBehaviour "CARELESS";
 _wpGr2 setWaypointSpeed "NORMAL";
@@ -29,14 +33,9 @@ _wpGr2 setWaypointType "MOVE";
 _wpGr2 setWaypointCompletionRadius 1;
 _wpGr2 setWaypointStatements ["true",""];
 
-[2] spawn ATR_fnc_conversation;
-sleep 5;
-//wait for player response
-informant1 addaction ["Stay calm man! We're here to protect you!",{costiaWait = 1;informant1 removeAction 0;},[],1,true,true,"","_this == player && player distance informant1 <= 4"];
-waituntil {sleep 0.1;costiaWait==1};
+costia kbTell [Player1, "costia", "C3"];
 
-[3] spawn ATR_fnc_conversation;
-sleep 12;
+waitUntil {costia kbWasSaid [player1,"costia","c7",999999]};
 
 _wpGr3 = _group addWaypoint [[4275,2674,0],0,3];
 _wpGr3 setWaypointBehaviour "CARELESS";
@@ -45,13 +44,7 @@ _wpGr3 setWaypointType "MOVE";
 _wpGr3 setWaypointCompletionRadius 1;
 _wpGr3 setWaypointStatements ["true",""];
 
-[4] spawn ATR_fnc_conversation;
-
-informant1 addaction ["Stay here! We'll call our support immediatly.",{costiaWait = 2;informant1 removeAction 1;},[],1,true,true,"","_this == player && player distance informant1 <= 4"];
-waituntil {sleep 0.1;costiaWait==2};
-
-[5] spawn ATR_fnc_conversation;
-sleep 19;
+waitUntil {costia kbWasSaid [player1,"costia","c11",999999]};
 
 _wpGr4 = _group addWaypoint [[4280,2670,0],0,4];
 _wpGr4 setWaypointBehaviour "CARELESS";
@@ -100,7 +93,7 @@ _wpEne3 setWaypointStatements ["true",""];
 
 //hiding of civilian unit
 private ["_distance"];
-waitUntil {sleep 1; _distance = (leader _enemy1) distance informant1;(_distance < 200) || (count units _enemy1 < 2)}; 
+waitUntil {sleep 1; _distance = (leader _enemy1) distance costia;(_distance < 200) || (count units _enemy1 < 2)}; 
 _wpGr5 = _group addWaypoint [[4291,2697,0],0,5];
 _wpGr5 setWaypointBehaviour "CARELESS";
 _wpGr5 setWaypointSpeed "FULL";
@@ -108,7 +101,7 @@ _wpGr5 setWaypointType "MOVE";
 _wpGr5 setWaypointCompletionRadius 1;
 _wpGr5 setWaypointStatements ["true",""];
 
-[6] spawn ATR_fnc_conversation;
+costia kbTell [Player1, "costia", "C12"];
 
 //spawn vehicles and assign in handles
 private ["_vehicles","_airhum","_airblue"];
@@ -121,7 +114,7 @@ hum = _airhum select 0;
 //create groups
 _airblue = createGroup West;
 [(_airhum select 2)] joinSilent _airblue;
-
+(crew hum select 0) allowDamage false;
 
 //waypoints for Hummingbird (extract)
 private ["_wpH1","_wpH2","_wpH3","_wpH4","_anzahl","_smoke"];
@@ -154,9 +147,9 @@ waitUntil {sleep 1; _distance = (hum distance (getMarkerPos "humArr"));_distance
 _smoke = "SmokeShellGreen" createVehicle [4280,2677,1];
 
 //exertion of civilian unit
-waitUntil {sleep 1, _distance = (hum distance informant1); _distance < 24}; 
+waitUntil {sleep 1, _distance = (hum distance costia); _distance < 24}; 
 
-[7] spawn ATR_fnc_conversation;
+costia kbTell [Player1, "costia", "C13"];
 
 //get civilian near landing zone
 _wpGr6 = _group addWaypoint [[(position hum select 0)+2,(position hum select 1)-2],0,6];
@@ -167,11 +160,11 @@ _wpGr6 setWaypointCompletionRadius 1;
 _wpGr6 setWaypointStatements ["true",""];
 
 //let civilian board the chopper
-waitUntil {sleep 0.1, _distance = (Informant1 distance hum); _distance < 7}; 
-Informant1 assignAsCargo hum;
-[Informant1] orderGetIn true;
+waitUntil {sleep 0.1, _distance = (costia distance hum); _distance < 7}; 
+costia assignAsCargo hum;
+[costia] orderGetIn true;
 
-waitUntil {sleep 1; Informant1 in Hum};
+waitUntil {sleep 1; costia in Hum};
 _wpH4 = (group Hum) addWaypoint [getMarkerPos "humEvac",0,4];
 _wpH4 setWaypointBehaviour "CARELESS";
 _wpH4 setWaypointSpeed "FULL";
