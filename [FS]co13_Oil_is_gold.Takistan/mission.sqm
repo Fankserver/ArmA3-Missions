@@ -1014,7 +1014,7 @@ class Mission
 					vehicle="Logic";
 					leader=1;
 					skill=0.44999999;
-					init="X39_MedSys_var_Hearing_enable = false;  X39_MedSys_var_KnockOut_enableChatWhenKnockedOut = false;  X39_MedSys_var_Bleeding_BloodLossPerTickModificator =.25; ";
+					init="X39_MedSys_var_KnockOut_enableChatWhenKnockedOut = false;  X39_MedSys_var_Bleeding_BloodLossPerTickModificator =.25; ";
 				};
 			};
 		};

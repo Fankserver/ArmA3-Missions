@@ -1,6 +1,6 @@
 author = Filip;
 onLoadName = Oil is gold;
-onLoadMission = Erreicht das Feldlager! 'murrica!;
+onLoadMission = Boom boom pahw;
 joinUnassigned = 1;
 respawn = "BASE";
 respawndelay = 10;
