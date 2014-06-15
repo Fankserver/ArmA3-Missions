@@ -1406,7 +1406,7 @@ class Mission
 					position[]={1901.7374,13.646935,2757.6035};
 					combatMode="RED";
 					formation="LINE";
-					speed="NORMAL";
+					speed="LIMITED";
 					combat="SAFE";
 					class Effects
 					{
@@ -1558,7 +1558,7 @@ class Mission
 					position[]={3251.0505,227.18643,2926.3872};
 					combatMode="RED";
 					formation="LINE";
-					speed="NORMAL";
+					speed="LIMITED";
 					combat="SAFE";
 					class Effects
 					{
@@ -1697,8 +1697,8 @@ class Mission
 				items=3;
 				class Item0
 				{
-					position[]={2416.8235,2.8111,1143.1017};
-					azimut=399.54401;
+					position[]={2847.4775,141.42746,1751.847};
+					azimut=241.81253;
 					special="CARGO";
 					id=47;
 					side="EAST";
@@ -1708,8 +1708,8 @@ class Mission
 				};
 				class Item1
 				{
-					position[]={2412.3938,1.9732941,1139.1721};
-					azimut=399.54401;
+					position[]={2853.0667,141.34889,1753.8042};
+					azimut=241.81253;
 					special="CARGO";
 					id=48;
 					side="EAST";
@@ -1718,8 +1718,8 @@ class Mission
 				};
 				class Item2
 				{
-					position[]={2408.1245,1.7491913,1144.0951};
-					azimut=399.54401;
+					position[]={2855.1519,140.64906,1747.6306};
+					azimut=241.81253;
 					special="CARGO";
 					id=49;
 					side="EAST";
@@ -1729,10 +1729,10 @@ class Mission
 			};
 			class Waypoints
 			{
-				items=11;
+				items=10;
 				class Item0
 				{
-					position[]={2439.554,3.0457914,1143.0215};
+					position[]={2838.7139,142.24667,1752.4879};
 					id=88;
 					type="GETIN";
 					class Effects
@@ -1742,7 +1742,7 @@ class Mission
 				};
 				class Item1
 				{
-					position[]={2460.4351,2.7905967,1158.021};
+					position[]={2811.2588,143.86163,1759.8113};
 					combatMode="RED";
 					speed="NORMAL";
 					combat="SAFE";
@@ -1753,7 +1753,8 @@ class Mission
 				};
 				class Item2
 				{
-					position[]={3128.3552,90.511818,1591.1035};
+					position[]={2793.5286,145.05414,1773.0786};
+					speed="FULL";
 					class Effects
 					{
 					};
@@ -1761,7 +1762,8 @@ class Mission
 				};
 				class Item3
 				{
-					position[]={2793.5286,145.05414,1773.0786};
+					position[]={3459.3323,142.95615,2636.623};
+					speed="LIMITED";
 					class Effects
 					{
 					};
@@ -1769,7 +1771,7 @@ class Mission
 				};
 				class Item4
 				{
-					position[]={3458.2742,143.30324,2641.9126};
+					position[]={2283.9531,55.633728,2175.7451};
 					class Effects
 					{
 					};
@@ -1777,7 +1779,7 @@ class Mission
 				};
 				class Item5
 				{
-					position[]={2283.9531,55.633728,2175.7451};
+					position[]={1992.8354,2.6125867,2710.2144};
 					class Effects
 					{
 					};
@@ -1785,7 +1787,7 @@ class Mission
 				};
 				class Item6
 				{
-					position[]={1992.8354,2.6125867,2710.2144};
+					position[]={2283.7493,55.553055,2202.958};
 					class Effects
 					{
 					};
@@ -1793,7 +1795,7 @@ class Mission
 				};
 				class Item7
 				{
-					position[]={2283.7493,55.553055,2202.958};
+					position[]={3450.6553,145.20894,2656.8696};
 					class Effects
 					{
 					};
@@ -1801,21 +1803,13 @@ class Mission
 				};
 				class Item8
 				{
-					position[]={3450.6553,145.20894,2656.8696};
-					class Effects
-					{
-					};
-					showWP="NEVER";
-				};
-				class Item9
-				{
 					position[]={4305.2412,215.41347,3743.9404};
 					class Effects
 					{
 					};
 					showWP="NEVER";
 				};
-				class Item10
+				class Item9
 				{
 					position[]={3503.7126,143.40468,2650.314};
 					type="CYCLE";
@@ -1885,7 +1879,7 @@ class Mission
 					position[]={2014.0457,7.7566967,3590.624};
 					combatMode="RED";
 					formation="LINE";
-					speed="NORMAL";
+					speed="LIMITED";
 					combat="SAFE";
 					class Effects
 					{
@@ -3107,8 +3101,8 @@ class Mission
 		};
 		class Item3
 		{
-			position[]={2439.554,3.0457914,1143.0215};
-			azimut=426.73999;
+			position[]={2838.7139,142.24667,1752.4879};
+			azimut=269.00848;
 			special="CARGO";
 			id=88;
 			side="EMPTY";
@@ -3582,7 +3576,7 @@ class Mission
 	};
 	class Sensors
 	{
-		items=15;
+		items=14;
 		class Item0
 		{
 			position[]={4623.2593,134.7735,4169.543};
@@ -3770,16 +3764,6 @@ class Mission
 		};
 		class Item12
 		{
-			position[]={548.66852,-118.33082,328.20117};
-			interruptable=1;
-			age="UNKNOWN";
-			expActiv="rec2=[helistart2,400,15] spawn BIS_fnc_Unitcapture";
-			class Effects
-			{
-			};
-		};
-		class Item13
-		{
 			position[]={2810.6689,123.24153,2452.2314};
 			a=300;
 			b=300;
@@ -3793,7 +3777,7 @@ class Mission
 			{
 			};
 		};
-		class Item14
+		class Item13
 		{
 			position[]={4279.4399,3.0957618,2685.104};
 			a=60;
