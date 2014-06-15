@@ -20,11 +20,11 @@ _wpGr1 setWaypointCompletionRadius 1;
 _wpGr1 setWaypointStatements ["true",""];
 
 //informant conversation
-costia kbTell [Player1, "costia", "C1"];
+costia kbTell [tl1, "costia", "C1"];
 sleep 5;
-costia kbTell [Player1, "costia", "C1_1"];
+costia kbTell [tl1, "costia", "C1_1"];
 sleep 5;
-costia kbTell [Player1, "costia", "C2"];
+costia kbTell [tl1, "costia", "C2"];
 
 _wpGr2 = _group addWaypoint [[4280,2670,0],0,2];
 _wpGr2 setWaypointBehaviour "CARELESS";
@@ -33,9 +33,9 @@ _wpGr2 setWaypointType "MOVE";
 _wpGr2 setWaypointCompletionRadius 1;
 _wpGr2 setWaypointStatements ["true",""];
 
-costia kbTell [Player1, "costia", "C3"];
+costia kbTell [tl1, "costia", "C3"];
 
-waitUntil {costia kbWasSaid [player1,"costia","c7",999999]};
+waitUntil {costia kbWasSaid [tl1,"costia","c7",999999]};
 
 _wpGr3 = _group addWaypoint [[4275,2674,0],0,3];
 _wpGr3 setWaypointBehaviour "CARELESS";
@@ -44,7 +44,7 @@ _wpGr3 setWaypointType "MOVE";
 _wpGr3 setWaypointCompletionRadius 1;
 _wpGr3 setWaypointStatements ["true",""];
 
-waitUntil {costia kbWasSaid [player1,"costia","c11",999999]};
+waitUntil {costia kbWasSaid [tl1,"costia","c11",999999]};
 
 _wpGr4 = _group addWaypoint [[4280,2670,0],0,4];
 _wpGr4 setWaypointBehaviour "CARELESS";
@@ -101,7 +101,7 @@ _wpGr5 setWaypointType "MOVE";
 _wpGr5 setWaypointCompletionRadius 1;
 _wpGr5 setWaypointStatements ["true",""];
 
-costia kbTell [Player1, "costia", "C12"];
+costia kbTell [tl1, "costia", "C12"];
 
 //spawn vehicles and assign in handles
 private ["_vehicles","_airhum","_airblue"];
@@ -149,7 +149,7 @@ _smoke = "SmokeShellGreen" createVehicle [4280,2677,1];
 //exertion of civilian unit
 waitUntil {sleep 1, _distance = (hum distance costia); _distance < 24}; 
 
-costia kbTell [Player1, "costia", "C13"];
+costia kbTell [tl1, "costia", "C13"];
 
 //get civilian near landing zone
 _wpGr6 = _group addWaypoint [[(position hum select 0)+2,(position hum select 1)-2],0,6];

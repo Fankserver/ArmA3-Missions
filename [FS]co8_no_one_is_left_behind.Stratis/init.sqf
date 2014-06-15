@@ -16,14 +16,12 @@ _side = createCenter east;
 //create Trigger for northern mission part
 private ["_patTrigger"];
 _patTrigger = ["patTriggerObj0",1700,1,0,true,west,"PRESENT",false] call ATR_fnc_createTrigger;
-_patTrigger setTriggerStatements ["this","[] call ATR_fnc_patsNorth",""]; 
+_patTrigger setTriggerStatements ["this","hint ""active"";[] call ATR_fnc_patsNorth",""]; 
 
 //add obj2 topic to all player units
-private ["_players"];
-_players = [tl1,gl2,player1,player2];
 {
      _x kbaddTopic ["costia", "kb\costia.bikb", "", compile preprocessFileLineNumbers "kb\player.sqf"];
-} forEach [tl1,gl2,player1,player2];
+} forEach [tl1,gl2,g2,g3,g4,g5,g7,playerCaptive];
 
 //assign name to informant
 costia setidentity "costiaPapadopolous";
