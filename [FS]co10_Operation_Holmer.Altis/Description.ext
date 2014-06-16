@@ -1,0 +1,17 @@
+respawn = "BASE";
+respawndelay = "5";
+
+author = "WrightStriker";
+OnLoadName = "Operation Holmer";
+OnLoadMission = "Töte Offizier Holmer";
+joinUnassigned = 0;
+disabledAI = 1;
+aiKills = 0;
+disableChannels[] = {0,1,2,3,4,5,6};
+
+class Header
+{
+gameType = COOP;
+minPlayers = 2;
+maxPlayers = 64;
+};
