@@ -79,7 +79,7 @@ class Mission
 		year=2014;
 		month=6;
 		day=19;
-		hour=19;
+		hour=18;
 		minute=0;
 		startFogDecay=0.013;
 		forecastFogDecay=0.013;
@@ -3253,7 +3253,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=46;
+		items=54;
 		class Item0
 		{
 			position[]={1989.0458,2.5754457,3518.7407};
@@ -3571,6 +3571,54 @@ class Mission
 		{
 			position[]={2774.6858,101.40359,3584.2856};
 			name="snipOverwatch";
+			type="Empty";
+		};
+		class Item46
+		{
+			position[]={3374.6128,214.89169,2996.1772};
+			name="northpat3_0";
+			type="Empty";
+		};
+		class Item47
+		{
+			position[]={2965.5645,156.2897,3350.4785};
+			name="northpat3_1";
+			type="Empty";
+		};
+		class Item48
+		{
+			position[]={2864.8977,43.562477,3719.9951};
+			name="northpat3_2";
+			type="Empty";
+		};
+		class Item49
+		{
+			position[]={3407.9546,84.684967,3568.7808};
+			name="northpat3_3";
+			type="Empty";
+		};
+		class Item50
+		{
+			position[]={4155.5972,157.29991,3289.5991};
+			name="northpat4_0";
+			type="Empty";
+		};
+		class Item51
+		{
+			position[]={4442.3843,105.00088,2870.1411};
+			name="northpat4_1";
+			type="Empty";
+		};
+		class Item52
+		{
+			position[]={4612.835,182.10785,3413.4126};
+			name="northpat4_2";
+			type="Empty";
+		};
+		class Item53
+		{
+			position[]={4276.2192,214.61034,3643.5215};
+			name="northpat4_3";
 			type="Empty";
 		};
 	};

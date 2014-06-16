@@ -83,3 +83,71 @@ _northsnip1 setCombatMode "RED";
 _northsnip1 setFormDir 220;
 
 
+//create patrol 3 north
+private ["_northpat3","_northpatsol9","_northpatsol10","_northpatsol11","_northpat3wp1","_northpat3wp2","_northpat3wp3","_northpat3wp4"];
+
+_northpat3 = createGroup EAST;
+_northpatsol9 = "O_Soldier_TL_F" createUnit [getMarkerPos "northpat3_0", _northpat3,"",0.6,"SERGEANT"];
+_northpatsol10 = "O_Soldier_F" createUnit [getMarkerPos "northpat3_0", _northpat3,"",0.5,"PRIVATE"];
+_northpatsol11 = "O_medic_F" createUnit [getMarkerPos "northpat3_0", _northpat3,"",0.5,"PRIVATE"];
+
+//remove Nightvision
+_northpatsol9 addEventHandler ['Killed',{(_this select 0) unassignItem 'NVGoggles_OPFOR';  (_this select 0) removeItem 'NVGoggles_OPFOR';}];
+_northpatsol10 addEventHandler ['Killed',{(_this select 0) unassignItem 'NVGoggles_OPFOR';  (_this select 0) removeItem 'NVGoggles_OPFOR';}];
+_northpatsol11 addEventHandler ['Killed',{(_this select 0) unassignItem 'NVGoggles_OPFOR';  (_this select 0) removeItem 'NVGoggles_OPFOR';}];
+
+_northpat3 setCombatMode "YELLOW";
+_northpat3 setBehaviour "SAFE";
+_northpat3 setSpeedMode "LIMITED";
+
+_northpat3wp1 = _northpat3 addWaypoint [getMarkerPos "northpat3_1",0,1];
+_northpat3wp1 setWaypointType "MOVE";
+_northpat3wp1 setWaypointTimeout [5,8,12];
+
+_northpat3wp2 = _northpat3 addWaypoint [getMarkerPos "northpat3_2",0,2];
+_northpat3wp2 setWaypointType "MOVE";
+_northpat3wp2 setWaypointTimeout [5,8,12];
+
+_northpat3wp3 = _northpat3 addWaypoint [getMarkerPos "northpat3_1",0,3];
+_northpat3wp3 setWaypointType "MOVE";
+_northpat3wp3 setWaypointTimeout [5,8,12];
+
+//set return waypoint and cycle
+_northpat3wp4 = _northpat3 addWaypoint [[(getMarkerPos "northpat3_0" select 0) +2,(getMarkerPos "northpat3_0" select 1)+2,0],0,4];
+_northpat3wp4 setWaypointType "CYCLE";
+_northpat3wp4 setWaypointTimeout [5,8,12];
+
+
+//create patrol 4 north
+private ["_northpat4","_northpatsol12","_northpatsol13","_northpatsol14","_northpat4wp1","_northpat4wp2","_northpat4wp3","_northpat4wp4"];
+
+_northpat4 = createGroup EAST;
+_northpatsol12 = "O_Soldier_TL_F" createUnit [getMarkerPos "northpat4_0", _northpat4,"",0.6,"SERGEANT"];
+_northpatsol13 = "O_Soldier_F" createUnit [getMarkerPos "northpat4_0", _northpat4,"",0.5,"PRIVATE"];
+_northpatsol14 = "O_medic_F" createUnit [getMarkerPos "northpat4_0", _northpat4,"",0.5,"PRIVATE"];
+
+//remove Nightvision
+_northpatsol12 addEventHandler ['Killed',{(_this select 0) unassignItem 'NVGoggles_OPFOR';  (_this select 0) removeItem 'NVGoggles_OPFOR';}];
+_northpatsol13 addEventHandler ['Killed',{(_this select 0) unassignItem 'NVGoggles_OPFOR';  (_this select 0) removeItem 'NVGoggles_OPFOR';}];
+_northpatsol14 addEventHandler ['Killed',{(_this select 0) unassignItem 'NVGoggles_OPFOR';  (_this select 0) removeItem 'NVGoggles_OPFOR';}];
+
+_northpat4 setCombatMode "YELLOW";
+_northpat4 setBehaviour "SAFE";
+_northpat4 setSpeedMode "LIMITED";
+
+_northpat4wp1 = _northpat4 addWaypoint [getMarkerPos "northpat4_1",0,1];
+_northpat4wp1 setWaypointType "MOVE";
+_northpat4wp1 setWaypointTimeout [5,8,12];
+
+_northpat4wp2 = _northpat4 addWaypoint [getMarkerPos "northpat4_2",0,2];
+_northpat4wp2 setWaypointType "MOVE";
+_northpat4wp2 setWaypointTimeout [5,8,12];
+         
+_northpat4wp3 = _northpat4 addWaypoint [getMarkerPos "northpat4_1",0,3];
+_northpat4wp3 setWaypointType "MOVE";
+_northpat4wp3 setWaypointTimeout [5,8,12];
+
+//set return waypoint and cycle
+_northpat4wp4 = _northpat4 addWaypoint [[(getMarkerPos "northpat4_0" select 0) +2,(getMarkerPos "northpat4_0" select 1)+2,0],0,4];
+_northpat4wp4 setWaypointType "CYCLE";
+_northpat4wp4 setWaypointTimeout [5,8,12];

@@ -10,7 +10,7 @@ _index = [_this,5, 1,[0]] call BIS_fnc_param;
 //set waypoint for group
 
 _wp = _group addwaypoint [_position,0,_index];
-_wp setWaypointSpeed _behaviour;
-_wp setWaypointBehaviour _speed;
+_wp setWaypointSpeed _speed;
+_wp setWaypointBehaviour _behaviour;
 _wp setWaypointType _type;
 _wp
