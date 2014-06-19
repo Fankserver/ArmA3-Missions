@@ -1,0 +1,33 @@
+respawnTemplatesWest[] = {"MenuPosition"};
+respawn = 3;
+respawnDelay = 5;
+respawnOnStart = 0;
+
+
+onLoadName = "Hunt Alpha Golf"; 
+loadScreen = "";
+author="Atrax";
+onLoadMission = "Catch him if you can... you better should!";
+
+
+
+
+
+class Header {
+	gameType = COOP;
+	minPlayers = 1;
+	maxPlayers = 8;
+};
+
+class CfgFunctions {
+	class ATR {
+		class enemy {
+			class ups {};
+			class createWaypoint {};
+			class createTrigger {};
+			class zaros {};
+		};
+	};
+};
+
+
