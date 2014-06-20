@@ -26,6 +26,7 @@ class CfgFunctions {
 			class createWaypoint {};
 			class createTrigger {};
 			class zaros {};
+			class zarosUnits {};
 		};
 	};
 };

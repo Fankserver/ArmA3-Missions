@@ -355,18 +355,18 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={9232.2217,109.87667,11479.264};
-					azimut=-208.85699;
+					position[]={9228.5684,109.7851,11489.184};
+					azimut=-585.97021;
 					special="NONE";
 					id=12;
 					side="WEST";
-					vehicle="B_Soldier_SL_F";
+					vehicle="B_soldier_AT_F";
 					player="PLAYER COMMANDER";
 					leader=1;
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="Klaus";
-					init="this call X39_MedSys_fnc_InitializeUnit;this allowDamage false;this setCaptive true";
+					init="this call X39_MedSys_fnc_InitializeUnit;this allowDamage false;this setcaptive true;";
 					description="Squad leader";
 					syncId=10;
 					synchronizations[]={11,12};
@@ -539,7 +539,7 @@ class Mission
 					vehicle="LocationBase_F";
 					leader=1;
 					skill=0.41143483;
-					init="X39_MedSys_var_Hearing_enable = false;[] call ATR_fnc_zaros;";
+					init="X39_MedSys_var_Hearing_enable = false";
 				};
 			};
 		};
@@ -612,7 +612,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=28;
+		items=29;
 		class Item0
 		{
 			position[]={9517.0313,13.749484,11533.065};
@@ -692,7 +692,7 @@ class Mission
 		};
 		class Item10
 		{
-			position[]={9348.542,15.390642,11883.747};
+			position[]={9282.0078,15.45435,11905.355};
 			name="obj1t1Wp3";
 			type="Empty";
 		};
@@ -704,7 +704,7 @@ class Mission
 		};
 		class Item12
 		{
-			position[]={9118.3154,21.533772,12087.165};
+			position[]={9059.8105,25.854485,12092.713};
 			name="obj1t2Wp2";
 			type="Empty";
 		};
@@ -799,6 +799,12 @@ class Mission
 			name="obj1Hill3";
 			type="Empty";
 			angle=-360.33765;
+		};
+		class Item28
+		{
+			position[]={9137.7998,16.970543,11885.196};
+			name="obj1TriggerUnits";
+			type="Empty";
 		};
 	};
 	class Sensors
