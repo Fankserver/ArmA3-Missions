@@ -91,7 +91,7 @@ class Mission
 				};
 				class Item1
 				{
-					position[]={4148.8892,25.445721,11612.813};
+					position[]={4148.8892,25.445738,11612.813};
 					azimut=-182.547;
 					special="NONE";
 					id=1;
@@ -3491,9 +3491,9 @@ class Mission
 		{
 			position[]={4148.6011,26.05018,11563.357};
 			activationBy="WEST";
-			timeoutMin=10;
-			timeoutMid=10;
-			timeoutMax=10;
+			timeoutMin=600;
+			timeoutMid=600;
+			timeoutMax=600;
 			age="UNKNOWN";
 			class Effects
 			{
