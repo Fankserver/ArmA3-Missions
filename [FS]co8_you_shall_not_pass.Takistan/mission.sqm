@@ -91,47 +91,47 @@ class Mission
 				};
 				class Item1
 				{
-					position[]={4151.9014,25.480883,11593.836};
+					position[]={4148.8892,25.445721,11612.813};
 					azimut=-182.547;
 					special="NONE";
 					id=1;
 					side="WEST";
 					vehicle="B_Truck_01_box_F";
-					skill=0.60000002;
+					skill=0.72590029;
 				};
 				class Item2
 				{
-					position[]={4148.3818,25.476843,11616.682};
+					position[]={4145.3691,25.715244,11643.791};
 					azimut=-182.65199;
 					special="NONE";
 					id=2;
 					side="WEST";
 					vehicle="B_Truck_01_ammo_F";
-					skill=0.60000002;
+					skill=0.75925285;
 				};
 				class Item3
 				{
-					position[]={4144.8086,25.714378,11644.37};
+					position[]={4138.7847,25.29763,11686.539};
 					azimut=175.95;
 					special="NONE";
 					id=3;
 					side="WEST";
 					vehicle="B_Truck_01_medical_F";
-					skill=0.60000002;
+					skill=0.82119238;
 				};
 				class Item4
 				{
-					position[]={4141.1211,25.508547,11671.62};
+					position[]={4134.7959,25.137941,11719.814};
 					azimut=179.30299;
 					special="NONE";
 					id=4;
 					side="WEST";
 					vehicle="B_Truck_01_fuel_F";
-					skill=0.60000002;
+					skill=0.74019396;
 				};
 				class Item5
 				{
-					position[]={4152.1611,25.97716,11569.204};
+					position[]={4150.6265,25.621805,11582.91};
 					azimut=175.526;
 					special="NONE";
 					id=5;
@@ -141,13 +141,13 @@ class Mission
 				};
 				class Item6
 				{
-					position[]={4138.3193,25.182779,11696.894};
+					position[]={4131.2847,25.03487,11753.184};
 					azimut=-182.547;
 					special="NONE";
 					id=6;
 					side="WEST";
 					vehicle="B_Truck_01_box_F";
-					skill=0.60000002;
+					skill=0.70684147;
 					description="Talibanführer";
 				};
 			};
@@ -176,6 +176,7 @@ class Mission
 				class Item2
 				{
 					position[]={3811.2449,43.223003,10496.291};
+					speed="LIMITED";
 					class Effects
 					{
 					};
@@ -191,7 +192,7 @@ class Mission
 				};
 				class Item4
 				{
-					position[]={3082.8931,60.838337,9955.6953};
+					position[]={3084.6912,60.74715,9955.0127};
 					class Effects
 					{
 					};
@@ -199,7 +200,7 @@ class Mission
 				};
 				class Item5
 				{
-					position[]={3084.9451,60.439999,9933.8398};
+					position[]={3085.6897,60.439999,9934.9795};
 					class Effects
 					{
 					};
@@ -207,7 +208,7 @@ class Mission
 				};
 				class Item6
 				{
-					position[]={3099.7764,60.439999,9865.7441};
+					position[]={3102.4302,60.439999,9857.96};
 					class Effects
 					{
 					};
@@ -1279,7 +1280,7 @@ class Mission
 				items=3;
 				class Item0
 				{
-					position[]={3686.2964,93.816254,10341.35};
+					position[]={3884.9763,112.36424,10225.543};
 					combatMode="BLUE";
 					speed="FULL";
 					combat="CARELESS";
@@ -3490,9 +3491,9 @@ class Mission
 		{
 			position[]={4148.6011,26.05018,11563.357};
 			activationBy="WEST";
-			timeoutMin=660;
-			timeoutMid=660;
-			timeoutMax=660;
+			timeoutMin=10;
+			timeoutMid=10;
+			timeoutMax=10;
 			age="UNKNOWN";
 			class Effects
 			{
