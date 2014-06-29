@@ -3010,7 +3010,7 @@ class Mission
 			vehicle="HLC_AK_ammobox";
 			leader=1;
 			skill=0.60000002;
-			init="clearweaponcargo this;    clearmagazinecargo this;    clearitemcargo this;      this addmagazinecargo [""hlc_30Rnd_545x39_EP_AK"",10];    this addmagazinecargo [""PG7V_F"",4];    this addmagazinecargo [""hlc_30Rnd_762x39_t_ak"",20];    this addmagazinecargo [""DemoCharge_Remote_Mag"",5];  this addmagazinecargo[""PG7V_F"",3];     this additemcargoGlobal [""x39_bandage"",5];    this additemcargoGlobal [""x39_morphine"",6];    this additemcargoGlobal [""x39_bloodbag"",5];    this additemcargoGlobal [""x39_epinephrine"",5];    this additemcargoGlobal [""x39_medikit5"",5];";
+			init="clearweaponcargo this;    clearmagazinecargo this;    clearitemcargo this;      this addmagazinecargo [""hlc_30Rnd_545x39_EP_AK"",10];    this addmagazinecargo [""PG7V_F"",4];    this addmagazinecargo [""hlc_30Rnd_762x39_t_ak"",20];    this addmagazinecargo [""DemoCharge_Remote_Mag"",5];  this addmagazinecargo[""PG7V_F"",3];     this additemcargoGlobal [""x39_bandage"",5];    this additemcargoGlobal [""x39_morphine"",6];    this additemcargoGlobal [""x39_bloodbag"",5];    this additemcargoGlobal [""x39_epinephrine"",5];    this additemcargoGlobal [""x39_medikit5"",5];this addmagazinecargo [""hlc_75rnd_762x39_m_rpk"",10];";
 			description="Weapon";
 		};
 		class Item5
