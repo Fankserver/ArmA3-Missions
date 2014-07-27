@@ -1,0 +1,22 @@
+class Header
+{
+gameType = COOP;
+minPlayers = 2;
+maxPlayers = 8;
+};
+
+
+author = Malwit;
+onLoadName = AGM_Test;
+onLoadMission = Testen;
+
+
+joinUnassigned = 1;
+respawn = "BASE" ;
+respawndelay = 0;
+respawnDialog = true;
+respawnVehicleDelay = 10;
+
+disabledAI = true;
+disableChannels[] = {0,2,3,4,5};
+

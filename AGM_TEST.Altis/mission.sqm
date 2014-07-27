@@ -25,7 +25,7 @@ class Mission
 		"A3_Armor_F_Slammer",
 		"A3_armor_f_beta_APC_Tracked_02",
 		"A3_Armor_F_AMV",
-		"jsrs2_amv7_marshal"
+		
 	};
 	addOnsAuto[]=
 	{
