@@ -56,13 +56,13 @@ class Mission
 	};
 	class Groups
 	{
-		items=59;
+		items=53;
 		class Item0
 		{
 			side="WEST";
 			class Vehicles
 			{
-				items=1;
+				items=4;
 				class Item0
 				{
 					position[]={3969.6443,16.606194,3159.9263};
@@ -75,6 +75,46 @@ class Mission
 					rank="SERGEANT";
 					skill=0.5;
 					init="comment ""Exported from Arsenal by Filip"";    comment ""Remove existing items"";  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;    comment ""Add containers"";  this forceAddUniform ""BWA3_Uniform_Tropen"";  for ""_i"" from 1 to 15 do {this addItemToUniform ""AGM_Bandage"";};  this addItemToUniform ""BWA3_optic_NSA80"";  this addItemToUniform ""BWA3_15Rnd_9x19_P8"";  this addVest ""BWA3_Vest_Leader_Tropen"";  for ""_i"" from 1 to 5 do {this addItemToVest ""AGM_Bandage"";};  for ""_i"" from 1 to 2 do {this addItemToVest ""AGM_Morphine"";};  for ""_i"" from 1 to 2 do {this addItemToVest ""AGM_Epipen"";};  this addItemToVest ""AGM_Bloodbag"";  for ""_i"" from 1 to 5 do {this addItemToVest ""BWA3_DM25"";};  for ""_i"" from 1 to 3 do {this addItemToVest ""BWA3_DM32_Orange"";};  for ""_i"" from 1 to 3 do {this addItemToVest ""BWA3_DM51A1"";};  for ""_i"" from 1 to 3 do {this addItemToVest ""BWA3_30Rnd_556x45_G36"";};  this addBackpack ""B_Carryall_cbr"";  for ""_i"" from 1 to 5 do {this addItemToBackpack ""AGM_Bandage"";};  for ""_i"" from 1 to 2 do {this addItemToBackpack ""AGM_Morphine"";};  for ""_i"" from 1 to 2 do {this addItemToBackpack ""AGM_Epipen"";};  this addItemToBackpack ""AGM_EarBuds"";  for ""_i"" from 1 to 3 do {this addItemToBackpack ""BWA3_DM25"";};  for ""_i"" from 1 to 15 do {this addItemToBackpack ""BWA3_30Rnd_556x45_G36"";};  this addHeadgear ""BWA3_M92_Tropen"";    comment ""Add weapons"";  this addWeapon ""BWA3_G36"";  this addPrimaryWeaponItem ""acc_pointer_IR"";  this addPrimaryWeaponItem ""BWA3_optic_ZO4x30"";  this addWeapon ""BWA3_P8"";    comment ""Add items"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc148jem_1"";  this linkItem ""BWA3_ItemNaviPad"";  this linkItem ""BWA3_Vector"";    comment ""Set identity"";  this setFace ""WhiteHead_16"";  this setSpeaker ""Male01GRE"";  [this,""Curator""] call bis_fnc_setUnitInsignia;  ";
+					description="Truppfuehrer";
+				};
+				class Item1
+				{
+					position[]={3971.9001,16.558098,3158.3674};
+					azimut=39.930199;
+					id=1;
+					side="WEST";
+					vehicle="BWA3_Grenadier_Tropen";
+					player="PLAY CDG";
+					skill=0.40000001;
+					text="S";
+					init="comment ""Exported from Arsenal by Filip"";    comment ""Remove existing items"";  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;    comment ""Add containers"";  this forceAddUniform ""BWA3_Uniform_Tropen"";  for ""_i"" from 1 to 15 do {this addItemToUniform ""AGM_Bandage"";};  this addItemToUniform ""BWA3_optic_NSA80"";  this addItemToUniform ""BWA3_15Rnd_9x19_P8"";  this addVest ""BWA3_Vest_Rifleman1_Tropen"";  for ""_i"" from 1 to 5 do {this addItemToVest ""AGM_Bandage"";};  for ""_i"" from 1 to 2 do {this addItemToVest ""AGM_Morphine"";};  for ""_i"" from 1 to 2 do {this addItemToVest ""AGM_Epipen"";};  this addItemToVest ""AGM_Bloodbag"";  for ""_i"" from 1 to 5 do {this addItemToVest ""BWA3_DM25"";};  for ""_i"" from 1 to 3 do {this addItemToVest ""BWA3_DM32_Orange"";};  for ""_i"" from 1 to 3 do {this addItemToVest ""BWA3_DM51A1"";};  for ""_i"" from 1 to 6 do {this addItemToVest ""BWA3_30Rnd_556x45_G36"";};  this addBackpack ""B_Carryall_cbr"";  for ""_i"" from 1 to 5 do {this addItemToBackpack ""AGM_Bandage"";};  for ""_i"" from 1 to 2 do {this addItemToBackpack ""AGM_Morphine"";};  for ""_i"" from 1 to 2 do {this addItemToBackpack ""AGM_Epipen"";};  this addItemToBackpack ""AGM_EarBuds"";  for ""_i"" from 1 to 15 do {this addItemToBackpack ""BWA3_30Rnd_556x45_G36"";};  for ""_i"" from 1 to 3 do {this addItemToBackpack ""BWA3_DM25"";};  this addHeadgear ""BWA3_M92_Tropen"";    comment ""Add weapons"";  this addWeapon ""BWA3_G36"";  this addPrimaryWeaponItem ""acc_pointer_IR"";  this addPrimaryWeaponItem ""BWA3_optic_ZO4x30"";  this addWeapon ""BWA3_P8"";    comment ""Add items"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc148jem_1"";  this linkItem ""BWA3_ItemNaviPad"";  this linkItem ""BWA3_Vector"";    comment ""Set identity"";  this setFace ""WhiteHead_16"";  this setSpeaker ""Male01GRE"";  [this,""Curator""] call bis_fnc_setUnitInsignia;  ";
+					description="Schuetze";
+				};
+				class Item2
+				{
+					position[]={3971.104,16.574875,3158.9077};
+					azimut=39.930199;
+					id=2;
+					side="WEST";
+					vehicle="BWA3_Grenadier_Tropen";
+					player="PLAY CDG";
+					skill=0.40000001;
+					text="MG";
+					init="comment ""Exported from Arsenal by Filip"";    comment ""Remove existing items"";  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;    comment ""Add containers"";  this forceAddUniform ""BWA3_Uniform_Tropen"";  for ""_i"" from 1 to 15 do {this addItemToUniform ""AGM_Bandage"";};  this addItemToUniform ""BWA3_optic_NSA80"";  this addItemToUniform ""BWA3_15Rnd_9x19_P8"";  this addVest ""BWA3_Vest_Autorifleman_Tropen"";  for ""_i"" from 1 to 5 do {this addItemToVest ""AGM_Bandage"";};  for ""_i"" from 1 to 2 do {this addItemToVest ""AGM_Morphine"";};  for ""_i"" from 1 to 2 do {this addItemToVest ""AGM_Epipen"";};  this addItemToVest ""AGM_Bloodbag"";  for ""_i"" from 1 to 5 do {this addItemToVest ""BWA3_DM25"";};  for ""_i"" from 1 to 3 do {this addItemToVest ""BWA3_DM32_Orange"";};  for ""_i"" from 1 to 3 do {this addItemToVest ""BWA3_DM51A1"";};  this addItemToVest ""BWA3_120Rnd_762x51"";  this addBackpack ""B_Carryall_cbr"";  for ""_i"" from 1 to 5 do {this addItemToBackpack ""AGM_Bandage"";};  for ""_i"" from 1 to 2 do {this addItemToBackpack ""AGM_Morphine"";};  for ""_i"" from 1 to 2 do {this addItemToBackpack ""AGM_Epipen"";};  this addItemToBackpack ""AGM_EarBuds"";  for ""_i"" from 1 to 3 do {this addItemToBackpack ""BWA3_DM25"";};  for ""_i"" from 1 to 7 do {this addItemToBackpack ""BWA3_120Rnd_762x51"";};  this addHeadgear ""BWA3_M92_Tropen"";    comment ""Add weapons"";  this addWeapon ""BWA3_MG5_Tan"";  this addPrimaryWeaponItem ""acc_pointer_IR"";  this addPrimaryWeaponItem ""BWA3_optic_ZO4x30"";  this addWeapon ""BWA3_P8"";    comment ""Add items"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc148jem_1"";  this linkItem ""BWA3_ItemNaviPad"";  this linkItem ""BWA3_Vector"";    comment ""Set identity"";  this setFace ""WhiteHead_16"";  this setSpeaker ""Male01GRE"";  [this,""Curator""] call bis_fnc_setUnitInsignia;  ";
+					description="MG-Schuetze";
+				};
+				class Item3
+				{
+					position[]={3970.2698,16.591801,3159.4412};
+					azimut=39.930199;
+					id=3;
+					side="WEST";
+					vehicle="BWA3_Grenadier_Tropen";
+					player="PLAY CDG";
+					skill=0.40000001;
+					text="Sani";
+					init="comment ""Exported from Arsenal by Filip"";    comment ""Remove existing items"";  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;    comment ""Add containers"";  this forceAddUniform ""BWA3_Uniform_Tropen"";  for ""_i"" from 1 to 15 do {this addItemToUniform ""AGM_Bandage"";};  this addItemToUniform ""BWA3_optic_NSA80"";  this addItemToUniform ""BWA3_15Rnd_9x19_P8"";  this addVest ""BWA3_Vest_Medic_Tropen"";  for ""_i"" from 1 to 18 do {this addItemToVest ""AGM_Bandage"";};  for ""_i"" from 1 to 2 do {this addItemToVest ""AGM_Morphine"";};  for ""_i"" from 1 to 2 do {this addItemToVest ""AGM_Epipen"";};  this addItemToVest ""AGM_Bloodbag"";  for ""_i"" from 1 to 5 do {this addItemToVest ""BWA3_DM25"";};  for ""_i"" from 1 to 3 do {this addItemToVest ""BWA3_DM32_Orange"";};  for ""_i"" from 1 to 3 do {this addItemToVest ""BWA3_DM51A1"";};  for ""_i"" from 1 to 3 do {this addItemToVest ""BWA3_30Rnd_556x45_G36"";};  this addBackpack ""B_Carryall_cbr"";  for ""_i"" from 1 to 27 do {this addItemToBackpack ""AGM_Bandage"";};  for ""_i"" from 1 to 10 do {this addItemToBackpack ""AGM_Morphine"";};  for ""_i"" from 1 to 10 do {this addItemToBackpack ""AGM_Epipen"";};  for ""_i"" from 1 to 5 do {this addItemToBackpack ""AGM_Bloodbag"";};  this addItemToBackpack ""AGM_EarBuds"";  for ""_i"" from 1 to 10 do {this addItemToBackpack ""BWA3_DM25"";};  for ""_i"" from 1 to 10 do {this addItemToBackpack ""BWA3_30Rnd_556x45_G36"";};  this addHeadgear ""BWA3_M92_Tropen"";    comment ""Add weapons"";  this addWeapon ""BWA3_G36"";  this addPrimaryWeaponItem ""acc_pointer_IR"";  this addPrimaryWeaponItem ""BWA3_optic_ZO4x30"";  this addWeapon ""BWA3_P8"";    comment ""Add items"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc148jem_1"";  this linkItem ""BWA3_ItemNaviPad"";  this linkItem ""BWA3_Vector"";    comment ""Set identity"";  this setFace ""WhiteHead_16"";  this setSpeaker ""Male01GRE"";  [this,""Curator""] call bis_fnc_setUnitInsignia;  ";
+					description="Sanitaeter";
 				};
 			};
 		};
@@ -83,138 +123,12 @@ class Mission
 			side="WEST";
 			class Vehicles
 			{
-				items=1;
-				class Item0
-				{
-					position[]={3970.2698,16.591801,3159.4412};
-					azimut=39.930199;
-					id=1;
-					side="WEST";
-					vehicle="BWA3_Grenadier_Tropen";
-					player="PLAY CDG";
-					leader=1;
-					skill=0.40000001;
-					text="Sani";
-					init="comment ""Exported from Arsenal by Filip"";    comment ""Remove existing items"";  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;    comment ""Add containers"";  this forceAddUniform ""BWA3_Uniform_Tropen"";  for ""_i"" from 1 to 15 do {this addItemToUniform ""AGM_Bandage"";};  this addItemToUniform ""BWA3_optic_NSA80"";  this addItemToUniform ""BWA3_15Rnd_9x19_P8"";  this addVest ""BWA3_Vest_Medic_Tropen"";  for ""_i"" from 1 to 18 do {this addItemToVest ""AGM_Bandage"";};  for ""_i"" from 1 to 2 do {this addItemToVest ""AGM_Morphine"";};  for ""_i"" from 1 to 2 do {this addItemToVest ""AGM_Epipen"";};  this addItemToVest ""AGM_Bloodbag"";  for ""_i"" from 1 to 5 do {this addItemToVest ""BWA3_DM25"";};  for ""_i"" from 1 to 3 do {this addItemToVest ""BWA3_DM32_Orange"";};  for ""_i"" from 1 to 3 do {this addItemToVest ""BWA3_DM51A1"";};  for ""_i"" from 1 to 3 do {this addItemToVest ""BWA3_30Rnd_556x45_G36"";};  this addBackpack ""B_Carryall_cbr"";  for ""_i"" from 1 to 27 do {this addItemToBackpack ""AGM_Bandage"";};  for ""_i"" from 1 to 10 do {this addItemToBackpack ""AGM_Morphine"";};  for ""_i"" from 1 to 10 do {this addItemToBackpack ""AGM_Epipen"";};  for ""_i"" from 1 to 5 do {this addItemToBackpack ""AGM_Bloodbag"";};  this addItemToBackpack ""AGM_EarBuds"";  for ""_i"" from 1 to 10 do {this addItemToBackpack ""BWA3_DM25"";};  for ""_i"" from 1 to 10 do {this addItemToBackpack ""BWA3_30Rnd_556x45_G36"";};  this addHeadgear ""BWA3_M92_Tropen"";    comment ""Add weapons"";  this addWeapon ""BWA3_G36"";  this addPrimaryWeaponItem ""acc_pointer_IR"";  this addPrimaryWeaponItem ""BWA3_optic_ZO4x30"";  this addWeapon ""BWA3_P8"";    comment ""Add items"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc148jem_1"";  this linkItem ""BWA3_ItemNaviPad"";  this linkItem ""BWA3_Vector"";    comment ""Set identity"";  this setFace ""WhiteHead_16"";  this setSpeaker ""Male01GRE"";  [this,""Curator""] call bis_fnc_setUnitInsignia;  ";
-				};
-			};
-		};
-		class Item2
-		{
-			side="WEST";
-			class Vehicles
-			{
-				items=1;
-				class Item0
-				{
-					position[]={3971.104,16.574875,3158.9077};
-					azimut=39.930199;
-					id=2;
-					side="WEST";
-					vehicle="BWA3_Grenadier_Tropen";
-					player="PLAY CDG";
-					leader=1;
-					skill=0.40000001;
-					text="MG";
-					init="comment ""Exported from Arsenal by Filip"";    comment ""Remove existing items"";  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;    comment ""Add containers"";  this forceAddUniform ""BWA3_Uniform_Tropen"";  for ""_i"" from 1 to 15 do {this addItemToUniform ""AGM_Bandage"";};  this addItemToUniform ""BWA3_optic_NSA80"";  this addItemToUniform ""BWA3_15Rnd_9x19_P8"";  this addVest ""BWA3_Vest_Autorifleman_Tropen"";  for ""_i"" from 1 to 5 do {this addItemToVest ""AGM_Bandage"";};  for ""_i"" from 1 to 2 do {this addItemToVest ""AGM_Morphine"";};  for ""_i"" from 1 to 2 do {this addItemToVest ""AGM_Epipen"";};  this addItemToVest ""AGM_Bloodbag"";  for ""_i"" from 1 to 5 do {this addItemToVest ""BWA3_DM25"";};  for ""_i"" from 1 to 3 do {this addItemToVest ""BWA3_DM32_Orange"";};  for ""_i"" from 1 to 3 do {this addItemToVest ""BWA3_DM51A1"";};  this addItemToVest ""BWA3_120Rnd_762x51"";  this addBackpack ""B_Carryall_cbr"";  for ""_i"" from 1 to 5 do {this addItemToBackpack ""AGM_Bandage"";};  for ""_i"" from 1 to 2 do {this addItemToBackpack ""AGM_Morphine"";};  for ""_i"" from 1 to 2 do {this addItemToBackpack ""AGM_Epipen"";};  this addItemToBackpack ""AGM_EarBuds"";  for ""_i"" from 1 to 3 do {this addItemToBackpack ""BWA3_DM25"";};  for ""_i"" from 1 to 7 do {this addItemToBackpack ""BWA3_120Rnd_762x51"";};  this addHeadgear ""BWA3_M92_Tropen"";    comment ""Add weapons"";  this addWeapon ""BWA3_MG5_Tan"";  this addPrimaryWeaponItem ""acc_pointer_IR"";  this addPrimaryWeaponItem ""BWA3_optic_ZO4x30"";  this addWeapon ""BWA3_P8"";    comment ""Add items"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc148jem_1"";  this linkItem ""BWA3_ItemNaviPad"";  this linkItem ""BWA3_Vector"";    comment ""Set identity"";  this setFace ""WhiteHead_16"";  this setSpeaker ""Male01GRE"";  [this,""Curator""] call bis_fnc_setUnitInsignia;  ";
-				};
-			};
-		};
-		class Item3
-		{
-			side="WEST";
-			class Vehicles
-			{
-				items=1;
-				class Item0
-				{
-					position[]={3971.9001,16.558098,3158.3674};
-					azimut=39.930199;
-					id=3;
-					side="WEST";
-					vehicle="BWA3_Grenadier_Tropen";
-					player="PLAY CDG";
-					leader=1;
-					skill=0.40000001;
-					text="S";
-					init="comment ""Exported from Arsenal by Filip"";    comment ""Remove existing items"";  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;    comment ""Add containers"";  this forceAddUniform ""BWA3_Uniform_Tropen"";  for ""_i"" from 1 to 15 do {this addItemToUniform ""AGM_Bandage"";};  this addItemToUniform ""BWA3_optic_NSA80"";  this addItemToUniform ""BWA3_15Rnd_9x19_P8"";  this addVest ""BWA3_Vest_Rifleman1_Tropen"";  for ""_i"" from 1 to 5 do {this addItemToVest ""AGM_Bandage"";};  for ""_i"" from 1 to 2 do {this addItemToVest ""AGM_Morphine"";};  for ""_i"" from 1 to 2 do {this addItemToVest ""AGM_Epipen"";};  this addItemToVest ""AGM_Bloodbag"";  for ""_i"" from 1 to 5 do {this addItemToVest ""BWA3_DM25"";};  for ""_i"" from 1 to 3 do {this addItemToVest ""BWA3_DM32_Orange"";};  for ""_i"" from 1 to 3 do {this addItemToVest ""BWA3_DM51A1"";};  for ""_i"" from 1 to 6 do {this addItemToVest ""BWA3_30Rnd_556x45_G36"";};  this addBackpack ""B_Carryall_cbr"";  for ""_i"" from 1 to 5 do {this addItemToBackpack ""AGM_Bandage"";};  for ""_i"" from 1 to 2 do {this addItemToBackpack ""AGM_Morphine"";};  for ""_i"" from 1 to 2 do {this addItemToBackpack ""AGM_Epipen"";};  this addItemToBackpack ""AGM_EarBuds"";  for ""_i"" from 1 to 15 do {this addItemToBackpack ""BWA3_30Rnd_556x45_G36"";};  for ""_i"" from 1 to 3 do {this addItemToBackpack ""BWA3_DM25"";};  this addHeadgear ""BWA3_M92_Tropen"";    comment ""Add weapons"";  this addWeapon ""BWA3_G36"";  this addPrimaryWeaponItem ""acc_pointer_IR"";  this addPrimaryWeaponItem ""BWA3_optic_ZO4x30"";  this addWeapon ""BWA3_P8"";    comment ""Add items"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc148jem_1"";  this linkItem ""BWA3_ItemNaviPad"";  this linkItem ""BWA3_Vector"";    comment ""Set identity"";  this setFace ""WhiteHead_16"";  this setSpeaker ""Male01GRE"";  [this,""Curator""] call bis_fnc_setUnitInsignia;  ";
-				};
-			};
-		};
-		class Item4
-		{
-			side="WEST";
-			class Vehicles
-			{
-				items=1;
-				class Item0
-				{
-					position[]={3969.3447,16.576269,3158.4302};
-					azimut=39.930199;
-					id=4;
-					side="WEST";
-					vehicle="BWA3_Grenadier_Tropen";
-					player="PLAY CDG";
-					leader=1;
-					skill=0.40000001;
-					text="Sani2";
-					init="comment ""Exported from Arsenal by Filip"";    comment ""Remove existing items"";  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;    comment ""Add containers"";  this forceAddUniform ""BWA3_Uniform_Tropen"";  for ""_i"" from 1 to 15 do {this addItemToUniform ""AGM_Bandage"";};  this addItemToUniform ""BWA3_optic_NSA80"";  this addItemToUniform ""BWA3_15Rnd_9x19_P8"";  this addVest ""BWA3_Vest_Medic_Tropen"";  for ""_i"" from 1 to 18 do {this addItemToVest ""AGM_Bandage"";};  for ""_i"" from 1 to 2 do {this addItemToVest ""AGM_Morphine"";};  for ""_i"" from 1 to 2 do {this addItemToVest ""AGM_Epipen"";};  this addItemToVest ""AGM_Bloodbag"";  for ""_i"" from 1 to 5 do {this addItemToVest ""BWA3_DM25"";};  for ""_i"" from 1 to 3 do {this addItemToVest ""BWA3_DM32_Orange"";};  for ""_i"" from 1 to 3 do {this addItemToVest ""BWA3_DM51A1"";};  for ""_i"" from 1 to 3 do {this addItemToVest ""BWA3_30Rnd_556x45_G36"";};  this addBackpack ""B_Carryall_cbr"";  for ""_i"" from 1 to 27 do {this addItemToBackpack ""AGM_Bandage"";};  for ""_i"" from 1 to 10 do {this addItemToBackpack ""AGM_Morphine"";};  for ""_i"" from 1 to 10 do {this addItemToBackpack ""AGM_Epipen"";};  for ""_i"" from 1 to 5 do {this addItemToBackpack ""AGM_Bloodbag"";};  this addItemToBackpack ""AGM_EarBuds"";  for ""_i"" from 1 to 10 do {this addItemToBackpack ""BWA3_DM25"";};  for ""_i"" from 1 to 10 do {this addItemToBackpack ""BWA3_30Rnd_556x45_G36"";};  this addHeadgear ""BWA3_M92_Tropen"";    comment ""Add weapons"";  this addWeapon ""BWA3_G36"";  this addPrimaryWeaponItem ""acc_pointer_IR"";  this addPrimaryWeaponItem ""BWA3_optic_ZO4x30"";  this addWeapon ""BWA3_P8"";    comment ""Add items"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc148jem_1"";  this linkItem ""BWA3_ItemNaviPad"";  this linkItem ""BWA3_Vector"";    comment ""Set identity"";  this setFace ""WhiteHead_16"";  this setSpeaker ""Male01GRE"";  [this,""Curator""] call bis_fnc_setUnitInsignia;  ";
-				};
-			};
-		};
-		class Item5
-		{
-			side="WEST";
-			class Vehicles
-			{
-				items=1;
-				class Item0
-				{
-					position[]={3970.2439,16.55945,3157.814};
-					azimut=39.930199;
-					id=5;
-					side="WEST";
-					vehicle="BWA3_Grenadier_Tropen";
-					player="PLAY CDG";
-					leader=1;
-					skill=0.40000001;
-					text="MG2";
-					init="comment ""Exported from Arsenal by Filip"";    comment ""Remove existing items"";  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;    comment ""Add containers"";  this forceAddUniform ""BWA3_Uniform_Tropen"";  for ""_i"" from 1 to 15 do {this addItemToUniform ""AGM_Bandage"";};  this addItemToUniform ""BWA3_optic_NSA80"";  this addItemToUniform ""BWA3_15Rnd_9x19_P8"";  this addVest ""BWA3_Vest_Autorifleman_Tropen"";  for ""_i"" from 1 to 5 do {this addItemToVest ""AGM_Bandage"";};  for ""_i"" from 1 to 2 do {this addItemToVest ""AGM_Morphine"";};  for ""_i"" from 1 to 2 do {this addItemToVest ""AGM_Epipen"";};  this addItemToVest ""AGM_Bloodbag"";  for ""_i"" from 1 to 5 do {this addItemToVest ""BWA3_DM25"";};  for ""_i"" from 1 to 3 do {this addItemToVest ""BWA3_DM32_Orange"";};  for ""_i"" from 1 to 3 do {this addItemToVest ""BWA3_DM51A1"";};  this addItemToVest ""BWA3_120Rnd_762x51"";  this addBackpack ""B_Carryall_cbr"";  for ""_i"" from 1 to 5 do {this addItemToBackpack ""AGM_Bandage"";};  for ""_i"" from 1 to 2 do {this addItemToBackpack ""AGM_Morphine"";};  for ""_i"" from 1 to 2 do {this addItemToBackpack ""AGM_Epipen"";};  this addItemToBackpack ""AGM_EarBuds"";  for ""_i"" from 1 to 3 do {this addItemToBackpack ""BWA3_DM25"";};  for ""_i"" from 1 to 7 do {this addItemToBackpack ""BWA3_120Rnd_762x51"";};  this addHeadgear ""BWA3_M92_Tropen"";    comment ""Add weapons"";  this addWeapon ""BWA3_MG5_Tan"";  this addPrimaryWeaponItem ""acc_pointer_IR"";  this addPrimaryWeaponItem ""BWA3_optic_ZO4x30"";  this addWeapon ""BWA3_P8"";    comment ""Add items"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc148jem_1"";  this linkItem ""BWA3_ItemNaviPad"";  this linkItem ""BWA3_Vector"";    comment ""Set identity"";  this setFace ""WhiteHead_16"";  this setSpeaker ""Male01GRE"";  [this,""Curator""] call bis_fnc_setUnitInsignia;  ";
-				};
-			};
-		};
-		class Item6
-		{
-			side="WEST";
-			class Vehicles
-			{
-				items=1;
-				class Item0
-				{
-					position[]={3971.2668,16.541462,3157.2981};
-					azimut=39.930199;
-					id=6;
-					side="WEST";
-					vehicle="BWA3_Grenadier_Tropen";
-					player="PLAY CDG";
-					leader=1;
-					skill=0.40000001;
-					text="S2";
-					init="comment ""Exported from Arsenal by Filip"";    comment ""Remove existing items"";  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;    comment ""Add containers"";  this forceAddUniform ""BWA3_Uniform_Tropen"";  for ""_i"" from 1 to 15 do {this addItemToUniform ""AGM_Bandage"";};  this addItemToUniform ""BWA3_optic_NSA80"";  this addItemToUniform ""BWA3_15Rnd_9x19_P8"";  this addVest ""BWA3_Vest_Rifleman1_Tropen"";  for ""_i"" from 1 to 5 do {this addItemToVest ""AGM_Bandage"";};  for ""_i"" from 1 to 2 do {this addItemToVest ""AGM_Morphine"";};  for ""_i"" from 1 to 2 do {this addItemToVest ""AGM_Epipen"";};  this addItemToVest ""AGM_Bloodbag"";  for ""_i"" from 1 to 5 do {this addItemToVest ""BWA3_DM25"";};  for ""_i"" from 1 to 3 do {this addItemToVest ""BWA3_DM32_Orange"";};  for ""_i"" from 1 to 3 do {this addItemToVest ""BWA3_DM51A1"";};  for ""_i"" from 1 to 6 do {this addItemToVest ""BWA3_30Rnd_556x45_G36"";};  this addBackpack ""B_Carryall_cbr"";  for ""_i"" from 1 to 5 do {this addItemToBackpack ""AGM_Bandage"";};  for ""_i"" from 1 to 2 do {this addItemToBackpack ""AGM_Morphine"";};  for ""_i"" from 1 to 2 do {this addItemToBackpack ""AGM_Epipen"";};  this addItemToBackpack ""AGM_EarBuds"";  for ""_i"" from 1 to 15 do {this addItemToBackpack ""BWA3_30Rnd_556x45_G36"";};  for ""_i"" from 1 to 3 do {this addItemToBackpack ""BWA3_DM25"";};  this addHeadgear ""BWA3_M92_Tropen"";    comment ""Add weapons"";  this addWeapon ""BWA3_G36"";  this addPrimaryWeaponItem ""acc_pointer_IR"";  this addPrimaryWeaponItem ""BWA3_optic_ZO4x30"";  this addWeapon ""BWA3_P8"";    comment ""Add items"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc148jem_1"";  this linkItem ""BWA3_ItemNaviPad"";  this linkItem ""BWA3_Vector"";    comment ""Set identity"";  this setFace ""WhiteHead_16"";  this setSpeaker ""Male01GRE"";  [this,""Curator""] call bis_fnc_setUnitInsignia;  ";
-				};
-			};
-		};
-		class Item7
-		{
-			side="WEST";
-			class Vehicles
-			{
-				items=1;
+				items=4;
 				class Item0
 				{
 					position[]={3968.7351,16.591671,3158.9944};
 					azimut=39.930199;
-					id=7;
+					id=4;
 					side="WEST";
 					vehicle="BWA3_TL_Tropen";
 					player="PLAY CDG";
@@ -222,10 +136,50 @@ class Mission
 					rank="SERGEANT";
 					skill=0.5;
 					init="comment ""Exported from Arsenal by Filip"";    comment ""Remove existing items"";  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;    comment ""Add containers"";  this forceAddUniform ""BWA3_Uniform_Tropen"";  for ""_i"" from 1 to 15 do {this addItemToUniform ""AGM_Bandage"";};  this addItemToUniform ""BWA3_optic_NSA80"";  this addItemToUniform ""BWA3_15Rnd_9x19_P8"";  this addVest ""BWA3_Vest_Leader_Tropen"";  for ""_i"" from 1 to 5 do {this addItemToVest ""AGM_Bandage"";};  for ""_i"" from 1 to 2 do {this addItemToVest ""AGM_Morphine"";};  for ""_i"" from 1 to 2 do {this addItemToVest ""AGM_Epipen"";};  this addItemToVest ""AGM_Bloodbag"";  for ""_i"" from 1 to 5 do {this addItemToVest ""BWA3_DM25"";};  for ""_i"" from 1 to 3 do {this addItemToVest ""BWA3_DM32_Orange"";};  for ""_i"" from 1 to 3 do {this addItemToVest ""BWA3_DM51A1"";};  for ""_i"" from 1 to 3 do {this addItemToVest ""BWA3_30Rnd_556x45_G36"";};  this addBackpack ""B_Carryall_cbr"";  for ""_i"" from 1 to 5 do {this addItemToBackpack ""AGM_Bandage"";};  for ""_i"" from 1 to 2 do {this addItemToBackpack ""AGM_Morphine"";};  for ""_i"" from 1 to 2 do {this addItemToBackpack ""AGM_Epipen"";};  this addItemToBackpack ""AGM_EarBuds"";  for ""_i"" from 1 to 3 do {this addItemToBackpack ""BWA3_DM25"";};  for ""_i"" from 1 to 15 do {this addItemToBackpack ""BWA3_30Rnd_556x45_G36"";};  this addHeadgear ""BWA3_M92_Tropen"";    comment ""Add weapons"";  this addWeapon ""BWA3_G36"";  this addPrimaryWeaponItem ""acc_pointer_IR"";  this addPrimaryWeaponItem ""BWA3_optic_ZO4x30"";  this addWeapon ""BWA3_P8"";    comment ""Add items"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc148jem_1"";  this linkItem ""BWA3_ItemNaviPad"";  this linkItem ""BWA3_Vector"";    comment ""Set identity"";  this setFace ""WhiteHead_16"";  this setSpeaker ""Male01GRE"";  [this,""Curator""] call bis_fnc_setUnitInsignia;  ";
+					description="Truppfuehrer";
+				};
+				class Item1
+				{
+					position[]={3971.2668,16.541462,3157.2981};
+					azimut=39.930199;
+					id=5;
+					side="WEST";
+					vehicle="BWA3_Grenadier_Tropen";
+					player="PLAY CDG";
+					skill=0.40000001;
+					text="S2";
+					init="comment ""Exported from Arsenal by Filip"";    comment ""Remove existing items"";  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;    comment ""Add containers"";  this forceAddUniform ""BWA3_Uniform_Tropen"";  for ""_i"" from 1 to 15 do {this addItemToUniform ""AGM_Bandage"";};  this addItemToUniform ""BWA3_optic_NSA80"";  this addItemToUniform ""BWA3_15Rnd_9x19_P8"";  this addVest ""BWA3_Vest_Rifleman1_Tropen"";  for ""_i"" from 1 to 5 do {this addItemToVest ""AGM_Bandage"";};  for ""_i"" from 1 to 2 do {this addItemToVest ""AGM_Morphine"";};  for ""_i"" from 1 to 2 do {this addItemToVest ""AGM_Epipen"";};  this addItemToVest ""AGM_Bloodbag"";  for ""_i"" from 1 to 5 do {this addItemToVest ""BWA3_DM25"";};  for ""_i"" from 1 to 3 do {this addItemToVest ""BWA3_DM32_Orange"";};  for ""_i"" from 1 to 3 do {this addItemToVest ""BWA3_DM51A1"";};  for ""_i"" from 1 to 6 do {this addItemToVest ""BWA3_30Rnd_556x45_G36"";};  this addBackpack ""B_Carryall_cbr"";  for ""_i"" from 1 to 5 do {this addItemToBackpack ""AGM_Bandage"";};  for ""_i"" from 1 to 2 do {this addItemToBackpack ""AGM_Morphine"";};  for ""_i"" from 1 to 2 do {this addItemToBackpack ""AGM_Epipen"";};  this addItemToBackpack ""AGM_EarBuds"";  for ""_i"" from 1 to 15 do {this addItemToBackpack ""BWA3_30Rnd_556x45_G36"";};  for ""_i"" from 1 to 3 do {this addItemToBackpack ""BWA3_DM25"";};  this addHeadgear ""BWA3_M92_Tropen"";    comment ""Add weapons"";  this addWeapon ""BWA3_G36"";  this addPrimaryWeaponItem ""acc_pointer_IR"";  this addPrimaryWeaponItem ""BWA3_optic_ZO4x30"";  this addWeapon ""BWA3_P8"";    comment ""Add items"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc148jem_1"";  this linkItem ""BWA3_ItemNaviPad"";  this linkItem ""BWA3_Vector"";    comment ""Set identity"";  this setFace ""WhiteHead_16"";  this setSpeaker ""Male01GRE"";  [this,""Curator""] call bis_fnc_setUnitInsignia;  ";
+					description="Schuetze";
+				};
+				class Item2
+				{
+					position[]={3970.2439,16.55945,3157.814};
+					azimut=39.930199;
+					id=6;
+					side="WEST";
+					vehicle="BWA3_Grenadier_Tropen";
+					player="PLAY CDG";
+					skill=0.40000001;
+					text="MG2";
+					init="comment ""Exported from Arsenal by Filip"";    comment ""Remove existing items"";  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;    comment ""Add containers"";  this forceAddUniform ""BWA3_Uniform_Tropen"";  for ""_i"" from 1 to 15 do {this addItemToUniform ""AGM_Bandage"";};  this addItemToUniform ""BWA3_optic_NSA80"";  this addItemToUniform ""BWA3_15Rnd_9x19_P8"";  this addVest ""BWA3_Vest_Autorifleman_Tropen"";  for ""_i"" from 1 to 5 do {this addItemToVest ""AGM_Bandage"";};  for ""_i"" from 1 to 2 do {this addItemToVest ""AGM_Morphine"";};  for ""_i"" from 1 to 2 do {this addItemToVest ""AGM_Epipen"";};  this addItemToVest ""AGM_Bloodbag"";  for ""_i"" from 1 to 5 do {this addItemToVest ""BWA3_DM25"";};  for ""_i"" from 1 to 3 do {this addItemToVest ""BWA3_DM32_Orange"";};  for ""_i"" from 1 to 3 do {this addItemToVest ""BWA3_DM51A1"";};  this addItemToVest ""BWA3_120Rnd_762x51"";  this addBackpack ""B_Carryall_cbr"";  for ""_i"" from 1 to 5 do {this addItemToBackpack ""AGM_Bandage"";};  for ""_i"" from 1 to 2 do {this addItemToBackpack ""AGM_Morphine"";};  for ""_i"" from 1 to 2 do {this addItemToBackpack ""AGM_Epipen"";};  this addItemToBackpack ""AGM_EarBuds"";  for ""_i"" from 1 to 3 do {this addItemToBackpack ""BWA3_DM25"";};  for ""_i"" from 1 to 7 do {this addItemToBackpack ""BWA3_120Rnd_762x51"";};  this addHeadgear ""BWA3_M92_Tropen"";    comment ""Add weapons"";  this addWeapon ""BWA3_MG5_Tan"";  this addPrimaryWeaponItem ""acc_pointer_IR"";  this addPrimaryWeaponItem ""BWA3_optic_ZO4x30"";  this addWeapon ""BWA3_P8"";    comment ""Add items"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc148jem_1"";  this linkItem ""BWA3_ItemNaviPad"";  this linkItem ""BWA3_Vector"";    comment ""Set identity"";  this setFace ""WhiteHead_16"";  this setSpeaker ""Male01GRE"";  [this,""Curator""] call bis_fnc_setUnitInsignia;  ";
+					description="MG-Schuetze";
+				};
+				class Item3
+				{
+					position[]={3969.3447,16.576269,3158.4302};
+					azimut=39.930199;
+					id=7;
+					side="WEST";
+					vehicle="BWA3_Grenadier_Tropen";
+					player="PLAY CDG";
+					skill=0.40000001;
+					text="Sani2";
+					init="comment ""Exported from Arsenal by Filip"";    comment ""Remove existing items"";  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;    comment ""Add containers"";  this forceAddUniform ""BWA3_Uniform_Tropen"";  for ""_i"" from 1 to 15 do {this addItemToUniform ""AGM_Bandage"";};  this addItemToUniform ""BWA3_optic_NSA80"";  this addItemToUniform ""BWA3_15Rnd_9x19_P8"";  this addVest ""BWA3_Vest_Medic_Tropen"";  for ""_i"" from 1 to 18 do {this addItemToVest ""AGM_Bandage"";};  for ""_i"" from 1 to 2 do {this addItemToVest ""AGM_Morphine"";};  for ""_i"" from 1 to 2 do {this addItemToVest ""AGM_Epipen"";};  this addItemToVest ""AGM_Bloodbag"";  for ""_i"" from 1 to 5 do {this addItemToVest ""BWA3_DM25"";};  for ""_i"" from 1 to 3 do {this addItemToVest ""BWA3_DM32_Orange"";};  for ""_i"" from 1 to 3 do {this addItemToVest ""BWA3_DM51A1"";};  for ""_i"" from 1 to 3 do {this addItemToVest ""BWA3_30Rnd_556x45_G36"";};  this addBackpack ""B_Carryall_cbr"";  for ""_i"" from 1 to 27 do {this addItemToBackpack ""AGM_Bandage"";};  for ""_i"" from 1 to 10 do {this addItemToBackpack ""AGM_Morphine"";};  for ""_i"" from 1 to 10 do {this addItemToBackpack ""AGM_Epipen"";};  for ""_i"" from 1 to 5 do {this addItemToBackpack ""AGM_Bloodbag"";};  this addItemToBackpack ""AGM_EarBuds"";  for ""_i"" from 1 to 10 do {this addItemToBackpack ""BWA3_DM25"";};  for ""_i"" from 1 to 10 do {this addItemToBackpack ""BWA3_30Rnd_556x45_G36"";};  this addHeadgear ""BWA3_M92_Tropen"";    comment ""Add weapons"";  this addWeapon ""BWA3_G36"";  this addPrimaryWeaponItem ""acc_pointer_IR"";  this addPrimaryWeaponItem ""BWA3_optic_ZO4x30"";  this addWeapon ""BWA3_P8"";    comment ""Add items"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc148jem_1"";  this linkItem ""BWA3_ItemNaviPad"";  this linkItem ""BWA3_Vector"";    comment ""Set identity"";  this setFace ""WhiteHead_16"";  this setSpeaker ""Male01GRE"";  [this,""Curator""] call bis_fnc_setUnitInsignia;  ";
+					description="Sanitaeter";
 				};
 			};
 		};
-		class Item8
+		class Item2
 		{
 			side="LOGIC";
 			class Vehicles
@@ -289,7 +243,7 @@ class Mission
 				};
 			};
 		};
-		class Item9
+		class Item3
 		{
 			side="LOGIC";
 			class Vehicles
@@ -353,7 +307,7 @@ class Mission
 				};
 			};
 		};
-		class Item10
+		class Item4
 		{
 			side="LOGIC";
 			class Vehicles
@@ -387,7 +341,7 @@ class Mission
 				};
 			};
 		};
-		class Item11
+		class Item5
 		{
 			side="WEST";
 			class Vehicles
@@ -405,7 +359,7 @@ class Mission
 				};
 			};
 		};
-		class Item12
+		class Item6
 		{
 			side="WEST";
 			class Vehicles
@@ -424,7 +378,7 @@ class Mission
 				};
 			};
 		};
-		class Item13
+		class Item7
 		{
 			side="WEST";
 			class Vehicles
@@ -442,7 +396,7 @@ class Mission
 				};
 			};
 		};
-		class Item14
+		class Item8
 		{
 			side="WEST";
 			class Vehicles
@@ -460,7 +414,7 @@ class Mission
 				};
 			};
 		};
-		class Item15
+		class Item9
 		{
 			side="WEST";
 			class Vehicles
@@ -501,7 +455,7 @@ class Mission
 				};
 			};
 		};
-		class Item16
+		class Item10
 		{
 			side="WEST";
 			class Vehicles
@@ -519,7 +473,7 @@ class Mission
 				};
 			};
 		};
-		class Item17
+		class Item11
 		{
 			side="WEST";
 			class Vehicles
@@ -537,7 +491,7 @@ class Mission
 				};
 			};
 		};
-		class Item18
+		class Item12
 		{
 			side="CIV";
 			class Vehicles
@@ -556,7 +510,7 @@ class Mission
 				};
 			};
 		};
-		class Item19
+		class Item13
 		{
 			side="CIV";
 			class Vehicles
@@ -576,7 +530,7 @@ class Mission
 				};
 			};
 		};
-		class Item20
+		class Item14
 		{
 			side="CIV";
 			class Vehicles
@@ -596,7 +550,7 @@ class Mission
 				};
 			};
 		};
-		class Item21
+		class Item15
 		{
 			side="CIV";
 			class Vehicles
@@ -616,7 +570,7 @@ class Mission
 				};
 			};
 		};
-		class Item22
+		class Item16
 		{
 			side="CIV";
 			class Vehicles
@@ -635,7 +589,7 @@ class Mission
 				};
 			};
 		};
-		class Item23
+		class Item17
 		{
 			side="CIV";
 			class Vehicles
@@ -654,7 +608,7 @@ class Mission
 				};
 			};
 		};
-		class Item24
+		class Item18
 		{
 			side="CIV";
 			class Vehicles
@@ -673,7 +627,7 @@ class Mission
 				};
 			};
 		};
-		class Item25
+		class Item19
 		{
 			side="CIV";
 			class Vehicles
@@ -725,7 +679,7 @@ class Mission
 				};
 			};
 		};
-		class Item26
+		class Item20
 		{
 			side="EAST";
 			class Vehicles
@@ -812,7 +766,7 @@ class Mission
 				};
 			};
 		};
-		class Item27
+		class Item21
 		{
 			side="EAST";
 			class Vehicles
@@ -875,7 +829,7 @@ class Mission
 				};
 			};
 		};
-		class Item28
+		class Item22
 		{
 			side="EAST";
 			class Vehicles
@@ -920,7 +874,7 @@ class Mission
 				};
 			};
 		};
-		class Item29
+		class Item23
 		{
 			side="EAST";
 			class Vehicles
@@ -965,7 +919,7 @@ class Mission
 				};
 			};
 		};
-		class Item30
+		class Item24
 		{
 			side="CIV";
 			class Vehicles
@@ -984,7 +938,7 @@ class Mission
 				};
 			};
 		};
-		class Item31
+		class Item25
 		{
 			side="CIV";
 			class Vehicles
@@ -1003,7 +957,7 @@ class Mission
 				};
 			};
 		};
-		class Item32
+		class Item26
 		{
 			side="CIV";
 			class Vehicles
@@ -1022,7 +976,7 @@ class Mission
 				};
 			};
 		};
-		class Item33
+		class Item27
 		{
 			side="CIV";
 			class Vehicles
@@ -1041,7 +995,7 @@ class Mission
 				};
 			};
 		};
-		class Item34
+		class Item28
 		{
 			side="CIV";
 			class Vehicles
@@ -1060,7 +1014,7 @@ class Mission
 				};
 			};
 		};
-		class Item35
+		class Item29
 		{
 			side="CIV";
 			class Vehicles
@@ -1079,7 +1033,7 @@ class Mission
 				};
 			};
 		};
-		class Item36
+		class Item30
 		{
 			side="CIV";
 			class Vehicles
@@ -1098,7 +1052,7 @@ class Mission
 				};
 			};
 		};
-		class Item37
+		class Item31
 		{
 			side="CIV";
 			class Vehicles
@@ -1117,7 +1071,7 @@ class Mission
 				};
 			};
 		};
-		class Item38
+		class Item32
 		{
 			side="CIV";
 			class Vehicles
@@ -1136,7 +1090,7 @@ class Mission
 				};
 			};
 		};
-		class Item39
+		class Item33
 		{
 			side="CIV";
 			class Vehicles
@@ -1155,7 +1109,7 @@ class Mission
 				};
 			};
 		};
-		class Item40
+		class Item34
 		{
 			side="CIV";
 			class Vehicles
@@ -1174,7 +1128,7 @@ class Mission
 				};
 			};
 		};
-		class Item41
+		class Item35
 		{
 			side="CIV";
 			class Vehicles
@@ -1193,7 +1147,7 @@ class Mission
 				};
 			};
 		};
-		class Item42
+		class Item36
 		{
 			side="EAST";
 			class Vehicles
@@ -1238,7 +1192,7 @@ class Mission
 				};
 			};
 		};
-		class Item43
+		class Item37
 		{
 			side="LOGIC";
 			class Vehicles
@@ -1290,7 +1244,7 @@ class Mission
 				};
 			};
 		};
-		class Item44
+		class Item38
 		{
 			side="LOGIC";
 			class Vehicles
@@ -1342,7 +1296,7 @@ class Mission
 				};
 			};
 		};
-		class Item45
+		class Item39
 		{
 			side="LOGIC";
 			class Vehicles
@@ -1394,7 +1348,7 @@ class Mission
 				};
 			};
 		};
-		class Item46
+		class Item40
 		{
 			side="LOGIC";
 			class Vehicles
@@ -1460,7 +1414,7 @@ class Mission
 				};
 			};
 		};
-		class Item47
+		class Item41
 		{
 			side="EAST";
 			class Vehicles
@@ -1480,7 +1434,7 @@ class Mission
 				};
 			};
 		};
-		class Item48
+		class Item42
 		{
 			side="EAST";
 			class Vehicles
@@ -1500,7 +1454,7 @@ class Mission
 				};
 			};
 		};
-		class Item49
+		class Item43
 		{
 			side="EAST";
 			class Vehicles
@@ -1520,7 +1474,7 @@ class Mission
 				};
 			};
 		};
-		class Item50
+		class Item44
 		{
 			side="EAST";
 			class Vehicles
@@ -1540,7 +1494,7 @@ class Mission
 				};
 			};
 		};
-		class Item51
+		class Item45
 		{
 			side="LOGIC";
 			class Vehicles
@@ -1570,7 +1524,7 @@ class Mission
 				};
 			};
 		};
-		class Item52
+		class Item46
 		{
 			side="LOGIC";
 			class Vehicles
@@ -1636,7 +1590,7 @@ class Mission
 				};
 			};
 		};
-		class Item53
+		class Item47
 		{
 			side="LOGIC";
 			class Vehicles
@@ -1666,7 +1620,7 @@ class Mission
 				};
 			};
 		};
-		class Item54
+		class Item48
 		{
 			side="LOGIC";
 			class Vehicles
@@ -1732,7 +1686,7 @@ class Mission
 				};
 			};
 		};
-		class Item55
+		class Item49
 		{
 			side="EAST";
 			class Vehicles
@@ -1777,7 +1731,7 @@ class Mission
 				};
 			};
 		};
-		class Item56
+		class Item50
 		{
 			side="EAST";
 			class Vehicles
@@ -1822,7 +1776,7 @@ class Mission
 				};
 			};
 		};
-		class Item57
+		class Item51
 		{
 			side="EAST";
 			class Vehicles
@@ -1843,7 +1797,7 @@ class Mission
 				};
 			};
 		};
-		class Item58
+		class Item52
 		{
 			side="LOGIC";
 			class Vehicles
