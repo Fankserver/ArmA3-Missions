@@ -65,12 +65,12 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={4044.2441,25.06967,3575.0659};
-					azimut=-310.71231;
+					position[]={3969.6443,16.606194,3159.9263};
+					azimut=-310.71201;
 					id=0;
 					side="WEST";
 					vehicle="BWA3_TL_Tropen";
-					player="PLAYER COMMANDER";
+					player="PLAY CDG";
 					leader=1;
 					rank="SERGEANT";
 					skill=0.5;
@@ -91,6 +91,7 @@ class Mission
 					id=1;
 					side="WEST";
 					vehicle="BWA3_Grenadier_Tropen";
+					player="PLAY CDG";
 					leader=1;
 					skill=0.40000001;
 					text="Sani";
@@ -111,6 +112,7 @@ class Mission
 					id=2;
 					side="WEST";
 					vehicle="BWA3_Grenadier_Tropen";
+					player="PLAY CDG";
 					leader=1;
 					skill=0.40000001;
 					text="MG";
@@ -131,6 +133,7 @@ class Mission
 					id=3;
 					side="WEST";
 					vehicle="BWA3_Grenadier_Tropen";
+					player="PLAY CDG";
 					leader=1;
 					skill=0.40000001;
 					text="S";
@@ -151,6 +154,7 @@ class Mission
 					id=4;
 					side="WEST";
 					vehicle="BWA3_Grenadier_Tropen";
+					player="PLAY CDG";
 					leader=1;
 					skill=0.40000001;
 					text="Sani2";
@@ -171,6 +175,7 @@ class Mission
 					id=5;
 					side="WEST";
 					vehicle="BWA3_Grenadier_Tropen";
+					player="PLAY CDG";
 					leader=1;
 					skill=0.40000001;
 					text="MG2";
@@ -191,6 +196,7 @@ class Mission
 					id=6;
 					side="WEST";
 					vehicle="BWA3_Grenadier_Tropen";
+					player="PLAY CDG";
 					leader=1;
 					skill=0.40000001;
 					text="S2";
@@ -211,6 +217,7 @@ class Mission
 					id=7;
 					side="WEST";
 					vehicle="BWA3_TL_Tropen";
+					player="PLAY CDG";
 					leader=1;
 					rank="SERGEANT";
 					skill=0.5;
