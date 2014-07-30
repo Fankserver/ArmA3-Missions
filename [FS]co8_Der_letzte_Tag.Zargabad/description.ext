@@ -1,0 +1,16 @@
+author = Filip;
+onLoadName = Der letzte Tag;
+onLoadMission = Patrouilliert zur Moschee und zurück;
+joinUnassigned = 1;
+respawn = "BASE";
+respawndelay = 10;
+disabledAI = true;
+disableChannels[] = {0,1,2,3};
+
+class Header
+{
+	gameType = Coop; // Game type, see 'class' columns in the table below
+	minPlayers = 2; //min # of players the mission supports
+	maxPlayers = 8; //max # of players the mission supports
+};
+
